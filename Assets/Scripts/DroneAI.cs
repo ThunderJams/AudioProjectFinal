@@ -19,6 +19,9 @@ public class DroneAI : MonoBehaviour
     private bool goingLeft = true;
     private FloorType floorBelow = FloorType.None;
 
+    // capulse collider
+    [SerializeField] private CapsuleCollider feet;
+
     /// The Wwise event to trigger a footstep sound.
 	public AK.Wwise.Event woodenFootstep = new AK.Wwise.Event();
     
@@ -81,36 +84,57 @@ public class DroneAI : MonoBehaviour
     // function for triggering footstep sounds
     void Footstep()
     {
-        // find out what is below us
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit))
+        floorBelow = FloorType.None;
+        // feet overlap circle
+        Collider[] hitColliders = Physics.OverlapCapsule(feet.bounds.center, feet.bounds.center, feet.radius, LayerMask.GetMask("Floor"));
+        // if hit colliders is not empty
+        if (hitColliders.Length > 0)
         {
-            // if it is a floor, we are walking
-            if (hit.collider.gameObject.tag == "Floor")
-            {
-                floorBelow = FloorType.Floor;
-            }
-            else if (hit.collider.gameObject.tag == "Carpet")
-            {
-                floorBelow = FloorType.Carpet;
-            }
-            else
-            {
-                floorBelow = FloorType.None;
-            }
-
-        }
-
-        // if it is a floor, do floor footsteps
-        if (floorBelow == FloorType.Floor)
-        {
+            floorBelow = FloorType.Floor;
             woodenFootstep.Post(gameObject);
         }
-        // if it is a carpet, do carpet footsteps
-        else if (floorBelow == FloorType.Carpet)
+
+        // feet overlap circle
+        Collider[] hitColliders2 = Physics.OverlapCapsule(feet.bounds.center, feet.bounds.center, feet.radius, LayerMask.GetMask("Carpet"));
+        // if hit colliders is not empty
+        if (hitColliders2.Length > 0)
         {
+            floorBelow = FloorType.Carpet;
             carpetFootstep.Post(gameObject);
         }
+
+
+
+        //// find out what is below us
+        //RaycastHit hit;
+        //if (Physics.Raycast(transform.position, Vector3.down, out hit))
+        //{
+        //    // if it is a floor, we are walking
+        //    if (hit.collider.gameObject.tag == "Floor")
+        //    {
+        //        floorBelow = FloorType.Floor;
+        //    }
+        //    else if (hit.collider.gameObject.tag == "Carpet")
+        //    {
+        //        floorBelow = FloorType.Carpet;
+        //    }
+        //    else
+        //    {
+        //        floorBelow = FloorType.None;
+        //    }
+
+        //}
+
+        //// if it is a floor, do floor footsteps
+        //if (floorBelow == FloorType.Floor)
+        //{
+        //    woodenFootstep.Post(gameObject);
+        //}
+        //// if it is a carpet, do carpet footsteps
+        //else if (floorBelow == FloorType.Carpet)
+        //{
+        //    carpetFootstep.Post(gameObject);
+        //}
     }
 }
 

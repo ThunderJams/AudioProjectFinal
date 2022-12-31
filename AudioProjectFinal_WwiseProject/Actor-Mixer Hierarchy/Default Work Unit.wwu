@@ -85,6 +85,157 @@
 					</ChildrenList>
 					<ObjectLists/>
 				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="RandomFootstepsOnWood" ID="{BE992481-7D04-42E3-97BF-FFBF68154DE6}" ShortID="629746625">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Footstep_Walking_Hardwood_02" ID="{0D247B56-8495-439E-8AA9-625E2411AB9A}" ShortID="715990074">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footstep_Walking_Hardwood_02" ID="{9E29B39B-9862-414F-82C0-B486B7B79821}">
+									<Language>SFX</Language>
+									<AudioFile>Footstep_Walking_Hardwood_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="133392742"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Footstep_Walking_Hardwood_02" ID="{9E29B39B-9862-414F-82C0-B486B7B79821}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Footstep_Walking_Hardwood_04" ID="{93041766-A709-4173-BED0-272672586F67}" ShortID="920455770">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footstep_Walking_Hardwood_04" ID="{75F62420-6E28-45F9-945F-19075C5E86AD}">
+									<Language>SFX</Language>
+									<AudioFile>Footstep_Walking_Hardwood_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="987766169"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Footstep_Walking_Hardwood_04" ID="{75F62420-6E28-45F9-945F-19075C5E86AD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Footstep_Walking_Hardwood_05" ID="{8BD4BBD8-FF3B-44CB-B801-6FA5AE8C2529}" ShortID="521699561">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footstep_Walking_Hardwood_05" ID="{BDA05E33-2538-4E6C-BB9B-6DC660C29845}">
+									<Language>SFX</Language>
+									<AudioFile>Footstep_Walking_Hardwood_05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="346463506"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Footstep_Walking_Hardwood_05" ID="{BDA05E33-2538-4E6C-BB9B-6DC660C29845}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Footstep_Walking_Hardwood_01" ID="{7521A9A6-5226-4C3D-8360-035D04F39281}" ShortID="70071080">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footstep_Walking_Hardwood_01" ID="{3ECE0F8F-807D-4B63-9FD0-0CD9CC830A47}">
+									<Language>SFX</Language>
+									<AudioFile>Footstep_Walking_Hardwood_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="267028213"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Footstep_Walking_Hardwood_01" ID="{3ECE0F8F-807D-4B63-9FD0-0CD9CC830A47}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Footstep_Walking_Hardwood_03" ID="{3B625B92-1693-4BA3-AFB4-B0CF645E05EA}" ShortID="928199459">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footstep_Walking_Hardwood_03" ID="{BB65C079-67F0-49F6-B164-680FD3AB16A7}">
+									<Language>SFX</Language>
+									<AudioFile>Footstep_Walking_Hardwood_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1034362710"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Footstep_Walking_Hardwood_03" ID="{BB65C079-67F0-49F6-B164-680FD3AB16A7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Footstep_Walking_Hardwood_06" ID="{87E48CE7-6918-44D4-BEF5-31F9F8688831}" ShortID="199493861">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footstep_Walking_Hardwood_06" ID="{EAE70649-5464-44D1-9AE5-32D81BA251DE}">
+									<Language>SFX</Language>
+									<AudioFile>Footstep_Walking_Hardwood_06.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="104374374"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Footstep_Walking_Hardwood_06" ID="{EAE70649-5464-44D1-9AE5-32D81BA251DE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
