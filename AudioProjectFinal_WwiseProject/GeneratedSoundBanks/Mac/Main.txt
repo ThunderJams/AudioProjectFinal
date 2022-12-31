@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2385628198	Footsteps			\Default Work Unit\Footsteps	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	5282315	Footstep2	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Mac\SFX\Footstep2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFootsteps\Footstep2		28864
+	861191779	Footstep3	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Mac\SFX\Footstep3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFootsteps\Footstep3		24000
+	1033927115	Footstep1	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Mac\SFX\Footstep1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFootsteps\Footstep1		22336
+

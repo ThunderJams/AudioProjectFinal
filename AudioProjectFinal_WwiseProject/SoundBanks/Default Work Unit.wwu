@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B8EB6E9C-9253-4A20-8A92-3854E3A502DF}" SchemaVersion="103">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{B8EB6E9C-9253-4A20-8A92-3854E3A502DF}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{350FAE14-9B31-457D-A7BB-83B158C03E8D}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Footstep2" ID="{FBA9012D-55FD-4277-B003-5ADB9FE69C41}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="RandomFootsteps" ID="{034E4822-6BA7-4339-82C3-B22941585F75}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Footstep3" ID="{19074968-4D10-46C7-A073-64B2E1655422}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Footstep1" ID="{431B0394-1D2E-4D85-B498-82DA157B521C}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

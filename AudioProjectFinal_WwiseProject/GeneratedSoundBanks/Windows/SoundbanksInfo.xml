@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="558632651">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2385628198" Name="Footsteps" ObjectPath="\Events\Default Work Unit\Footsteps" DurationType="OneShot" DurationMin="0.252517" DurationMax="0.326531"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="5282315" Language="SFX">
+					<ShortName>Footstep2.wav</ShortName>
+					<Path>SFX\Footstep2_10C4C929.wem</Path>
+				</File>
+				<File Id="861191779" Language="SFX">
+					<ShortName>Footstep3.wav</ShortName>
+					<Path>SFX\Footstep3_10C4C929.wem</Path>
+				</File>
+				<File Id="1033927115" Language="SFX">
+					<ShortName>Footstep1.wav</ShortName>
+					<Path>SFX\Footstep1_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
