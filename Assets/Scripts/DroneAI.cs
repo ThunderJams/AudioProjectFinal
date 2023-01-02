@@ -85,6 +85,7 @@ public class DroneAI : MonoBehaviour
     void Footstep()
     {
         floorBelow = FloorType.None;
+        
         // feet overlap circle
         Collider[] hitColliders = Physics.OverlapCapsule(feet.bounds.center, feet.bounds.center, feet.radius, LayerMask.GetMask("Floor"));
         // if hit colliders is not empty
@@ -103,38 +104,6 @@ public class DroneAI : MonoBehaviour
             carpetFootstep.Post(gameObject);
         }
 
-
-
-        //// find out what is below us
-        //RaycastHit hit;
-        //if (Physics.Raycast(transform.position, Vector3.down, out hit))
-        //{
-        //    // if it is a floor, we are walking
-        //    if (hit.collider.gameObject.tag == "Floor")
-        //    {
-        //        floorBelow = FloorType.Floor;
-        //    }
-        //    else if (hit.collider.gameObject.tag == "Carpet")
-        //    {
-        //        floorBelow = FloorType.Carpet;
-        //    }
-        //    else
-        //    {
-        //        floorBelow = FloorType.None;
-        //    }
-
-        //}
-
-        //// if it is a floor, do floor footsteps
-        //if (floorBelow == FloorType.Floor)
-        //{
-        //    woodenFootstep.Post(gameObject);
-        //}
-        //// if it is a carpet, do carpet footsteps
-        //else if (floorBelow == FloorType.Carpet)
-        //{
-        //    carpetFootstep.Post(gameObject);
-        //}
     }
 }
 
