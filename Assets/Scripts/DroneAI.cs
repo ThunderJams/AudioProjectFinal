@@ -76,7 +76,7 @@ public class DroneAI : MonoBehaviour
         }
 
         // debug log what terrain we are standing on
-        Debug.Log(floorBelow);
+        //Debug.Log(floorBelow);
         
     }
 
