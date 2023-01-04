@@ -16,7 +16,7 @@ public class DroneAI : MonoBehaviour
 {
     CharacterController cc;
     private float internalTimer = 0;
-    private bool goingLeft = true;
+    private bool goingLeft = false;
     private FloorType floorBelow = FloorType.None;
 
     // capulse collider
@@ -75,24 +75,29 @@ public class DroneAI : MonoBehaviour
             }
         }
 
+        FloorCheck();
+        
+        // if floor below is none, get affected by gravity
+        if (floorBelow == FloorType.None)
+        {
+            cc.Move(Vector3.down * Time.deltaTime * 9.8f);
+        }
+
         // debug log what terrain we are standing on
         //Debug.Log(floorBelow);
-        
+
     }
 
-
-    // function for triggering footstep sounds
-    void Footstep()
+    void FloorCheck()
     {
         floorBelow = FloorType.None;
-        
+
         // feet overlap circle
         Collider[] hitColliders = Physics.OverlapCapsule(feet.bounds.center, feet.bounds.center, feet.radius, LayerMask.GetMask("Floor"));
         // if hit colliders is not empty
         if (hitColliders.Length > 0)
         {
             floorBelow = FloorType.Floor;
-            woodenFootstep.Post(gameObject);
         }
 
         // feet overlap circle
@@ -101,6 +106,20 @@ public class DroneAI : MonoBehaviour
         if (hitColliders2.Length > 0)
         {
             floorBelow = FloorType.Carpet;
+        }
+    }
+    
+    // function for triggering footstep sounds
+    void Footstep()
+    {
+        // if we are on the floor, play wooden footstep
+        if (floorBelow == FloorType.Floor)
+        {
+            woodenFootstep.Post(gameObject);
+        }
+        // if we are on the carpet, play carpet footstep
+        else if (floorBelow == FloorType.Carpet)
+        {
             carpetFootstep.Post(gameObject);
         }
 

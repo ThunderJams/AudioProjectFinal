@@ -4,35 +4,73 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float xSensitivity = 400;
-    public float ySensitivity = 400;
+    CharacterController characterController;
+    public float speed = 6.0f;
+    public bool movementEnabled = false;
 
-    float xRotation;
-    float yRotation;
+    private FloorType floorBelow = FloorType.None;
+    
+    // capulse collider
+    [SerializeField] private CapsuleCollider feet;
 
-    public Transform orientation;
-
-    // Start is called before the first frame update
+    // start
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        characterController = GetComponent<CharacterController>();
     }
 
-    // Update is called once per frame
+    // update
     void Update()
     {
-        // get mouse input
-        float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * xSensitivity;
-        float mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * ySensitivity;
+        if (movementEnabled)
+        {
+            // get input
+            float horizontal = Input.GetAxis("Horizontal");
+            float vertical = Input.GetAxis("Vertical");
 
-        yRotation += mouseX;
-        xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+            //// move
+            //Vector3 direction = new Vector3(horizontal, 0, vertical);
+            //characterController.Move(-direction * Time.deltaTime * speed);
 
-        transform.rotation = Quaternion.Euler(xRotation, yRotation, 0f);
-        orientation.rotation = Quaternion.Euler(0f, yRotation, 0f);
+            // move respective of camera direction
+            Vector3 forward = Camera.main.transform.forward;
+            Vector3 right = Camera.main.transform.right;
+            forward.y = 0;
+            right.y = 0;
+            forward.Normalize();
+            right.Normalize();
+            Vector3 desiredMoveDirection = forward * vertical + right * horizontal;
+            characterController.Move(desiredMoveDirection * Time.deltaTime * speed);
 
-        transform.position = orientation.position;
+            FloorCheck();
+
+            // if floor below is none, get affected by gravity
+            if (floorBelow == FloorType.None)
+            {
+                characterController.Move(Vector3.down * Time.deltaTime * 9.8f);
+            }
+        }
+        
+    }
+
+    void FloorCheck()
+    {
+        floorBelow = FloorType.None;
+
+        // feet overlap circle
+        Collider[] hitColliders = Physics.OverlapCapsule(feet.bounds.center, feet.bounds.center, feet.radius, LayerMask.GetMask("Floor"));
+        // if hit colliders is not empty
+        if (hitColliders.Length > 0)
+        {
+            floorBelow = FloorType.Floor;
+        }
+
+        // feet overlap circle
+        Collider[] hitColliders2 = Physics.OverlapCapsule(feet.bounds.center, feet.bounds.center, feet.radius, LayerMask.GetMask("Carpet"));
+        // if hit colliders is not empty
+        if (hitColliders2.Length > 0)
+        {
+            floorBelow = FloorType.Carpet;
+        }
     }
 }
