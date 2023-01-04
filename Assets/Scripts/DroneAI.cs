@@ -31,10 +31,20 @@ public class DroneAI : MonoBehaviour
     [Range(0.01f, 1.0f)]
     public float footstepRate = 0.3f;
 
+    // walking speed
+    [Range(0.01f, 5.0f)]    
+    public float walkSpeed = 1.0f;
+
     ///	Used to determine when to trigger footstep sounds.
 	private bool walking = true;
     ///	Used to determine when to trigger footstep sounds.
     private float walkCount = 0.0f;
+
+    public int currentLocation;
+    // public list of transforms
+    public List<Transform> locations;
+    // int move threshold for each location
+    public List<int> moveThreshold;
 
     // Start is called before the first frame update
     void Start()
@@ -53,14 +63,20 @@ public class DroneAI : MonoBehaviour
             goingLeft = !goingLeft;
         }
 
-        if (goingLeft)
+        // if we are going to a new location and are not there yet
+        if (locations[currentLocation].position != transform.position)
         {
-            cc.Move(Vector3.left * Time.deltaTime);
+            // move towards the current location
+            transform.position = Vector3.MoveTowards(transform.position, locations[currentLocation].position, walkSpeed * Time.deltaTime);
+            walking = true;
         }
         else
         {
-            cc.Move(Vector3.right * Time.deltaTime);
+            // call a new event or move elsewhere
+            walking = false;
+            EventAI();
         }
+        
 
         // if we are walking, trigger footstep sounds
         if (walking)
@@ -122,6 +138,36 @@ public class DroneAI : MonoBehaviour
         {
             carpetFootstep.Post(gameObject);
         }
+
+    }
+
+    // run this event AI after every event (aka sound effect)
+    // or after we have moved to a new location
+    void EventAI()
+    {
+        // generate a move threshold based on the current location
+        // generate a random number between 1 and 100
+        int random = Random.Range(1, 100);
+
+        if (random < moveThreshold[currentLocation])
+        {
+            // move to the next location
+            currentLocation++;
+            
+            // if we are at the end of the list, go back to the beginning
+            if (currentLocation >= locations.Count)
+            {
+                currentLocation = 0;
+            }
+        }
+        else
+        {
+            // do event
+            
+        }
+
+
+
 
     }
 }
