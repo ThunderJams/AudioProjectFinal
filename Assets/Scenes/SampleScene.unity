@@ -1046,6 +1046,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 213fcc0c91e37cb4eb7a7153f9cb3190, type: 2}
   footstepRate: 0.6
+  walkSpeed: 1
   currentLocation: 0
   locations: []
   moveThreshold: 
@@ -1430,6 +1431,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 213fcc0c91e37cb4eb7a7153f9cb3190, type: 2}
   footstepRate: 0.6
+  walkSpeed: 1
   currentLocation: 0
   locations: []
   moveThreshold: 
@@ -2257,6 +2259,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 213fcc0c91e37cb4eb7a7153f9cb3190, type: 2}
   footstepRate: 0.6
+  walkSpeed: 1
   currentLocation: 0
   locations: []
   moveThreshold: 
@@ -3562,6 +3565,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 213fcc0c91e37cb4eb7a7153f9cb3190, type: 2}
   footstepRate: 0.6
+  walkSpeed: 3
   currentLocation: 0
   locations:
   - {fileID: 572473265}
@@ -3909,6 +3913,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 213fcc0c91e37cb4eb7a7153f9cb3190, type: 2}
   footstepRate: 0.6
+  walkSpeed: 1
   currentLocation: 0
   locations: []
   moveThreshold: 
@@ -4053,6 +4058,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 213fcc0c91e37cb4eb7a7153f9cb3190, type: 2}
   footstepRate: 0.6
+  walkSpeed: 1
   currentLocation: 0
   locations: []
   moveThreshold: 

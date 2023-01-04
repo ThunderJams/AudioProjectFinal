@@ -46,6 +46,8 @@ public class DroneAI : MonoBehaviour
     // int move threshold for each location
     public List<int> moveThreshold;
 
+    bool directionOfTravel = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -64,6 +66,7 @@ public class DroneAI : MonoBehaviour
         }
 
         // if we are going to a new location and are not there yet
+        // and if wwise sound is not playing
         if (locations[currentLocation].position != transform.position)
         {
             // move towards the current location
@@ -152,12 +155,25 @@ public class DroneAI : MonoBehaviour
         if (random < moveThreshold[currentLocation])
         {
             // move to the next location
-            currentLocation++;
-            
-            // if we are at the end of the list, go back to the beginning
+            if (directionOfTravel)
+            {
+                currentLocation++;
+            }
+            else
+            {
+                currentLocation--;
+            }
+
+            // flip direction of travel if we go out of the list
             if (currentLocation >= locations.Count)
             {
-                currentLocation = 0;
+                currentLocation = locations.Count - 2;
+                directionOfTravel = false;
+            }
+            else if (currentLocation < 0)
+            {
+                currentLocation = 1;
+                directionOfTravel = true;
             }
         }
         else
