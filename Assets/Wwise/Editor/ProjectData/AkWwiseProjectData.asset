@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 313890e9ec0fac47965e488ece730db3
     GuidInternal: 
-    m_lastTime: -8585291180346503745
+    m_lastTime: -8585286948068770538
     List:
+    - name: Carpetsteps
+      guid: 5245d1c496058e458c1c4992af798899
+      id: 3720131405
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 313890e9ec0fac47965e488ece730db3
+      - ElementName: Carpetsteps
+        ObjectType: 3
+        guid: 5245d1c496058e458c1c4992af798899
+      Path: Events\Default Work Unit\Carpetsteps
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Footsteps
       guid: 96378923b478f14da1367a0637efb8c7
       id: 2385628198

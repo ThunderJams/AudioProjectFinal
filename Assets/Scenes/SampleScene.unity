@@ -3563,7 +3563,7 @@ MonoBehaviour:
   carpetFootstep:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 213fcc0c91e37cb4eb7a7153f9cb3190, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: a3eb25cb751a52848bb84fa40218a4ca, type: 2}
   footstepRate: 0.6
   walkSpeed: 3
   currentLocation: 0

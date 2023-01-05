@@ -236,6 +236,111 @@
 					</ChildrenList>
 					<ObjectLists/>
 				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="RandomCarpetFootsteps" ID="{6B6D3B21-7AFD-41CA-8B40-E1484C5C1932}" ShortID="791032923">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="cloth3" ID="{82172351-BC58-4168-A9E2-9972C3B2CC33}" ShortID="882254036">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="cloth3" ID="{1981B0B8-0A34-40F1-9C86-56E82C62CC24}">
+									<Language>SFX</Language>
+									<AudioFile>cloth3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="287944606"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="cloth3" ID="{1981B0B8-0A34-40F1-9C86-56E82C62CC24}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="cloth4" ID="{2FB0D449-E135-4EE7-84C5-68777501402B}" ShortID="999869760">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="cloth4" ID="{84F0E63F-35E1-422A-B659-24F776F95A90}">
+									<Language>SFX</Language>
+									<AudioFile>cloth4.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="76254678"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="cloth4" ID="{84F0E63F-35E1-422A-B659-24F776F95A90}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="cloth2" ID="{6A15A208-FF6B-4157-BF30-61DE95249EB4}" ShortID="106395224">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="cloth2" ID="{37B2CFE3-A2B3-4971-8798-2474E7094364}">
+									<Language>SFX</Language>
+									<AudioFile>cloth2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="78163868"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="cloth2" ID="{37B2CFE3-A2B3-4971-8798-2474E7094364}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="cloth1" ID="{23EC611C-0159-4C99-A309-D67A85AB099A}" ShortID="377269332">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="cloth1" ID="{45011449-538E-49F9-9094-9AB56DC14E56}">
+									<Language>SFX</Language>
+									<AudioFile>cloth1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="927854305"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="cloth1" ID="{45011449-538E-49F9-9094-9AB56DC14E56}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
