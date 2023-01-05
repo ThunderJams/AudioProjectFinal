@@ -5,17 +5,26 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{350FAE14-9B31-457D-A7BB-83B158C03E8D}">
 					<ObjectInclusionList>
+						<ObjectRef Name="womanCarpet2" ID="{634ACE7F-52D0-4145-AB67-6FCF2C0884BB}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="cloth2" ID="{6A15A208-FF6B-4157-BF30-61DE95249EB4}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="cloth3" ID="{82172351-BC58-4168-A9E2-9972C3B2CC33}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep_Walking_Hardwood_04" ID="{93041766-A709-4173-BED0-272672586F67}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="RandomCarpetFootsteps" ID="{6B6D3B21-7AFD-41CA-8B40-E1484C5C1932}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep2" ID="{FBA9012D-55FD-4277-B003-5ADB9FE69C41}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RandomFootstepsOnWood" ID="{BE992481-7D04-42E3-97BF-FFBF68154DE6}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="RandomCarpetF" ID="{D3939672-AC22-4314-9D87-8ABC5B256D84}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RandomFootsteps" ID="{034E4822-6BA7-4339-82C3-B22941585F75}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep_Walking_Hardwood_02" ID="{0D247B56-8495-439E-8AA9-625E2411AB9A}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep_Walking_Hardwood_05" ID="{8BD4BBD8-FF3B-44CB-B801-6FA5AE8C2529}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep_Walking_Hardwood_06" ID="{87E48CE7-6918-44D4-BEF5-31F9F8688831}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep3" ID="{19074968-4D10-46C7-A073-64B2E1655422}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="womanCarpet1" ID="{9719E391-54C2-4813-847C-1D84F334D527}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="womanCarpet3" ID="{FD32BE70-C8C4-4B94-8934-C0D7097CB911}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep_Walking_Hardwood_03" ID="{3B625B92-1693-4BA3-AFB4-B0CF645E05EA}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep_Walking_Hardwood_01" ID="{7521A9A6-5226-4C3D-8360-035D04F39281}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="cloth1" ID="{23EC611C-0159-4C99-A309-D67A85AB099A}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep1" ID="{431B0394-1D2E-4D85-B498-82DA157B521C}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="cloth4" ID="{2FB0D449-E135-4EE7-84C5-68777501402B}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

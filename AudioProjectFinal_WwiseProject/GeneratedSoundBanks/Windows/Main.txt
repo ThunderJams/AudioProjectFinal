@@ -1,14 +1,23 @@
 Event	ID	Name			Wwise Object Path	Notes
 	2385628198	Footsteps			\Default Work Unit\Footsteps	
 	2593838623	Woodsteps			\Default Work Unit\Woodsteps	
+	3720131405	Carpetsteps			\Default Work Unit\Carpetsteps	
+	4077091701	CarpetFootstepsF			\Default Work Unit\CarpetFootstepsF	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	5282315	Footstep2	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\Footstep2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFootsteps\Footstep2		28864
+	76254678	cloth4	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\cloth4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomCarpetFootsteps\cloth4		18010
+	78163868	cloth2	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\cloth2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomCarpetFootsteps\cloth2		18010
 	104374374	Footstep_Walking_Hardwood_06	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\Footstep_Walking_Hardwood_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFootstepsOnWood\Footstep_Walking_Hardwood_06		25232
 	133392742	Footstep_Walking_Hardwood_02	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\Footstep_Walking_Hardwood_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFootstepsOnWood\Footstep_Walking_Hardwood_02		24892
+	147795527	womanCarpet2	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\womanCarpet2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomCarpetF\womanCarpet2		64486
 	267028213	Footstep_Walking_Hardwood_01	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\Footstep_Walking_Hardwood_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFootstepsOnWood\Footstep_Walking_Hardwood_01		22572
+	287944606	cloth3	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\cloth3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomCarpetFootsteps\cloth3		18010
 	346463506	Footstep_Walking_Hardwood_05	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\Footstep_Walking_Hardwood_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFootstepsOnWood\Footstep_Walking_Hardwood_05		28428
+	441661625	womanCarpet3	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\womanCarpet3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomCarpetF\womanCarpet3		62184
+	477920797	womanCarpet1	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\womanCarpet1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomCarpetF\womanCarpet1		55282
 	861191779	Footstep3	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\Footstep3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFootsteps\Footstep3		24000
+	927854305	cloth1	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\cloth1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomCarpetFootsteps\cloth1		18010
 	987766169	Footstep_Walking_Hardwood_04	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\Footstep_Walking_Hardwood_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFootstepsOnWood\Footstep_Walking_Hardwood_04		21766
 	1033927115	Footstep1	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\Footstep1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFootsteps\Footstep1		22336
 	1034362710	Footstep_Walking_Hardwood_03	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\Footstep_Walking_Hardwood_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFootstepsOnWood\Footstep_Walking_Hardwood_03		24892

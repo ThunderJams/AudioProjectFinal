@@ -36,6 +36,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="CarpetFootstepsF" ID="{D993BCAE-0665-463D-9A71-7606D4872F30}">
+					<ChildrenList>
+						<Action Name="" ID="{7483499F-2DDC-42A7-AC1A-516378F32EAF}" ShortID="576204701">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RandomCarpetF" ID="{D3939672-AC22-4314-9D87-8ABC5B256D84}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

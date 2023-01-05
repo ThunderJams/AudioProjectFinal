@@ -6,6 +6,8 @@
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Ewan\Unity Projects\AudioProjectFinal\Assets\Audio\Footsteps\Carpet\"/>
 				<Property Name="Event Action List\{23893796-78B4-4DF1-A136-7A0637EFB8C7}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{AC6066AB-2A07-428E-9DC8-B5DC594D5DB0}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C4D14552-0596-458E-8C1C-4992AF798899}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D993BCAE-0665-463D-9A71-7606D4872F30}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>

@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 9c6eebb85392204a8a923854e3a502df
     GuidInternal: 
-    m_lastTime: -8585291180204201761
+    m_lastTime: -8585286871314161541
     List:
     - name: Main
       guid: 14ae0f35319b7d45a7bb83b158c03e8d
@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 313890e9ec0fac47965e488ece730db3
     GuidInternal: 
-    m_lastTime: -8585286948068770538
+    m_lastTime: -8585286871568421395
     List:
+    - name: CarpetFootstepsF
+      guid: aebc93d965063d469a717606d4872f30
+      id: 4077091701
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 313890e9ec0fac47965e488ece730db3
+      - ElementName: CarpetFootstepsF
+        ObjectType: 3
+        guid: aebc93d965063d469a717606d4872f30
+      Path: Events\Default Work Unit\CarpetFootstepsF
+      maxAttenuation: 0
+      maxDuration: 0.671063
+      minDuration: 0.575188
     - name: Carpetsteps
       guid: 5245d1c496058e458c1c4992af798899
       id: 3720131405
@@ -111,8 +128,8 @@ MonoBehaviour:
         guid: 5245d1c496058e458c1c4992af798899
       Path: Events\Default Work Unit\Carpetsteps
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.203469
+      minDuration: 0.203469
     - name: Footsteps
       guid: 96378923b478f14da1367a0637efb8c7
       id: 2385628198
@@ -204,7 +221,7 @@ MonoBehaviour:
     m_lastTime: -8585291504995917688
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000a0000000b000000
+  ExpandedWaapiItemIds: 0100000005000000060000000a0000000b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

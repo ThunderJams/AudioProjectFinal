@@ -13,6 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID CARPETFOOTSTEPSF = 4077091701U;
+        static const AkUniqueID CARPETSTEPS = 3720131405U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID WOODSTEPS = 2593838623U;
     } // namespace EVENTS

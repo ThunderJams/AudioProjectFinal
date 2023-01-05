@@ -16,11 +16,13 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2401478351">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3389954381">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="4077091701" Name="CarpetFootstepsF" ObjectPath="\Events\Default Work Unit\CarpetFootstepsF" DurationType="OneShot" DurationMin="0.575188" DurationMax="0.671063"/>
+				<Event Id="3720131405" Name="Carpetsteps" ObjectPath="\Events\Default Work Unit\Carpetsteps" DurationType="OneShot" DurationMin="0.203469" DurationMax="0.203469"/>
 				<Event Id="2385628198" Name="Footsteps" ObjectPath="\Events\Default Work Unit\Footsteps" DurationType="OneShot" DurationMin="0.252517" DurationMax="0.326531"/>
 				<Event Id="2593838623" Name="Woodsteps" ObjectPath="\Events\Default Work Unit\Woodsteps" DurationType="OneShot" DurationMin="0.226063" DurationMax="0.295458"/>
 			</IncludedEvents>
@@ -28,6 +30,14 @@
 				<File Id="5282315" Language="SFX">
 					<ShortName>Footstep2.wav</ShortName>
 					<Path>SFX\Footstep2_10C4C929.wem</Path>
+				</File>
+				<File Id="76254678" Language="SFX">
+					<ShortName>cloth4.wav</ShortName>
+					<Path>SFX\cloth4_10C4C929.wem</Path>
+				</File>
+				<File Id="78163868" Language="SFX">
+					<ShortName>cloth2.wav</ShortName>
+					<Path>SFX\cloth2_10C4C929.wem</Path>
 				</File>
 				<File Id="104374374" Language="SFX">
 					<ShortName>Footstep_Walking_Hardwood_06.wav</ShortName>
@@ -37,17 +47,37 @@
 					<ShortName>Footstep_Walking_Hardwood_02.wav</ShortName>
 					<Path>SFX\Footstep_Walking_Hardwood_02_10C4C929.wem</Path>
 				</File>
+				<File Id="147795527" Language="SFX">
+					<ShortName>womanCarpet2.wav</ShortName>
+					<Path>SFX\womanCarpet2_10C4C929.wem</Path>
+				</File>
 				<File Id="267028213" Language="SFX">
 					<ShortName>Footstep_Walking_Hardwood_01.wav</ShortName>
 					<Path>SFX\Footstep_Walking_Hardwood_01_10C4C929.wem</Path>
+				</File>
+				<File Id="287944606" Language="SFX">
+					<ShortName>cloth3.wav</ShortName>
+					<Path>SFX\cloth3_10C4C929.wem</Path>
 				</File>
 				<File Id="346463506" Language="SFX">
 					<ShortName>Footstep_Walking_Hardwood_05.wav</ShortName>
 					<Path>SFX\Footstep_Walking_Hardwood_05_10C4C929.wem</Path>
 				</File>
+				<File Id="441661625" Language="SFX">
+					<ShortName>womanCarpet3.wav</ShortName>
+					<Path>SFX\womanCarpet3_10C4C929.wem</Path>
+				</File>
+				<File Id="477920797" Language="SFX">
+					<ShortName>womanCarpet1.wav</ShortName>
+					<Path>SFX\womanCarpet1_10C4C929.wem</Path>
+				</File>
 				<File Id="861191779" Language="SFX">
 					<ShortName>Footstep3.wav</ShortName>
 					<Path>SFX\Footstep3_10C4C929.wem</Path>
+				</File>
+				<File Id="927854305" Language="SFX">
+					<ShortName>cloth1.wav</ShortName>
+					<Path>SFX\cloth1_10C4C929.wem</Path>
 				</File>
 				<File Id="987766169" Language="SFX">
 					<ShortName>Footstep_Walking_Hardwood_04.wav</ShortName>
