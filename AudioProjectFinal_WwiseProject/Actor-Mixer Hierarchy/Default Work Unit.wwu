@@ -426,7 +426,7 @@
 											</PropertyList>
 											<PointList>
 												<Point>
-													<XPos>-0</XPos>
+													<XPos>0</XPos>
 													<YPos>0</YPos>
 													<Flags>12</Flags>
 													<Time>0</Time>
@@ -632,6 +632,7 @@
 										<Value>51</Value>
 									</ValueList>
 								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 							</PropertyList>
 							<ReferenceList>
@@ -662,6 +663,7 @@
 						<Sound Name="TVStatic" ID="{D81A6AFF-46CB-4DE9-AA74-FB1B0235A381}" ShortID="92518677">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 							</PropertyList>
 							<ReferenceList>

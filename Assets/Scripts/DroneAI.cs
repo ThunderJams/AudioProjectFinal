@@ -195,10 +195,15 @@ public class DroneAI : MonoBehaviour
                         tv.isTVon = false;
                         waitCounter = 4;
                     }
-                    else
+                    else if (tv.currentChannel != TVChannel.News)
                     {
                         // if static is on, switch to news
-                        AkSoundEngine.SetSwitch("TV", "News", tv.gameObject);
+                        
+                        // stop playing the existing sound
+                        tv.tvOff.Post(tv.gameObject);
+                        tv.newsSwitch.SetValue(tv.gameObject);
+                        tv.tv.Post(tv.gameObject);
+                        tv.currentChannel = TVChannel.News;
                         waitCounter = 4;
                     }
 

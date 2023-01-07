@@ -11,18 +11,18 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2716378460">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="715534055">
+		<SoundBank Id="3161908922" Language="SFX" Hash="316429064">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2385628198" Name="Footsteps" ObjectPath="\Events\Default Work Unit\Footsteps" DurationType="OneShot" DurationMin="0.17611" DurationMax="0.25573"/>
-				<Event Id="1568083719" Name="TV" ObjectPath="\Events\Default Work Unit\TV" DurationType="OneShot" DurationMin="6." DurationMax="16."/>
+				<Event Id="1568083719" Name="TV" ObjectPath="\Events\Default Work Unit\TV" DurationType="Infinite"/>
 				<Event Id="2896649166" Name="TVOff" ObjectPath="\Events\Default Work Unit\TVOff" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -52,7 +52,7 @@
 				</File>
 				<File Id="167514482" Language="SFX">
 					<ShortName>TVStatic.wav</ShortName>
-					<Path>SFX\TVStatic_10C4C929.wem</Path>
+					<Path>SFX\TVStatic_D79FB2B7.wem</Path>
 				</File>
 				<File Id="267028213" Language="SFX">
 					<ShortName>Footstep_Walking_Hardwood_01.wav</ShortName>
@@ -96,7 +96,7 @@
 				</File>
 				<File Id="1039977825" Language="SFX">
 					<ShortName>TVNews.wav</ShortName>
-					<Path>SFX\TVNews_10C4C929.wem</Path>
+					<Path>SFX\TVNews_D79FB2B7.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 			<SwitchGroups>

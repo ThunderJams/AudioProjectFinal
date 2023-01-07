@@ -4564,6 +4564,8 @@ GameObject:
   - component: {fileID: 1393991141}
   - component: {fileID: 1393991140}
   - component: {fileID: 1393991143}
+  - component: {fileID: 1393991145}
+  - component: {fileID: 1393991144}
   m_Layer: 0
   m_Name: TV
   m_TagString: Untagged
@@ -4672,7 +4674,54 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 3f80222482fb19645ae5431a8b7a29f2, type: 2}
+  newsSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: dc34babe792e0f54da416d925042dc0d, type: 2}
   isTVon: 0
+  currentChannel: 1
+--- !u!114 &1393991144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393991138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef933371de1d57a469f068cc44b1bd48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeTime: 0.1
+  LayerMask:
+    serializedVersion: 2
+    m_Bits: 192
+  maxDistance: -1
+  refreshInterval: 0.1
+--- !u!114 &1393991145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393991138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc3f2d18234d47d478bf46e5ccb2fedf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &1400492576
 GameObject:
   m_ObjectHideFlags: 0
@@ -5828,6 +5877,7 @@ GameObject:
   - component: {fileID: 1814032916}
   - component: {fileID: 1814032918}
   - component: {fileID: 1814032917}
+  - component: {fileID: 1814032919}
   m_Layer: 0
   m_Name: Drone1
   m_TagString: Untagged
@@ -5868,7 +5918,7 @@ MonoBehaviour:
   footsteps:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 213fcc0c91e37cb4eb7a7153f9cb3190, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 7056842569e85e9408117f3425940fe6, type: 2}
   carpetSwitch:
     idInternal: 0
     valueGuidInternal: 
@@ -6019,6 +6069,24 @@ MonoBehaviour:
   groupIdInternal: 0
   valueGuidInternal: 
   groupGuidInternal: 
+--- !u!114 &1814032919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814032910}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef933371de1d57a469f068cc44b1bd48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeTime: 0.5
+  LayerMask:
+    serializedVersion: 2
+    m_Bits: 192
+  maxDistance: -1
+  refreshInterval: 1
 --- !u!1 &1825704869
 GameObject:
   m_ObjectHideFlags: 0
