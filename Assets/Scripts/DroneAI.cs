@@ -15,6 +15,7 @@ enum FloorType
 public class DroneAI : MonoBehaviour
 {
     CharacterController cc;
+    public Television tv;
     private float internalTimer = 0;
     private bool goingLeft = false;
     private FloorType floorBelow = FloorType.None;
@@ -22,10 +23,10 @@ public class DroneAI : MonoBehaviour
     // capulse collider
     [SerializeField] private CapsuleCollider feet;
 
-    /// The Wwise event to trigger a footstep sound.
-	public AK.Wwise.Event woodenFootstep = new AK.Wwise.Event();
-    
-	public AK.Wwise.Event carpetFootstep = new AK.Wwise.Event();
+    public AK.Wwise.Event footsteps = new AK.Wwise.Event();
+    [SerializeField] private AK.Wwise.Switch carpetSwitch;
+    [SerializeField] private AK.Wwise.Switch woodSwitch;
+
 
     /// The speed at which footstep sounds are triggered.
     [Range(0.01f, 1.0f)]
@@ -47,6 +48,8 @@ public class DroneAI : MonoBehaviour
     public List<int> moveThreshold;
 
     bool directionOfTravel = true;
+
+    float waitCounter = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -77,9 +80,17 @@ public class DroneAI : MonoBehaviour
         {
             // call a new event or move elsewhere
             walking = false;
-            EventAI();
+
+            if (waitCounter <= 0)
+            {
+                EventAI();
+            }
+            else
+            {
+                waitCounter -= Time.deltaTime;
+            }
+            
         }
-        
 
         // if we are walking, trigger footstep sounds
         if (walking)
@@ -88,7 +99,7 @@ public class DroneAI : MonoBehaviour
 
             if (walkCount > footstepRate)
             {
-                Footstep();
+                footsteps.Post(gameObject);
 
                 walkCount = 0.0f;
             }
@@ -117,6 +128,7 @@ public class DroneAI : MonoBehaviour
         if (hitColliders.Length > 0)
         {
             floorBelow = FloorType.Floor;
+            woodSwitch.SetValue(gameObject);
         }
 
         // feet overlap circle
@@ -125,24 +137,11 @@ public class DroneAI : MonoBehaviour
         if (hitColliders2.Length > 0)
         {
             floorBelow = FloorType.Carpet;
+            carpetSwitch.SetValue(gameObject);
         }
     }
     
-    // function for triggering footstep sounds
-    void Footstep()
-    {
-        // if we are on the floor, play wooden footstep
-        if (floorBelow == FloorType.Floor)
-        {
-            woodenFootstep.Post(gameObject);
-        }
-        // if we are on the carpet, play carpet footstep
-        else if (floorBelow == FloorType.Carpet)
-        {
-            carpetFootstep.Post(gameObject);
-        }
 
-    }
 
     // run this event AI after every event (aka sound effect)
     // or after we have moved to a new location
@@ -179,7 +178,45 @@ public class DroneAI : MonoBehaviour
         else
         {
             // do event
-            
+            // if we are in the living room
+            if (currentLocation == 4)
+            {
+                
+
+                // if the tv is on
+                if (tv.isTVon)
+                {
+                    int random2 = Random.Range(1, 100);
+                    
+                    if (random2 <= 10)
+                    {
+                        // if tv is on - turn tv off
+                        tv.tvOff.Post(tv.gameObject);
+                        tv.isTVon = false;
+                        waitCounter = 4;
+                    }
+                    else
+                    {
+                        // if static is on, switch to news
+                        AkSoundEngine.SetSwitch("TV", "News", tv.gameObject);
+                        waitCounter = 4;
+                    }
+
+                }
+                else
+                {
+                    tv.tv.Post(tv.gameObject);
+                    tv.isTVon = true;
+                    waitCounter = 3;
+                }
+                
+
+                
+
+                
+
+                
+            }
         }
 
 

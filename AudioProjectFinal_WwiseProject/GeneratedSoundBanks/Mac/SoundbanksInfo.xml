@@ -16,15 +16,14 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="4125651361">
+		<SoundBank Id="3161908922" Language="SFX" Hash="715534055">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="4077091701" Name="CarpetFootstepsF" ObjectPath="\Events\Default Work Unit\CarpetFootstepsF" DurationType="OneShot" DurationMin="0.575188" DurationMax="0.671063"/>
-				<Event Id="3720131405" Name="Carpetsteps" ObjectPath="\Events\Default Work Unit\Carpetsteps" DurationType="OneShot" DurationMin="0.203469" DurationMax="0.203469"/>
-				<Event Id="2385628198" Name="Footsteps" ObjectPath="\Events\Default Work Unit\Footsteps" DurationType="OneShot" DurationMin="0.252517" DurationMax="0.326531"/>
-				<Event Id="2593838623" Name="Woodsteps" ObjectPath="\Events\Default Work Unit\Woodsteps" DurationType="OneShot" DurationMin="0.226063" DurationMax="0.295458"/>
+				<Event Id="2385628198" Name="Footsteps" ObjectPath="\Events\Default Work Unit\Footsteps" DurationType="OneShot" DurationMin="0.17611" DurationMax="0.25573"/>
+				<Event Id="1568083719" Name="TV" ObjectPath="\Events\Default Work Unit\TV" DurationType="OneShot" DurationMin="6." DurationMax="16."/>
+				<Event Id="2896649166" Name="TVOff" ObjectPath="\Events\Default Work Unit\TVOff" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="5282315" Language="SFX">
@@ -50,6 +49,10 @@
 				<File Id="147795527" Language="SFX">
 					<ShortName>womanCarpet2.wav</ShortName>
 					<Path>SFX\womanCarpet2_10C4C929.wem</Path>
+				</File>
+				<File Id="167514482" Language="SFX">
+					<ShortName>TVStatic.wav</ShortName>
+					<Path>SFX\TVStatic_10C4C929.wem</Path>
 				</File>
 				<File Id="267028213" Language="SFX">
 					<ShortName>Footstep_Walking_Hardwood_01.wav</ShortName>
@@ -91,7 +94,25 @@
 					<ShortName>Footstep_Walking_Hardwood_03.wav</ShortName>
 					<Path>SFX\Footstep_Walking_Hardwood_03_10C4C929.wem</Path>
 				</File>
+				<File Id="1039977825" Language="SFX">
+					<ShortName>TVNews.wav</ShortName>
+					<Path>SFX\TVNews_10C4C929.wem</Path>
+				</File>
 			</IncludedMemoryFiles>
+			<SwitchGroups>
+				<SwitchGroup Id="1568083719" Name="TV" ObjectPath="\Switches\Default Work Unit\TV" GUID="{B1F35E4D-1703-4753-8EA0-8BE2D11E655A}">
+					<Switches>
+						<Switch Id="1409504247" Name="Static" ObjectPath="\Switches\Default Work Unit\TV\Static" GUID="{65258556-A82D-41B8-B6A4-442BA0CF2429}"/>
+						<Switch Id="898907948" Name="News" ObjectPath="\Switches\Default Work Unit\TV\News" GUID="{E7EBA029-249A-419B-B462-FD76543654DD}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="2385628198" Name="Footsteps" ObjectPath="\Switches\Default Work Unit\Footsteps" GUID="{83EE5126-1392-43BE-83A3-F5B22BA74E02}">
+					<Switches>
+						<Switch Id="2412606308" Name="Carpet" ObjectPath="\Switches\Default Work Unit\Footsteps\Carpet" GUID="{82BC185D-6B08-4ED4-B0B4-3871E9E165C9}"/>
+						<Switch Id="2058049674" Name="Wood" ObjectPath="\Switches\Default Work Unit\Footsteps\Wood" GUID="{27D7F647-EA5A-4950-96C9-5208EEB3B8A5}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

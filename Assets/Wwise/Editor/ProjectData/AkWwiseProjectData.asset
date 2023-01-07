@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 9c6eebb85392204a8a923854e3a502df
     GuidInternal: 
-    m_lastTime: -8585286871314161541
+    m_lastTime: -8585284980596542046
     List:
     - name: Main
       guid: 14ae0f35319b7d45a7bb83b158c03e8d
@@ -94,42 +94,8 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 313890e9ec0fac47965e488ece730db3
     GuidInternal: 
-    m_lastTime: -8585286871568421395
+    m_lastTime: -8585284979172580351
     List:
-    - name: CarpetFootstepsF
-      guid: aebc93d965063d469a717606d4872f30
-      id: 4077091701
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 313890e9ec0fac47965e488ece730db3
-      - ElementName: CarpetFootstepsF
-        ObjectType: 3
-        guid: aebc93d965063d469a717606d4872f30
-      Path: Events\Default Work Unit\CarpetFootstepsF
-      maxAttenuation: 0
-      maxDuration: 0.671063
-      minDuration: 0.575188
-    - name: Carpetsteps
-      guid: 5245d1c496058e458c1c4992af798899
-      id: 3720131405
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 313890e9ec0fac47965e488ece730db3
-      - ElementName: Carpetsteps
-        ObjectType: 3
-        guid: 5245d1c496058e458c1c4992af798899
-      Path: Events\Default Work Unit\Carpetsteps
-      maxAttenuation: 0
-      maxDuration: 0.203469
-      minDuration: 0.203469
     - name: Footsteps
       guid: 96378923b478f14da1367a0637efb8c7
       id: 2385628198
@@ -145,11 +111,11 @@ MonoBehaviour:
         guid: 96378923b478f14da1367a0637efb8c7
       Path: Events\Default Work Unit\Footsteps
       maxAttenuation: 0
-      maxDuration: 0.326531
-      minDuration: 0.252517
-    - name: Woodsteps
-      guid: ab6660ac072a8e429dc8b5dc594d5db0
-      id: 2593838623
+      maxDuration: 0.25573
+      minDuration: 0.17611
+    - name: TV
+      guid: 22e053142fc0f14db77c9456b61138b6
+      id: 1568083719
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -157,13 +123,30 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 313890e9ec0fac47965e488ece730db3
-      - ElementName: Woodsteps
+      - ElementName: TV
         ObjectType: 3
-        guid: ab6660ac072a8e429dc8b5dc594d5db0
-      Path: Events\Default Work Unit\Woodsteps
+        guid: 22e053142fc0f14db77c9456b61138b6
+      Path: Events\Default Work Unit\TV
       maxAttenuation: 0
-      maxDuration: 0.295458
-      minDuration: 0.226063
+      maxDuration: 16
+      minDuration: 6
+    - name: TVOff
+      guid: 8c043da369fc4d4fbac514f7d87e7c3d
+      id: 2896649166
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 313890e9ec0fac47965e488ece730db3
+      - ElementName: TVOff
+        ObjectType: 3
+        guid: 8c043da369fc4d4fbac514f7d87e7c3d
+      Path: Events\Default Work Unit\TVOff
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -204,8 +187,108 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 54cfbe0b97a7604685872bb00518f602
     GuidInternal: 
-    m_lastTime: -8585291504995797688
-    List: []
+    m_lastTime: -8585284980596397090
+    List:
+    - name: Footsteps
+      guid: 2651ee839213be4383a3f5b22ba74e02
+      id: 2385628198
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 54cfbe0b97a7604685872bb00518f602
+      - ElementName: Footsteps
+        ObjectType: 11
+        guid: 2651ee839213be4383a3f5b22ba74e02
+      Path: Switches\Default Work Unit\Footsteps
+      values:
+      - name: Carpet
+        guid: 5d18bc82086bd44eb0b43871e9e165c9
+        id: 2412606308
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 54cfbe0b97a7604685872bb00518f602
+        - ElementName: Footsteps
+          ObjectType: 11
+          guid: 2651ee839213be4383a3f5b22ba74e02
+        - ElementName: Carpet
+          ObjectType: 10
+          guid: 5d18bc82086bd44eb0b43871e9e165c9
+      - name: Wood
+        guid: 47f6d7275aea504996c95208eeb3b8a5
+        id: 2058049674
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 54cfbe0b97a7604685872bb00518f602
+        - ElementName: Footsteps
+          ObjectType: 11
+          guid: 2651ee839213be4383a3f5b22ba74e02
+        - ElementName: Wood
+          ObjectType: 10
+          guid: 47f6d7275aea504996c95208eeb3b8a5
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: TV
+      guid: 4d5ef3b1031753478ea08be2d11e655a
+      id: 1568083719
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 54cfbe0b97a7604685872bb00518f602
+      - ElementName: TV
+        ObjectType: 11
+        guid: 4d5ef3b1031753478ea08be2d11e655a
+      Path: Switches\Default Work Unit\TV
+      values:
+      - name: News
+        guid: 29a0ebe79a249b41b462fd76543654dd
+        id: 898907948
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 54cfbe0b97a7604685872bb00518f602
+        - ElementName: TV
+          ObjectType: 11
+          guid: 4d5ef3b1031753478ea08be2d11e655a
+        - ElementName: News
+          ObjectType: 10
+          guid: 29a0ebe79a249b41b462fd76543654dd
+      - name: Static
+        guid: 568525652da8b841b6a4442ba0cf2429
+        id: 1409504247
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 54cfbe0b97a7604685872bb00518f602
+        - ElementName: TV
+          ObjectType: 11
+          guid: 4d5ef3b1031753478ea08be2d11e655a
+        - ElementName: Static
+          ObjectType: 10
+          guid: 568525652da8b841b6a4442ba0cf2429
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -221,7 +304,7 @@ MonoBehaviour:
     m_lastTime: -8585291504995917688
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000005000000060000000a0000000b000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000000a0000000b000000130000001400000015000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

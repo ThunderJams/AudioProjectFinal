@@ -679,7 +679,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 293565935}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.023, y: -0.0018, z: -0.507}
+  m_LocalPosition: {x: 0.014, y: -0.0018, z: 0.51}
   m_LocalScale: {x: 0.79305, y: 0.7970985, z: -0.0019080001}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1240,15 +1240,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36dd52617d6086f4786e6d4a4913f635, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tv: {fileID: 0}
   feet: {fileID: 186975151}
-  woodenFootstep:
+  footsteps:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e895f553c77acd44985304e32f588e58, type: 2}
-  carpetFootstep:
+    WwiseObjectReference: {fileID: 0}
+  carpetSwitch:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 213fcc0c91e37cb4eb7a7153f9cb3190, type: 2}
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  woodSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   footstepRate: 0.6
   walkSpeed: 1
   currentLocation: 0
@@ -1819,15 +1828,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36dd52617d6086f4786e6d4a4913f635, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tv: {fileID: 0}
   feet: {fileID: 1320079490}
-  woodenFootstep:
+  footsteps:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e895f553c77acd44985304e32f588e58, type: 2}
-  carpetFootstep:
+    WwiseObjectReference: {fileID: 0}
+  carpetSwitch:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 213fcc0c91e37cb4eb7a7153f9cb3190, type: 2}
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  woodSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   footstepRate: 0.6
   walkSpeed: 1
   currentLocation: 0
@@ -2356,14 +2374,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847998346}
-  m_LocalRotation: {x: -0.2907703, y: -0.8307279, z: -0.043501005, w: 0.47270668}
-  m_LocalPosition: {x: 0.564, y: 0.7929001, z: 0.041}
+  m_LocalRotation: {x: -0.14332639, y: -0.13374351, z: -0.2567047, w: 0.9464}
+  m_LocalPosition: {x: 0.56400263, y: 0.7929001, z: 0.04099989}
   m_LocalScale: {x: 0.00403524, y: 0.5652, z: 0.2533}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1393991139}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: -20.315, y: -125.856, z: 28.118}
+  m_LocalEulerAnglesHint: {x: -19.874, y: -11.007, z: -28.418}
 --- !u!136 &847998348
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3338,15 +3356,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36dd52617d6086f4786e6d4a4913f635, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tv: {fileID: 0}
   feet: {fileID: 1796360636}
-  woodenFootstep:
+  footsteps:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e895f553c77acd44985304e32f588e58, type: 2}
-  carpetFootstep:
+    WwiseObjectReference: {fileID: 0}
+  carpetSwitch:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 213fcc0c91e37cb4eb7a7153f9cb3190, type: 2}
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  woodSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   footstepRate: 0.6
   walkSpeed: 1
   currentLocation: 0
@@ -4536,6 +4563,7 @@ GameObject:
   - component: {fileID: 1393991142}
   - component: {fileID: 1393991141}
   - component: {fileID: 1393991140}
+  - component: {fileID: 1393991143}
   m_Layer: 0
   m_Name: TV
   m_TagString: Untagged
@@ -4550,7 +4578,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1393991138}
-  m_LocalRotation: {x: -0, y: -0.4371962, z: -0, w: 0.89936614}
+  m_LocalRotation: {x: 0, y: 0.9396927, z: 0, w: 0.34202018}
   m_LocalPosition: {x: -4.6, y: 4.942, z: 8.54}
   m_LocalScale: {x: 1.7167, y: 1.1698, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4560,7 +4588,7 @@ Transform:
   - {fileID: 847998347}
   m_Father: {fileID: 191388052}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: -51.85, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 140, z: 0}
 --- !u!65 &1393991140
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4624,6 +4652,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1393991138}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1393991143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393991138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28aa8b09d390886478da194d2b390f80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tv:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 908c72670be781d47948855d022fcd57, type: 2}
+  tvOff:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3f80222482fb19645ae5431a8b7a29f2, type: 2}
+  isTVon: 0
 --- !u!1 &1400492576
 GameObject:
   m_ObjectHideFlags: 0
@@ -5777,6 +5826,8 @@ GameObject:
   - component: {fileID: 1814032913}
   - component: {fileID: 1814032912}
   - component: {fileID: 1814032916}
+  - component: {fileID: 1814032918}
+  - component: {fileID: 1814032917}
   m_Layer: 0
   m_Name: Drone1
   m_TagString: Untagged
@@ -5812,15 +5863,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36dd52617d6086f4786e6d4a4913f635, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tv: {fileID: 1393991143}
   feet: {fileID: 1527743720}
-  woodenFootstep:
+  footsteps:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e895f553c77acd44985304e32f588e58, type: 2}
-  carpetFootstep:
+    WwiseObjectReference: {fileID: 11400000, guid: 213fcc0c91e37cb4eb7a7153f9cb3190, type: 2}
+  carpetSwitch:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a3eb25cb751a52848bb84fa40218a4ca, type: 2}
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a8ab5b1f0273185439e2511c11549cdc, type: 2}
+  woodSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b75bda3c5c5a7ea41b7905aac469a846, type: 2}
   footstepRate: 0.6
   walkSpeed: 3
   currentLocation: 0
@@ -5913,6 +5973,52 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1814032917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814032910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc3f2d18234d47d478bf46e5ccb2fedf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!114 &1814032918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814032910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 261dc1bd154b3b443a92dba8141dd349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a8ab5b1f0273185439e2511c11549cdc, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1 &1825704869
 GameObject:
   m_ObjectHideFlags: 0
@@ -6257,15 +6363,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36dd52617d6086f4786e6d4a4913f635, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tv: {fileID: 0}
   feet: {fileID: 1234283696}
-  woodenFootstep:
+  footsteps:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e895f553c77acd44985304e32f588e58, type: 2}
-  carpetFootstep:
+    WwiseObjectReference: {fileID: 0}
+  carpetSwitch:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 213fcc0c91e37cb4eb7a7153f9cb3190, type: 2}
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  woodSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   footstepRate: 0.6
   walkSpeed: 1
   currentLocation: 0
@@ -6402,15 +6517,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36dd52617d6086f4786e6d4a4913f635, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tv: {fileID: 0}
   feet: {fileID: 2039872896}
-  woodenFootstep:
+  footsteps:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e895f553c77acd44985304e32f588e58, type: 2}
-  carpetFootstep:
+    WwiseObjectReference: {fileID: 0}
+  carpetSwitch:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 213fcc0c91e37cb4eb7a7153f9cb3190, type: 2}
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  woodSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   footstepRate: 0.6
   walkSpeed: 1
   currentLocation: 0

@@ -3,22 +3,37 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{94821554-1153-4220-90A1-5BCDA3B87363}" PersistMode="Standalone">
 			<ChildrenList>
-				<RandomSequenceContainer Name="RandomFootsteps" ID="{034E4822-6BA7-4339-82C3-B22941585F75}" ShortID="613695666">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="1"/>
-						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="80"/>
-					</PropertyList>
+				<SwitchContainer Name="Footsteps" ID="{24BA8E53-409B-4149-88C9-3023ED49B6DF}" ShortID="792438647">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
 						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Carpet" ID="{82BC185D-6B08-4ED4-B0B4-3871E9E165C9}" WorkUnitID="{0BBECF54-A797-4660-8587-2BB00518F602}"/>
+						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
 						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Footsteps" ID="{83EE5126-1392-43BE-83A3-F5B22BA74E02}" WorkUnitID="{0BBECF54-A797-4660-8587-2BB00518F602}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Footstep3" ID="{19074968-4D10-46C7-A073-64B2E1655422}" ShortID="793402777">
+						<RandomSequenceContainer Name="RandomFootsteps" ID="{034E4822-6BA7-4339-82C3-B22941585F75}" ShortID="613695666">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="1"/>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>250</Value>
+									</ValueList>
+								</Property>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="80"/>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Footstep Attenuation" ID="{CDC0687D-C532-40A3-BFD7-AE60CF40B280}" WorkUnitID="{29EBF851-3765-4D25-B772-69C2896CEBC0}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
 								</Reference>
@@ -27,21 +42,115 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Footstep3" ID="{C7604F68-964D-40CA-883F-2A04180D399F}">
-									<Language>SFX</Language>
-									<AudioFile>Footstep3.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="861191779"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<Sound Name="Footstep3" ID="{19074968-4D10-46C7-A073-64B2E1655422}" ShortID="793402777">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep3" ID="{C7604F68-964D-40CA-883F-2A04180D399F}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="861191779"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep3" ID="{C7604F68-964D-40CA-883F-2A04180D399F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep2" ID="{FBA9012D-55FD-4277-B003-5ADB9FE69C41}" ShortID="322179342">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep2" ID="{F54606BE-2597-4E01-818B-BEC1DBCF5AEC}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="5282315"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep2" ID="{F54606BE-2597-4E01-818B-BEC1DBCF5AEC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep1" ID="{431B0394-1D2E-4D85-B498-82DA157B521C}" ShortID="845532185">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep1" ID="{A5A06133-E1CE-4809-9683-26FD754A08B1}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1033927115"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep1" ID="{A5A06133-E1CE-4809-9683-26FD754A08B1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{06B8FBB1-922F-4A71-93D4-30F02EC2E04B}">
+									<PropertyList>
+										<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="RandomFootsteps_Path" ID="{8B31D071-C3DC-40A0-983F-4CEEECD87DBA}">
+											<PropertyList>
+												<Property Name="RandomX" Type="Real64" Value="50"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>50</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
 							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Footstep3" ID="{C7604F68-964D-40CA-883F-2A04180D399F}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Footstep2" ID="{FBA9012D-55FD-4277-B003-5ADB9FE69C41}" ShortID="322179342">
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="RandomFootstepsOnWood" ID="{BE992481-7D04-42E3-97BF-FFBF68154DE6}" ShortID="629746625">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="1"/>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>250</Value>
+									</ValueList>
+								</Property>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="80"/>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Footstep Attenuation" ID="{CDC0687D-C532-40A3-BFD7-AE60CF40B280}" WorkUnitID="{29EBF851-3765-4D25-B772-69C2896CEBC0}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
 								</Reference>
@@ -50,21 +159,186 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Footstep2" ID="{F54606BE-2597-4E01-818B-BEC1DBCF5AEC}">
-									<Language>SFX</Language>
-									<AudioFile>Footstep2.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="5282315"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<Sound Name="Footstep_Walking_Hardwood_02" ID="{0D247B56-8495-439E-8AA9-625E2411AB9A}" ShortID="715990074">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep_Walking_Hardwood_02" ID="{9E29B39B-9862-414F-82C0-B486B7B79821}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep_Walking_Hardwood_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="133392742"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep_Walking_Hardwood_02" ID="{9E29B39B-9862-414F-82C0-B486B7B79821}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep_Walking_Hardwood_04" ID="{93041766-A709-4173-BED0-272672586F67}" ShortID="920455770">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep_Walking_Hardwood_04" ID="{75F62420-6E28-45F9-945F-19075C5E86AD}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep_Walking_Hardwood_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="987766169"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep_Walking_Hardwood_04" ID="{75F62420-6E28-45F9-945F-19075C5E86AD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep_Walking_Hardwood_05" ID="{8BD4BBD8-FF3B-44CB-B801-6FA5AE8C2529}" ShortID="521699561">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep_Walking_Hardwood_05" ID="{BDA05E33-2538-4E6C-BB9B-6DC660C29845}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep_Walking_Hardwood_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="346463506"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep_Walking_Hardwood_05" ID="{BDA05E33-2538-4E6C-BB9B-6DC660C29845}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep_Walking_Hardwood_01" ID="{7521A9A6-5226-4C3D-8360-035D04F39281}" ShortID="70071080">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep_Walking_Hardwood_01" ID="{3ECE0F8F-807D-4B63-9FD0-0CD9CC830A47}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep_Walking_Hardwood_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="267028213"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep_Walking_Hardwood_01" ID="{3ECE0F8F-807D-4B63-9FD0-0CD9CC830A47}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep_Walking_Hardwood_03" ID="{3B625B92-1693-4BA3-AFB4-B0CF645E05EA}" ShortID="928199459">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep_Walking_Hardwood_03" ID="{BB65C079-67F0-49F6-B164-680FD3AB16A7}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep_Walking_Hardwood_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1034362710"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep_Walking_Hardwood_03" ID="{BB65C079-67F0-49F6-B164-680FD3AB16A7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep_Walking_Hardwood_06" ID="{87E48CE7-6918-44D4-BEF5-31F9F8688831}" ShortID="199493861">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep_Walking_Hardwood_06" ID="{EAE70649-5464-44D1-9AE5-32D81BA251DE}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep_Walking_Hardwood_06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="104374374"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep_Walking_Hardwood_06" ID="{EAE70649-5464-44D1-9AE5-32D81BA251DE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{96BF72DC-349B-4F41-98AE-B24993B74ED2}">
+									<ChildrenList>
+										<Path2D Name="RandomFootstepsOnWood_Path" ID="{9F216CAD-57AB-4691-90DF-0C7B721D43E6}">
+											<PropertyList>
+												<Property Name="RandomX" Type="Real64" Value="50"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>50</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
 							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Footstep2" ID="{F54606BE-2597-4E01-818B-BEC1DBCF5AEC}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Footstep1" ID="{431B0394-1D2E-4D85-B498-82DA157B521C}" ShortID="845532185">
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="RandomCarpetF" ID="{D3939672-AC22-4314-9D87-8ABC5B256D84}" ShortID="825974120">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="1"/>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>250</Value>
+									</ValueList>
+								</Property>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="80"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Footstep Attenuation" ID="{CDC0687D-C532-40A3-BFD7-AE60CF40B280}" WorkUnitID="{29EBF851-3765-4D25-B772-69C2896CEBC0}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
 								</Reference>
@@ -73,193 +347,297 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Footstep1" ID="{A5A06133-E1CE-4809-9683-26FD754A08B1}">
-									<Language>SFX</Language>
-									<AudioFile>Footstep1.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="1033927115"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<Sound Name="womanCarpet1" ID="{9719E391-54C2-4813-847C-1D84F334D527}" ShortID="460522043">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="womanCarpet1" ID="{D62E8CE0-3A48-4856-B9E0-0DBCC104C020}">
+											<Language>SFX</Language>
+											<AudioFile>womanCarpet1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="477920797"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="womanCarpet1" ID="{D62E8CE0-3A48-4856-B9E0-0DBCC104C020}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="womanCarpet2" ID="{634ACE7F-52D0-4145-AB67-6FCF2C0884BB}" ShortID="878323480">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="womanCarpet2" ID="{A1DD89B6-9676-4962-B0C8-8EA290D41F9F}">
+											<Language>SFX</Language>
+											<AudioFile>womanCarpet2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="147795527"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="womanCarpet2" ID="{A1DD89B6-9676-4962-B0C8-8EA290D41F9F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="womanCarpet3" ID="{FD32BE70-C8C4-4B94-8934-C0D7097CB911}" ShortID="634511096">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="womanCarpet3" ID="{C56FD173-CDCB-404D-883E-19948956D6D7}">
+											<Language>SFX</Language>
+											<AudioFile>womanCarpet3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="441661625"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="womanCarpet3" ID="{C56FD173-CDCB-404D-883E-19948956D6D7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{2CB510B1-7F5B-4080-BC7D-B6D08BD3F531}">
+									<ChildrenList>
+										<Path2D Name="LeftPath" ID="{24345EA5-6581-41F9-8593-0A7792B00576}">
+											<PropertyList>
+												<Property Name="RandomX" Type="Real64" Value="50"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>-0</XPos>
+													<YPos>0</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
 							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Footstep1" ID="{A5A06133-E1CE-4809-9683-26FD754A08B1}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="RandomCarpetFootsteps" ID="{6B6D3B21-7AFD-41CA-8B40-E1484C5C1932}" ShortID="791032923">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="1"/>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>250</Value>
+									</ValueList>
+								</Property>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="80"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Footstep Attenuation" ID="{CDC0687D-C532-40A3-BFD7-AE60CF40B280}" WorkUnitID="{29EBF851-3765-4D25-B772-69C2896CEBC0}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="cloth3" ID="{82172351-BC58-4168-A9E2-9972C3B2CC33}" ShortID="882254036">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="cloth3" ID="{1981B0B8-0A34-40F1-9C86-56E82C62CC24}">
+											<Language>SFX</Language>
+											<AudioFile>cloth3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="287944606"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="cloth3" ID="{1981B0B8-0A34-40F1-9C86-56E82C62CC24}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="cloth4" ID="{2FB0D449-E135-4EE7-84C5-68777501402B}" ShortID="999869760">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="cloth4" ID="{84F0E63F-35E1-422A-B659-24F776F95A90}">
+											<Language>SFX</Language>
+											<AudioFile>cloth4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="76254678"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="cloth4" ID="{84F0E63F-35E1-422A-B659-24F776F95A90}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="cloth2" ID="{6A15A208-FF6B-4157-BF30-61DE95249EB4}" ShortID="106395224">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="cloth2" ID="{37B2CFE3-A2B3-4971-8798-2474E7094364}">
+											<Language>SFX</Language>
+											<AudioFile>cloth2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="78163868"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="cloth2" ID="{37B2CFE3-A2B3-4971-8798-2474E7094364}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="cloth1" ID="{23EC611C-0159-4C99-A309-D67A85AB099A}" ShortID="377269332">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="cloth1" ID="{45011449-538E-49F9-9094-9AB56DC14E56}">
+											<Language>SFX</Language>
+											<AudioFile>cloth1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="927854305"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="cloth1" ID="{45011449-538E-49F9-9094-9AB56DC14E56}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{49E4314C-B4DF-4949-8F77-DC5B70472922}">
+									<ChildrenList>
+										<Path2D Name="RandomCarpetFootsteps_Path" ID="{2CD77D04-7E0E-449C-8B43-392D504BAB86}">
+											<PropertyList>
+												<Property Name="RandomX" Type="Real64" Value="50"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>50</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+							<ObjectLists/>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<ObjectLists/>
-				</RandomSequenceContainer>
-				<RandomSequenceContainer Name="RandomFootstepsOnWood" ID="{BE992481-7D04-42E3-97BF-FFBF68154DE6}" ShortID="629746625">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="1"/>
-						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="80"/>
-					</PropertyList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="RandomCarpetFootsteps" ID="{6B6D3B21-7AFD-41CA-8B40-E1484C5C1932}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="RandomFootsteps" ID="{034E4822-6BA7-4339-82C3-B22941585F75}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="RandomCarpetF" ID="{D3939672-AC22-4314-9D87-8ABC5B256D84}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="RandomFootstepsOnWood" ID="{BE992481-7D04-42E3-97BF-FFBF68154DE6}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Wood" ID="{27D7F647-EA5A-4950-96C9-5208EEB3B8A5}"/>
+								<ItemList>
+									<ItemRef Name="RandomFootstepsOnWood" ID="{BE992481-7D04-42E3-97BF-FFBF68154DE6}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Carpet" ID="{82BC185D-6B08-4ED4-B0B4-3871E9E165C9}"/>
+								<ItemList>
+									<ItemRef Name="RandomCarpetFootsteps" ID="{6B6D3B21-7AFD-41CA-8B40-E1484C5C1932}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<SwitchContainer Name="TV" ID="{75FC9EA1-2924-4907-9791-527CB09E0FA1}" ShortID="440152187">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
 						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="Footstep_Walking_Hardwood_02" ID="{0D247B56-8495-439E-8AA9-625E2411AB9A}" ShortID="715990074">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Footstep_Walking_Hardwood_02" ID="{9E29B39B-9862-414F-82C0-B486B7B79821}">
-									<Language>SFX</Language>
-									<AudioFile>Footstep_Walking_Hardwood_02.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="133392742"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Footstep_Walking_Hardwood_02" ID="{9E29B39B-9862-414F-82C0-B486B7B79821}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Footstep_Walking_Hardwood_04" ID="{93041766-A709-4173-BED0-272672586F67}" ShortID="920455770">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Footstep_Walking_Hardwood_04" ID="{75F62420-6E28-45F9-945F-19075C5E86AD}">
-									<Language>SFX</Language>
-									<AudioFile>Footstep_Walking_Hardwood_04.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="987766169"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Footstep_Walking_Hardwood_04" ID="{75F62420-6E28-45F9-945F-19075C5E86AD}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Footstep_Walking_Hardwood_05" ID="{8BD4BBD8-FF3B-44CB-B801-6FA5AE8C2529}" ShortID="521699561">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Footstep_Walking_Hardwood_05" ID="{BDA05E33-2538-4E6C-BB9B-6DC660C29845}">
-									<Language>SFX</Language>
-									<AudioFile>Footstep_Walking_Hardwood_05.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="346463506"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Footstep_Walking_Hardwood_05" ID="{BDA05E33-2538-4E6C-BB9B-6DC660C29845}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Footstep_Walking_Hardwood_01" ID="{7521A9A6-5226-4C3D-8360-035D04F39281}" ShortID="70071080">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Footstep_Walking_Hardwood_01" ID="{3ECE0F8F-807D-4B63-9FD0-0CD9CC830A47}">
-									<Language>SFX</Language>
-									<AudioFile>Footstep_Walking_Hardwood_01.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="267028213"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Footstep_Walking_Hardwood_01" ID="{3ECE0F8F-807D-4B63-9FD0-0CD9CC830A47}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Footstep_Walking_Hardwood_03" ID="{3B625B92-1693-4BA3-AFB4-B0CF645E05EA}" ShortID="928199459">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Footstep_Walking_Hardwood_03" ID="{BB65C079-67F0-49F6-B164-680FD3AB16A7}">
-									<Language>SFX</Language>
-									<AudioFile>Footstep_Walking_Hardwood_03.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="1034362710"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Footstep_Walking_Hardwood_03" ID="{BB65C079-67F0-49F6-B164-680FD3AB16A7}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Footstep_Walking_Hardwood_06" ID="{87E48CE7-6918-44D4-BEF5-31F9F8688831}" ShortID="199493861">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Footstep_Walking_Hardwood_06" ID="{EAE70649-5464-44D1-9AE5-32D81BA251DE}">
-									<Language>SFX</Language>
-									<AudioFile>Footstep_Walking_Hardwood_06.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="104374374"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="Footstep_Walking_Hardwood_06" ID="{EAE70649-5464-44D1-9AE5-32D81BA251DE}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-					<ObjectLists/>
-				</RandomSequenceContainer>
-				<RandomSequenceContainer Name="RandomCarpetFootsteps" ID="{6B6D3B21-7AFD-41CA-8B40-E1484C5C1932}" ShortID="791032923">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="1"/>
-						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="80"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Static" ID="{65258556-A82D-41B8-B6A4-442BA0CF2429}" WorkUnitID="{0BBECF54-A797-4660-8587-2BB00518F602}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
 						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="TV" ID="{B1F35E4D-1703-4753-8EA0-8BE2D11E655A}" WorkUnitID="{0BBECF54-A797-4660-8587-2BB00518F602}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="cloth3" ID="{82172351-BC58-4168-A9E2-9972C3B2CC33}" ShortID="882254036">
+						<Sound Name="TVNews" ID="{5C9E3C66-DC5D-405C-A64A-0F0CC7B5D078}" ShortID="748190958">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>51</Value>
+									</ValueList>
+								</Property>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="TV Attenuation" ID="{00FF16E2-D213-4AED-8D98-7F5A8175D9F0}" WorkUnitID="{29EBF851-3765-4D25-B772-69C2896CEBC0}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
 								</Reference>
@@ -268,21 +646,28 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="cloth3" ID="{1981B0B8-0A34-40F1-9C86-56E82C62CC24}">
+								<AudioFileSource Name="TVNews" ID="{56AE9516-E6A5-4AEB-A266-B8EEE0470AAB}">
 									<Language>SFX</Language>
-									<AudioFile>cloth3.wav</AudioFile>
+									<AudioFile>TVNews.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="287944606"/>
+										<MediaID ID="1039977825"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ObjectLists/>
 							<ActiveSourceList>
-								<ActiveSource Name="cloth3" ID="{1981B0B8-0A34-40F1-9C86-56E82C62CC24}" Platform="Linked"/>
+								<ActiveSource Name="TVNews" ID="{56AE9516-E6A5-4AEB-A266-B8EEE0470AAB}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="cloth4" ID="{2FB0D449-E135-4EE7-84C5-68777501402B}" ShortID="999869760">
+						<Sound Name="TVStatic" ID="{D81A6AFF-46CB-4DE9-AA74-FB1B0235A381}" ShortID="92518677">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="TV Attenuation" ID="{00FF16E2-D213-4AED-8D98-7F5A8175D9F0}" WorkUnitID="{29EBF851-3765-4D25-B772-69C2896CEBC0}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
 								</Reference>
@@ -291,154 +676,46 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="cloth4" ID="{84F0E63F-35E1-422A-B659-24F776F95A90}">
+								<AudioFileSource Name="TVStatic" ID="{BF2E7853-CDDB-4900-B8AF-5C83DF29A21E}">
 									<Language>SFX</Language>
-									<AudioFile>cloth4.wav</AudioFile>
+									<AudioFile>TVStatic.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="76254678"/>
+										<MediaID ID="167514482"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ObjectLists/>
 							<ActiveSourceList>
-								<ActiveSource Name="cloth4" ID="{84F0E63F-35E1-422A-B659-24F776F95A90}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="cloth2" ID="{6A15A208-FF6B-4157-BF30-61DE95249EB4}" ShortID="106395224">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="cloth2" ID="{37B2CFE3-A2B3-4971-8798-2474E7094364}">
-									<Language>SFX</Language>
-									<AudioFile>cloth2.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="78163868"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="cloth2" ID="{37B2CFE3-A2B3-4971-8798-2474E7094364}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="cloth1" ID="{23EC611C-0159-4C99-A309-D67A85AB099A}" ShortID="377269332">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="cloth1" ID="{45011449-538E-49F9-9094-9AB56DC14E56}">
-									<Language>SFX</Language>
-									<AudioFile>cloth1.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="927854305"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="cloth1" ID="{45011449-538E-49F9-9094-9AB56DC14E56}" Platform="Linked"/>
+								<ActiveSource Name="TVStatic" ID="{BF2E7853-CDDB-4900-B8AF-5C83DF29A21E}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
 					<ObjectLists/>
-				</RandomSequenceContainer>
-				<RandomSequenceContainer Name="RandomCarpetF" ID="{D3939672-AC22-4314-9D87-8ABC5B256D84}" ShortID="825974120">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="1"/>
-						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="70"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="womanCarpet1" ID="{9719E391-54C2-4813-847C-1D84F334D527}" ShortID="460522043">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="womanCarpet1" ID="{D62E8CE0-3A48-4856-B9E0-0DBCC104C020}">
-									<Language>SFX</Language>
-									<AudioFile>womanCarpet1.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="477920797"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="womanCarpet1" ID="{D62E8CE0-3A48-4856-B9E0-0DBCC104C020}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="womanCarpet2" ID="{634ACE7F-52D0-4145-AB67-6FCF2C0884BB}" ShortID="878323480">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="womanCarpet2" ID="{A1DD89B6-9676-4962-B0C8-8EA290D41F9F}">
-									<Language>SFX</Language>
-									<AudioFile>womanCarpet2.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="147795527"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="womanCarpet2" ID="{A1DD89B6-9676-4962-B0C8-8EA290D41F9F}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="womanCarpet3" ID="{FD32BE70-C8C4-4B94-8934-C0D7097CB911}" ShortID="634511096">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="womanCarpet3" ID="{C56FD173-CDCB-404D-883E-19948956D6D7}">
-									<Language>SFX</Language>
-									<AudioFile>womanCarpet3.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="441661625"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="womanCarpet3" ID="{C56FD173-CDCB-404D-883E-19948956D6D7}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-					<ObjectLists/>
-				</RandomSequenceContainer>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="TVNews" ID="{5C9E3C66-DC5D-405C-A64A-0F0CC7B5D078}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="TVStatic" ID="{D81A6AFF-46CB-4DE9-AA74-FB1B0235A381}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="News" ID="{E7EBA029-249A-419B-B462-FD76543654DD}"/>
+								<ItemList>
+									<ItemRef Name="TVNews" ID="{5C9E3C66-DC5D-405C-A64A-0F0CC7B5D078}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Static" ID="{65258556-A82D-41B8-B6A4-442BA0CF2429}"/>
+								<ItemList>
+									<ItemRef Name="TVStatic" ID="{D81A6AFF-46CB-4DE9-AA74-FB1B0235A381}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

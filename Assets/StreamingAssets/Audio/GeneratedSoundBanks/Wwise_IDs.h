@@ -13,11 +13,36 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID CARPETFOOTSTEPSF = 4077091701U;
-        static const AkUniqueID CARPETSTEPS = 3720131405U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
-        static const AkUniqueID WOODSTEPS = 2593838623U;
+        static const AkUniqueID TV = 1568083719U;
+        static const AkUniqueID TVOFF = 2896649166U;
     } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace FOOTSTEPS
+        {
+            static const AkUniqueID GROUP = 2385628198U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CARPET = 2412606308U;
+                static const AkUniqueID WOOD = 2058049674U;
+            } // namespace SWITCH
+        } // namespace FOOTSTEPS
+
+        namespace TV
+        {
+            static const AkUniqueID GROUP = 1568083719U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID NEWS = 898907948U;
+                static const AkUniqueID STATIC = 1409504247U;
+            } // namespace SWITCH
+        } // namespace TV
+
+    } // namespace SWITCHES
 
     namespace BANKS
     {
