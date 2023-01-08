@@ -1,4 +1,10 @@
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	743094712	GameBoy_Audio			\Default Work Unit\GameBoy_Audio	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	2247540952	Footsteps Bus			\Default Work Unit\Master Audio Bus\Footsteps Bus	
+	2342546307	TVBus			\Default Work Unit\Master Audio Bus\TVBus	
+	3261620469	GameBoy Bus			\Default Work Unit\Master Audio Bus\GameBoy Bus	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Audio Devices	ID	Name	Type				Notes

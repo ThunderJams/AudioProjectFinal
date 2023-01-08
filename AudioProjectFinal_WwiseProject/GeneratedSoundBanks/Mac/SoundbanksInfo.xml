@@ -11,17 +11,22 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1145100670">
+		<SoundBank Id="1355168291" Language="SFX" Hash="4243960548">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<GameParameters>
+				<GameParameter Id="743094712" Name="GameBoy_Audio" ObjectPath="\Game Parameters\Default Work Unit\GameBoy_Audio"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="316429064">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2668571336">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2385628198" Name="Footsteps" ObjectPath="\Events\Default Work Unit\Footsteps" DurationType="OneShot" DurationMin="0.17611" DurationMax="0.25573"/>
+				<Event Id="463933594" Name="GB_Music" ObjectPath="\Events\Default Work Unit\GB_Music" MaxAttenuation="100." DurationType="OneShot" DurationMin="53.199432" DurationMax="53.199432"/>
+				<Event Id="1406928585" Name="GB_MusicOff" ObjectPath="\Events\Default Work Unit\GB_MusicOff" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1568083719" Name="TV" ObjectPath="\Events\Default Work Unit\TV" DurationType="Infinite"/>
 				<Event Id="2896649166" Name="TVOff" ObjectPath="\Events\Default Work Unit\TVOff" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
@@ -53,6 +58,10 @@
 				<File Id="167514482" Language="SFX">
 					<ShortName>TVStatic.wav</ShortName>
 					<Path>SFX\TVStatic_D79FB2B7.wem</Path>
+				</File>
+				<File Id="209216606" Language="SFX">
+					<ShortName>Merry_Sonicmas Wav.wav</ShortName>
+					<Path>SFX\Merry_Sonicmas Wav_D79FB2B7.wem</Path>
 				</File>
 				<File Id="267028213" Language="SFX">
 					<ShortName>Footstep_Walking_Hardwood_01.wav</ShortName>

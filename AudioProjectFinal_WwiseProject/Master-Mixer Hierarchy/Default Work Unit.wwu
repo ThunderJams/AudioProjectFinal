@@ -9,6 +9,47 @@
 							<ObjectRef Name="System" ID="{48CE4C7C-39F4-4051-987A-A37D39A7B3BA}" WorkUnitID="{2CE54C95-A873-409F-96B5-EEE8A2912A01}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="GameBoy Bus" ID="{8354D2AD-B5E1-444C-93B2-BEF7B9F591C9}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{A3389B10-E276-4792-85D2-00E84DA3E105}" ShortID="574404402">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="GameBoy_Audio" ID="{7E176D83-63B2-42C2-9C3E-2D501DBB8DA0}" WorkUnitID="{A760E2F6-8762-41A6-A2EC-834994AAEAD9}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{154C1586-D8B0-498B-B9A3-AFDDEF28646E}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-50</XPos>
+														<YPos>-50</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>50</XPos>
+														<YPos>50</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="Footsteps Bus" ID="{C533F784-0BDA-4DC7-877E-C9133CFBFD5D}">
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="TVBus" ID="{2B539258-6559-4169-809D-C6E54B3FAB93}">
+							<ObjectLists/>
+						</Bus>
+					</ChildrenList>
 					<ObjectLists/>
 				</Bus>
 			</ChildrenList>

@@ -13,6 +13,19 @@ public class PlayerController : MonoBehaviour
     // capulse collider
     [SerializeField] private CapsuleCollider feet;
 
+    [SerializeField] private Gameboy gba;
+
+    // wwise bus
+    [SerializeField] private AK.Wwise.RTPC gameboyAudio;
+
+    [SerializeField]
+    [Range(-12, 12)]
+    private float gameboyAudioVolume = 0;
+
+    private float prevGBvol;
+
+
+
     // start
     void Start()
     {
@@ -22,6 +35,10 @@ public class PlayerController : MonoBehaviour
     // update
     void Update()
     {
+        GameBoy();
+
+        gameboyAudio.SetGlobalValue(gameboyAudioVolume);
+
         if (movementEnabled)
         {
             // get input
@@ -72,5 +89,37 @@ public class PlayerController : MonoBehaviour
         {
             floorBelow = FloorType.Carpet;
         }
+    }
+
+    void GameBoy()
+    {
+        // if G is pressed
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            if (gba.isActiveAndEnabled)
+            {
+                // stop music
+                prevGBvol = gameboyAudioVolume;
+                gameboyAudioVolume = -50;
+                gba.gameObject.SetActive(false);
+            }
+            else
+            {
+                gameboyAudioVolume = prevGBvol;
+                gba.gameObject.SetActive(true);
+            }
+        }
+
+        // if up arrow key is pressed, increase game boy volume
+        if (Input.GetKey("up") && gameboyAudioVolume <= 12)
+        {
+            gameboyAudioVolume += 10 * Time.deltaTime;
+        }
+        else if (Input.GetKey("down") && gameboyAudioVolume >= -12)
+        {
+            gameboyAudioVolume -= 10 * Time.deltaTime;
+        }
+
+
     }
 }

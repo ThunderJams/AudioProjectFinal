@@ -27,6 +27,7 @@
 						<ObjectRef Name="Footstep_Walking_Hardwood_01" ID="{7521A9A6-5226-4C3D-8360-035D04F39281}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="cloth1" ID="{23EC611C-0159-4C99-A309-D67A85AB099A}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep1" ID="{431B0394-1D2E-4D85-B498-82DA157B521C}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Merry_Sonicmas Wav" ID="{C91E880D-46AC-4DA4-8BC7-CD236F7A27DA}" WorkUnitID="{13E7F24E-7E93-4EF0-A883-76AD701D3881}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TVStatic" ID="{D81A6AFF-46CB-4DE9-AA74-FB1B0235A381}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="cloth4" ID="{2FB0D449-E135-4EE7-84C5-68777501402B}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

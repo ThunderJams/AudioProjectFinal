@@ -14,6 +14,8 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID FOOTSTEPS = 2385628198U;
+        static const AkUniqueID GB_MUSIC = 463933594U;
+        static const AkUniqueID GB_MUSICOFF = 1406928585U;
         static const AkUniqueID TV = 1568083719U;
         static const AkUniqueID TVOFF = 2896649166U;
     } // namespace EVENTS
@@ -44,6 +46,11 @@ namespace AK
 
     } // namespace SWITCHES
 
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID GAMEBOY_AUDIO = 743094712U;
+    } // namespace GAME_PARAMETERS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
@@ -52,7 +59,10 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID FOOTSTEPS_BUS = 2247540952U;
+        static const AkUniqueID GAMEBOY_BUS = 3261620469U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID TVBUS = 2342546307U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

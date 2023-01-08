@@ -12,7 +12,7 @@
 							<ObjectRef Name="Carpet" ID="{82BC185D-6B08-4ED4-B0B4-3871E9E165C9}" WorkUnitID="{0BBECF54-A797-4660-8587-2BB00518F602}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+							<ObjectRef Name="Footsteps Bus" ID="{C533F784-0BDA-4DC7-877E-C9133CFBFD5D}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
 						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
 							<ObjectRef Name="Footsteps" ID="{83EE5126-1392-43BE-83A3-F5B22BA74E02}" WorkUnitID="{0BBECF54-A797-4660-8587-2BB00518F602}"/>
@@ -616,8 +616,11 @@
 						<Reference Name="DefaultSwitchOrState">
 							<ObjectRef Name="Static" ID="{65258556-A82D-41B8-B6A4-442BA0CF2429}" WorkUnitID="{0BBECF54-A797-4660-8587-2BB00518F602}"/>
 						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+							<ObjectRef Name="Few_Odd_Harm_Notches" ID="{3B5685A6-6274-4292-B5B9-32AFE28DB80B}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+							<ObjectRef Name="TVBus" ID="{2B539258-6559-4169-809D-C6E54B3FAB93}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
 						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
 							<ObjectRef Name="TV" ID="{B1F35E4D-1703-4753-8EA0-8BE2D11E655A}" WorkUnitID="{0BBECF54-A797-4660-8587-2BB00518F602}"/>
@@ -634,6 +637,11 @@
 								</Property>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -664,7 +672,13 @@
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-26</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
