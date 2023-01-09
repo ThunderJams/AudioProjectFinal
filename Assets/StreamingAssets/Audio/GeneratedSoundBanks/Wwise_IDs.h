@@ -15,6 +15,9 @@ namespace AK
     {
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID GB_MUSIC = 463933594U;
+        static const AkUniqueID PAUSEMUSIC = 1127073398U;
+        static const AkUniqueID RESUMEMUSIC = 2170724709U;
+        static const AkUniqueID STARTMUSIC = 3827058668U;
         static const AkUniqueID TV = 1568083719U;
         static const AkUniqueID TVOFF = 2896649166U;
     } // namespace EVENTS
@@ -31,6 +34,17 @@ namespace AK
                 static const AkUniqueID WOOD = 2058049674U;
             } // namespace SWITCH
         } // namespace FOOTSTEPS
+
+        namespace GAMEBOY
+        {
+            static const AkUniqueID GROUP = 2215897303U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID ADDITIONAL_LOOP = 974269499U;
+                static const AkUniqueID MAIN_LOOP = 3813340491U;
+            } // namespace SWITCH
+        } // namespace GAMEBOY
 
         namespace TV
         {

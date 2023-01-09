@@ -44,7 +44,46 @@
 						<Action Name="" ID="{6A9F1A8F-DE4E-44AA-9608-A212178FCA0D}" ShortID="581198525">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="GBMusic" ID="{B29F2A92-8AA1-41E1-B8A0-0BCDBBDB8F36}" WorkUnitID="{13E7F24E-7E93-4EF0-A883-76AD701D3881}"/>
+									<ObjectRef Name="GB_Music" ID="{18C459D8-61C2-4459-AEA1-D3F40FAC6D3C}" WorkUnitID="{13E7F24E-7E93-4EF0-A883-76AD701D3881}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StartMusic" ID="{958CA41F-D305-4EA2-935D-738227514C8B}">
+					<ChildrenList>
+						<Action Name="" ID="{ADCE0B0E-01B1-411D-95B2-4DD0E7D9496B}" ShortID="752134088">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GBPlaylist" ID="{FB31BE61-CE19-4595-8017-D2538230917C}" WorkUnitID="{13E7F24E-7E93-4EF0-A883-76AD701D3881}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PauseMusic" ID="{CF4ED55D-468F-466B-BA09-5E8C77843115}">
+					<ChildrenList>
+						<Action Name="" ID="{80BAD4D5-1FB5-436B-9237-619916822676}" ShortID="873419994">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GBPlaylist" ID="{FB31BE61-CE19-4595-8017-D2538230917C}" WorkUnitID="{13E7F24E-7E93-4EF0-A883-76AD701D3881}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ResumeMusic" ID="{F69F3CCC-C8EA-4116-85F1-AE81A88B4A1D}">
+					<ChildrenList>
+						<Action Name="" ID="{6D1B149F-511B-4BF1-8842-4E6A2A7D1980}" ShortID="184673183">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="9"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GBPlaylist" ID="{FB31BE61-CE19-4595-8017-D2538230917C}" WorkUnitID="{13E7F24E-7E93-4EF0-A883-76AD701D3881}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

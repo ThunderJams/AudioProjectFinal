@@ -349,7 +349,7 @@ MonoBehaviour:
   musicOn:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: bf1ef5ace59721e46913224e93a5224a, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 43418afb1f0b97e41931b1c77f0094b3, type: 2}
   musicOff:
     idInternal: 0
     valueGuidInternal: 
@@ -6718,6 +6718,18 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 11400000, guid: 4ab6b5728252a7147ade643cf183afc7, type: 2}
   gameboyAudioVolume: -6
   prevGBvol: -6
+  mainSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d160169bee8e2844783e65b0a730dadd, type: 2}
+  drumsSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 16b500a6b5719f04e8f857b8738fa7e6, type: 2}
 --- !u!143 &1787533096
 CharacterController:
   m_ObjectHideFlags: 0

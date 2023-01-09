@@ -6,22 +6,26 @@
 				<SoundBank Name="Main" ID="{350FAE14-9B31-457D-A7BB-83B158C03E8D}">
 					<ObjectInclusionList>
 						<ObjectRef Name="TVNews" ID="{5C9E3C66-DC5D-405C-A64A-0F0CC7B5D078}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Intro + Drums" ID="{DF9FACEC-901D-40A7-B414-6E2D5787BDF9}" WorkUnitID="{13E7F24E-7E93-4EF0-A883-76AD701D3881}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ResumeMusic" ID="{F69F3CCC-C8EA-4116-85F1-AE81A88B4A1D}" WorkUnitID="{E9903831-0FEC-47AC-965E-488ECE730DB3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="womanCarpet2" ID="{634ACE7F-52D0-4145-AB67-6FCF2C0884BB}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footsteps" ID="{24BA8E53-409B-4149-88C9-3023ED49B6DF}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="cloth2" ID="{6A15A208-FF6B-4157-BF30-61DE95249EB4}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="cloth3" ID="{82172351-BC58-4168-A9E2-9972C3B2CC33}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep_Walking_Hardwood_04" ID="{93041766-A709-4173-BED0-272672586F67}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RandomCarpetFootsteps" ID="{6B6D3B21-7AFD-41CA-8B40-E1484C5C1932}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="GBMusic" ID="{B29F2A92-8AA1-41E1-B8A0-0BCDBBDB8F36}" WorkUnitID="{13E7F24E-7E93-4EF0-A883-76AD701D3881}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep2" ID="{FBA9012D-55FD-4277-B003-5ADB9FE69C41}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RandomFootstepsOnWood" ID="{BE992481-7D04-42E3-97BF-FFBF68154DE6}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RandomCarpetF" ID="{D3939672-AC22-4314-9D87-8ABC5B256D84}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RandomFootsteps" ID="{034E4822-6BA7-4339-82C3-B22941585F75}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep_Walking_Hardwood_02" ID="{0D247B56-8495-439E-8AA9-625E2411AB9A}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="GB_Music" ID="{18C459D8-61C2-4459-AEA1-D3F40FAC6D3C}" WorkUnitID="{13E7F24E-7E93-4EF0-A883-76AD701D3881}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep_Walking_Hardwood_05" ID="{8BD4BBD8-FF3B-44CB-B801-6FA5AE8C2529}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep_Walking_Hardwood_06" ID="{87E48CE7-6918-44D4-BEF5-31F9F8688831}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PauseMusic" ID="{CF4ED55D-468F-466B-BA09-5E8C77843115}" WorkUnitID="{E9903831-0FEC-47AC-965E-488ECE730DB3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep3" ID="{19074968-4D10-46C7-A073-64B2E1655422}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="womanCarpet1" ID="{9719E391-54C2-4813-847C-1D84F334D527}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="GB_Music" ID="{44CFBC9D-85ED-4852-BB53-A589F9F7DD88}" WorkUnitID="{E9903831-0FEC-47AC-965E-488ECE730DB3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TV" ID="{75FC9EA1-2924-4907-9791-527CB09E0FA1}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="womanCarpet3" ID="{FD32BE70-C8C4-4B94-8934-C0D7097CB911}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep_Walking_Hardwood_03" ID="{3B625B92-1693-4BA3-AFB4-B0CF645E05EA}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
@@ -31,8 +35,14 @@
 						<ObjectRef Name="cloth1" ID="{23EC611C-0159-4C99-A309-D67A85AB099A}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep1" ID="{431B0394-1D2E-4D85-B498-82DA157B521C}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TVStatic" ID="{D81A6AFF-46CB-4DE9-AA74-FB1B0235A381}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Footsteps" ID="{23893796-78B4-4DF1-A136-7A0637EFB8C7}" WorkUnitID="{E9903831-0FEC-47AC-965E-488ECE730DB3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="TV" ID="{1453E022-C02F-4DF1-B77C-9456B61138B6}" WorkUnitID="{E9903831-0FEC-47AC-965E-488ECE730DB3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Main Playlist" ID="{2722905D-C764-4E6B-86D3-1AB2FE9CA6D4}" WorkUnitID="{13E7F24E-7E93-4EF0-A883-76AD701D3881}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StartMusic" ID="{958CA41F-D305-4EA2-935D-738227514C8B}" WorkUnitID="{E9903831-0FEC-47AC-965E-488ECE730DB3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Additional Playlist" ID="{EEA41FA5-B7CD-4EA9-A835-AF824862430D}" WorkUnitID="{13E7F24E-7E93-4EF0-A883-76AD701D3881}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Intro" ID="{6FC58F98-1224-4EDA-B6C6-558D678645FB}" WorkUnitID="{13E7F24E-7E93-4EF0-A883-76AD701D3881}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="cloth4" ID="{2FB0D449-E135-4EE7-84C5-68777501402B}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="TVOff" ID="{A33D048C-FC69-4F4D-BAC5-14F7D87E7C3D}" WorkUnitID="{E9903831-0FEC-47AC-965E-488ECE730DB3}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

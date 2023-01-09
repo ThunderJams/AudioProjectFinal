@@ -15,6 +15,12 @@
 						<Switch Name="News" ID="{E7EBA029-249A-419B-B462-FD76543654DD}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Gameboy" ID="{455A2057-A207-48AC-AA2D-9E96B3318077}">
+					<ChildrenList>
+						<Switch Name="Main_Loop" ID="{86B782AE-3200-42CE-B1E2-44C114CE0925}"/>
+						<Switch Name="Additional_Loop" ID="{D1FA960C-D835-4743-A377-A7C9536F32AA}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

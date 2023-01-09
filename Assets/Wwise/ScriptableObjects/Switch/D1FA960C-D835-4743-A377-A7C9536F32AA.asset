@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a78ffd84532a6ea4099a6f10cc8090d0, type: 3}
+  m_Name: D1FA960C-D835-4743-A377-A7C9536F32AA
+  m_EditorClassIdentifier: 
+  objectName: Additional_Loop
+  id: 974269499
+  guid: D1FA960C-D835-4743-A377-A7C9536F32AA
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 9b317e88bca8ac44ba5a28ab58855b47, type: 2}

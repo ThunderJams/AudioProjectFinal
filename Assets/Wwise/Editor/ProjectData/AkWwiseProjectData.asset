@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 9c6eebb85392204a8a923854e3a502df
     GuidInternal: 
-    m_lastTime: -8585283215934208502
+    m_lastTime: -8585283009064836779
     List:
     - name: Main
       guid: 14ae0f35319b7d45a7bb83b158c03e8d
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 313890e9ec0fac47965e488ece730db3
     GuidInternal: 
-    m_lastTime: -8585283215934362962
+    m_lastTime: -8585283007707388868
     List:
     - name: Footsteps
       guid: 96378923b478f14da1367a0637efb8c7
@@ -178,9 +178,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: 9dbccf44ed855248bb53a589f9f7dd88
       Path: Events\Default Work Unit\GB_Music
-      maxAttenuation: 100
-      maxDuration: 53.199432
-      minDuration: 53.199432
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StartMusic
+      guid: 1fa48c9505d3a24e935d738227514c8b
+      id: 3827058668
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 313890e9ec0fac47965e488ece730db3
+      - ElementName: StartMusic
+        ObjectType: 3
+        guid: 1fa48c9505d3a24e935d738227514c8b
+      Path: Events\Default Work Unit\StartMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: TV
       guid: 22e053142fc0f14db77c9456b61138b6
       id: 1568083719
@@ -269,7 +286,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 54cfbe0b97a7604685872bb00518f602
     GuidInternal: 
-    m_lastTime: -8585284980596397090
+    m_lastTime: -8585283010978078413
     List:
     - name: Footsteps
       guid: 2651ee839213be4383a3f5b22ba74e02
@@ -318,6 +335,56 @@ MonoBehaviour:
         - ElementName: Wood
           ObjectType: 10
           guid: 47f6d7275aea504996c95208eeb3b8a5
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Gameboy
+      guid: 57205a4507a2ac48aa2d9e96b3318077
+      id: 2215897303
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 54cfbe0b97a7604685872bb00518f602
+      - ElementName: Gameboy
+        ObjectType: 11
+        guid: 57205a4507a2ac48aa2d9e96b3318077
+      Path: Switches\Default Work Unit\Gameboy
+      values:
+      - name: Additional_Loop
+        guid: 0c96fad135d84347a377a7c9536f32aa
+        id: 974269499
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 54cfbe0b97a7604685872bb00518f602
+        - ElementName: Gameboy
+          ObjectType: 11
+          guid: 57205a4507a2ac48aa2d9e96b3318077
+        - ElementName: Additional_Loop
+          ObjectType: 10
+          guid: 0c96fad135d84347a377a7c9536f32aa
+      - name: Main_Loop
+        guid: ae82b7860032ce42b1e244c114ce0925
+        id: 3813340491
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 54cfbe0b97a7604685872bb00518f602
+        - ElementName: Gameboy
+          ObjectType: 11
+          guid: 57205a4507a2ac48aa2d9e96b3318077
+        - ElementName: Main_Loop
+          ObjectType: 10
+          guid: ae82b7860032ce42b1e244c114ce0925
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []

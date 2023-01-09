@@ -1,16 +1,22 @@
 Event	ID	Name			Wwise Object Path	Notes
 	463933594	GB_Music			\Default Work Unit\GB_Music	
+	1127073398	PauseMusic			\Default Work Unit\PauseMusic	
 	1568083719	TV			\Default Work Unit\TV	
+	2170724709	ResumeMusic			\Default Work Unit\ResumeMusic	
 	2385628198	Footsteps			\Default Work Unit\Footsteps	
 	2896649166	TVOff			\Default Work Unit\TVOff	
+	3827058668	StartMusic			\Default Work Unit\StartMusic	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	1568083719	TV			\Default Work Unit\TV	
+	2215897303	Gameboy			\Default Work Unit\Gameboy	
 	2385628198	Footsteps			\Default Work Unit\Footsteps	
 
 Switch	ID	Name	Switch Group			Notes
 	898907948	News	TV			
 	1409504247	Static	TV			
+	974269499	Additional_Loop	Gameboy			
+	3813340491	Main_Loop	Gameboy			
 	2058049674	Wood	Footsteps			
 	2412606308	Carpet	Footsteps			
 
@@ -25,14 +31,15 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	133392742	Footstep_Walking_Hardwood_02	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\Footstep_Walking_Hardwood_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\RandomFootstepsOnWood\Footstep_Walking_Hardwood_02		24892
 	147795527	womanCarpet2	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\womanCarpet2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\RandomCarpetF\womanCarpet2		64486
 	167514482	TVStatic	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\TVStatic_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\TV\TVStatic		529264
+	213614345	Overworld (Yoshi) (beginning)	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\Yoshi\Overworld (Yoshi) (beginning)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\GB_Music\Additional Playlist\Intro + Drums\Overworld (Yoshi) (beginning)		974912
 	267028213	Footstep_Walking_Hardwood_01	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\Footstep_Walking_Hardwood_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\RandomFootstepsOnWood\Footstep_Walking_Hardwood_01		22572
 	287944606	cloth3	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\cloth3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\RandomCarpetFootsteps\cloth3		18010
-	310413332	Overworld (Normal) (loop)	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\Normal\Overworld (Normal) (loop)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\GBMusic\Main\Overworld (Normal) (loop)		6939524
+	310413332	Overworld (Normal) (loop)	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\Normal\Overworld (Normal) (loop)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\GB_Music\Main Playlist\Main\Overworld (Normal) (loop)		6939524
 	346463506	Footstep_Walking_Hardwood_05	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\Footstep_Walking_Hardwood_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\RandomFootstepsOnWood\Footstep_Walking_Hardwood_05		28428
-	396427189	Overworld (Yoshi) (loop)	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\Yoshi\Overworld (Yoshi) (loop)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\GBMusic\Main + Drums\Overworld (Yoshi) (loop)		6940156
+	396427189	Overworld (Yoshi) (loop)	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\Yoshi\Overworld (Yoshi) (loop)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\GB_Music\Additional Playlist\Main + Drums\Overworld (Yoshi) (loop)		6940156
 	441661625	womanCarpet3	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\womanCarpet3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\RandomCarpetF\womanCarpet3		62184
 	477920797	womanCarpet1	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\womanCarpet1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\RandomCarpetF\womanCarpet1		55282
-	791388537	Overworld (Normal) (beginning)	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\Normal\Overworld (Normal) (beginning)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\GBMusic\Intro\Overworld (Normal) (beginning)		974912
+	791388537	Overworld (Normal) (beginning)	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\Normal\Overworld (Normal) (beginning)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\GB_Music\Main Playlist\Intro\Overworld (Normal) (beginning)		974912
 	861191779	Footstep3	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\Footstep3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\RandomFootsteps\Footstep3		24000
 	927854305	cloth1	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\cloth1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\RandomCarpetFootsteps\cloth1		18010
 	987766169	Footstep_Walking_Hardwood_04	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\Footstep_Walking_Hardwood_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\RandomFootstepsOnWood\Footstep_Walking_Hardwood_04		21766

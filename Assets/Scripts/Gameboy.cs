@@ -32,4 +32,9 @@ public class Gameboy : MonoBehaviour
     {
         return gbTimer;
     }
+
+    public void StartMusic()
+    {
+        musicOn.Post(gameObject);
+    }
 }

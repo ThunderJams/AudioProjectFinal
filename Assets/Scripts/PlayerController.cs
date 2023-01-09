@@ -28,6 +28,17 @@ public class PlayerController : MonoBehaviour
 
     bool firstTimePlay = true;
 
+    float score = 0;
+
+    // wwise switch
+    public AK.Wwise.Switch mainSwitch = new AK.Wwise.Switch();
+    public AK.Wwise.Switch drumsSwitch = new AK.Wwise.Switch();
+    bool drumsSwitchedOn = false;
+
+    // wwise event
+    public AK.Wwise.Event pauseEvent = new AK.Wwise.Event();
+    public AK.Wwise.Event resumeEvent = new AK.Wwise.Event();
+
 
 
     // start
@@ -103,20 +114,30 @@ public class PlayerController : MonoBehaviour
             if (gba.isActiveAndEnabled)
             {
                 // stop music
-                prevGBvol = gameboyAudioVolume;
-                gameboyAudioVolume = -50;
+                //prevGBvol = gameboyAudioVolume;
+                //gameboyAudioVolume = -50;
                 gba.gameObject.SetActive(false);
+
+                pauseEvent.Post(gameObject);
             }
             else
             {
-                gameboyAudioVolume = prevGBvol;
+                //gameboyAudioVolume = prevGBvol;
                 gba.gameObject.SetActive(true);
+                
+                
+                
                 if (firstTimePlay)
                 {
+                    mainSwitch.SetValue(gameObject);                    
+                    gba.StartMusic();
+                    Debug.Log("music started");
+                    
                     firstTimePlay = false;
-                    // play music
-                    gba.musicOn.Post(gameObject);
+
                 }
+
+                resumeEvent.Post(gameObject);
             }
         }
 
@@ -130,6 +151,20 @@ public class PlayerController : MonoBehaviour
             gameboyAudioVolume -= 10 * Time.deltaTime;
         }
 
+        if (gba.isActiveAndEnabled)
+        {
+            if (gameboyAudioVolume > -11)
+            {
+                score += Time.deltaTime * (gameboyAudioVolume + 12);
+            }
+            
+        }
 
+        if (score > 500 && !drumsSwitchedOn)
+        {
+            Debug.Log("music switched");
+            drumsSwitchedOn = true;
+            drumsSwitch.SetValue(gameObject);
+        }
     }
 }
