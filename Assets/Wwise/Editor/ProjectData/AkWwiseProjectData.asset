@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 847a8e9c32eeaf45ac4f10eb36a60f6e
     GuidInternal: 
-    m_lastTime: -8585283950226473300
+    m_lastTime: -8585283215934522991
     List:
     - name: Footsteps Bus
       guid: 84f733c5da0bc74d877ec9133cfbfd5d
@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 9c6eebb85392204a8a923854e3a502df
     GuidInternal: 
-    m_lastTime: -8585284115892252060
+    m_lastTime: -8585283215934208502
     List:
     - name: Main
       guid: 14ae0f35319b7d45a7bb83b158c03e8d
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 313890e9ec0fac47965e488ece730db3
     GuidInternal: 
-    m_lastTime: -8585284132220452172
+    m_lastTime: -8585283215934362962
     List:
     - name: Footsteps
       guid: 96378923b478f14da1367a0637efb8c7
@@ -181,23 +181,6 @@ MonoBehaviour:
       maxAttenuation: 100
       maxDuration: 53.199432
       minDuration: 53.199432
-    - name: GB_MusicOff
-      guid: 879aae84e1c6df47b5ee47e2b95acbb8
-      id: 1406928585
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 313890e9ec0fac47965e488ece730db3
-      - ElementName: GB_MusicOff
-        ObjectType: 3
-        guid: 879aae84e1c6df47b5ee47e2b95acbb8
-      Path: Events\Default Work Unit\GB_MusicOff
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
     - name: TV
       guid: 22e053142fc0f14db77c9456b61138b6
       id: 1568083719
@@ -244,7 +227,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: f6e260a76287a641a2ec834994aaead9
     GuidInternal: 
-    m_lastTime: -8585283950226732494
+    m_lastTime: -8585283940265445719
     List:
     - name: GameBoy_Audio
       guid: 836d177eb263c2429c3e2d501dbb8da0

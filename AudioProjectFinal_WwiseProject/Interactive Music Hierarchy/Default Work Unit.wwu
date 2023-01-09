@@ -3,126 +3,854 @@
 	<InteractiveMusic>
 		<WorkUnit Name="Default Work Unit" ID="{13E7F24E-7E93-4EF0-A883-76AD701D3881}" PersistMode="Standalone">
 			<ChildrenList>
-				<MusicSegment Name="Merry_Sonicmas Wav" ID="{C91E880D-46AC-4DA4-8BC7-CD236F7A27DA}" ShortID="647349591">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="1"/>
-						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
-						<Property Name="EndPosition" Type="Real64" Value="53199.433106576"/>
-						<Property Name="Highpass" Type="int16">
-							<ValueList>
-								<Value>49</Value>
-							</ValueList>
-						</Property>
-						<Property Name="Lowpass" Type="int16">
-							<ValueList>
-								<Value>26</Value>
-							</ValueList>
-						</Property>
-						<Property Name="MakeUpGain" Type="Real64">
-							<ValueList>
-								<Value>29</Value>
-							</ValueList>
-						</Property>
-						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="10"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-24</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
+				<Folder Name="Normal" ID="{2501CD24-4E05-4810-926A-04E1727581EA}" ShortID="935507574">
+					<ChildrenList>
+						<MusicSegment Name="Overworld (Normal) (beginning)" ID="{9DDA0D4A-213B-4C5F-8434-60EC63357715}" ShortID="1067438978">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="5526.34920634921"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Overworld (Normal) (beginning)" ID="{8E141BB4-75D1-4CD3-8E69-1BF70C1B0721}" ShortID="293286941">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Overworld (Normal) (beginning)" ID="{0B6D3B5C-21D2-4A48-AF79-835A16525AA7}">
+											<Language>SFX</Language>
+											<AudioFile>Normal\Overworld (Normal) (beginning).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="791388537"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{42FACB44-127A-4440-A9C2-C4F5C7CA1360}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{9F303BCE-F0F9-4987-8336-CBAF0FB6EE29}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Overworld (Normal) (beginning)" ID="{11C29B58-9EB2-470D-B774-834DD4D22F5F}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="5526.34920634921"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Overworld (Normal) (beginning)" ID="{0B6D3B5C-21D2-4A48-AF79-835A16525AA7}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{E4F8A2D6-D741-4B47-A1C2-994C695518A4}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{7E47BB50-1960-4C39-81D5-A7F4A7A6D149}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="5526.34920634921"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="Overworld (Normal) (loop)" ID="{7738ECB1-E630-41AD-BCEF-195162611170}" ShortID="211161826">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="39338.9795918367"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Overworld (Normal) (loop)" ID="{AEC095B7-8324-4A4C-9486-F98930F2A06E}" ShortID="193597374">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Overworld (Normal) (loop)" ID="{5D737F52-F368-4604-9630-0A5BD09CD62A}">
+											<Language>SFX</Language>
+											<AudioFile>Normal\Overworld (Normal) (loop).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="310413332"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{CEB67949-FD39-477E-BF23-3DC4DCEE0FFC}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{0601444D-505D-40FE-99B8-A04174EFA6C7}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Overworld (Normal) (loop)" ID="{D437E6FB-5739-4285-B103-DB7F11F98779}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="39338.9795918367"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Overworld (Normal) (loop)" ID="{5D737F52-F368-4604-9630-0A5BD09CD62A}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{93EBEA31-D5A4-4973-884F-C184303EE26A}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{537F5181-41A7-4CC5-9606-DE0AAC95E54D}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="39338.9795918367"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="Overworld (Normal)" ID="{F400C654-FEDB-4D07-BACF-42058514CB67}" ShortID="573196180">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="44865.3287981859"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Overworld (Normal)" ID="{8AF50DCC-103D-4B65-A2E8-A13458737C06}" ShortID="347854952">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Overworld (Normal)" ID="{052825E3-8FE1-4030-B52F-5568A22DD9A7}">
+											<Language>SFX</Language>
+											<AudioFile>Normal\Overworld (Normal).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="842517102"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{D7954FC0-8D9D-46B0-BB7F-EFBDB918F712}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{9C90BC08-DA86-43D7-B9D6-6E9B4B5A62E6}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Overworld (Normal)" ID="{EF309036-798A-4F67-B829-A9CB4B31C402}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="44865.3287981859"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Overworld (Normal)" ID="{052825E3-8FE1-4030-B52F-5568A22DD9A7}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{CCCE166C-C35B-4672-8019-147BD92E7292}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{8FE395AE-E7A7-485E-82A5-5C0DBD9DFF3E}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="44865.3287981859"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Yoshi" ID="{677E1246-0245-47DC-B461-DF8784FBECCC}" ShortID="67838177">
+					<ChildrenList>
+						<MusicSegment Name="Overworld (Yoshi) (beginning)" ID="{D294E8A1-3D15-4E06-9733-C8486C1FEAEC}" ShortID="254919870">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="5526.34920634921"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Overworld (Yoshi) (beginning)" ID="{4770AC47-B082-4129-8070-4DCB70D965A0}" ShortID="1067707242">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Overworld (Yoshi) (beginning)" ID="{A576F592-5CA0-434B-96C4-C6AF21412C26}">
+											<Language>SFX</Language>
+											<AudioFile>Yoshi\Overworld (Yoshi) (beginning).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="213614345"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{97E68883-DBBB-48B4-BFA4-79D285CDDB2C}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{0B027122-EC8B-4D2D-A773-10D2652DE6A1}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Overworld (Yoshi) (beginning)" ID="{485ACD76-35BA-47EF-A49A-8D78DD990641}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="5526.34920634921"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Overworld (Yoshi) (beginning)" ID="{A576F592-5CA0-434B-96C4-C6AF21412C26}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{AE47F22D-01FC-4D1F-A707-237632E1BEF1}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{AB13A98D-B55C-474E-945A-C1917EB7A577}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="5526.34920634921"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="Overworld (Yoshi) (loop)" ID="{1538A3AC-614F-4343-B528-3EB6F1121E91}" ShortID="252093221">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="39342.5623582766"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Overworld (Yoshi) (loop)" ID="{C1E13A85-C7EF-4280-8885-365C429D4145}" ShortID="538730963">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Overworld (Yoshi) (loop)" ID="{EE2A6F11-E5AE-44F4-B3AF-9097054ABAA9}">
+											<Language>SFX</Language>
+											<AudioFile>Yoshi\Overworld (Yoshi) (loop).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="396427189"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{F887B4F1-A67E-45F8-A809-47917078B1F3}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{5D41E501-E332-41E0-8509-90843F23AD80}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Overworld (Yoshi) (loop)" ID="{9D364B20-9748-4EB1-8DDD-ED097A136BBF}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="39342.5623582766"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Overworld (Yoshi) (loop)" ID="{EE2A6F11-E5AE-44F4-B3AF-9097054ABAA9}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{EA47AB2F-8330-4637-BDFF-C6B89B87670D}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{74298FCB-DF96-4A8A-9074-17A559D3B4C0}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="39342.5623582766"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="Overworld (Yoshi)" ID="{0AB815BC-BB1D-41AD-8B86-CFC7C99DBED8}" ShortID="750287363">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="44868.9115646259"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Overworld (Yoshi)" ID="{F018B1E2-36D9-4FFE-9401-800C571DF3E4}" ShortID="355399506">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Overworld (Yoshi)" ID="{C89678A6-51B1-4159-B6D9-9DEA99337379}">
+											<Language>SFX</Language>
+											<AudioFile>Yoshi\Overworld (Yoshi).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="703445299"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{3C0B0524-F5B8-49B9-8798-20CFEBDA7300}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{174CD033-42BA-4E6B-B0A6-FFB0AD5F4787}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Overworld (Yoshi)" ID="{FF30C3C8-6BB1-42FD-9182-E42634D87A16}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="44868.9115646259"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Overworld (Yoshi)" ID="{C89678A6-51B1-4159-B6D9-9DEA99337379}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{38606497-1030-4594-8490-6941D64D00EE}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{2CE125CB-B9D1-437A-A001-9086D2E9572E}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="44868.9115646259"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+				</Folder>
+				<MusicPlaylistContainer Name="GBMusic" ID="{B29F2A92-8AA1-41E1-B8A0-0BCDBBDB8F36}" ShortID="460840445">
 					<ReferenceList>
-						<Reference Name="Attenuation">
-							<ObjectRef Name="GBAttenuation" ID="{FDBA70C7-6B2A-4C77-95C7-E049B9BB1779}" WorkUnitID="{29EBF851-3765-4D25-B772-69C2896CEBC0}"/>
-						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
-						</Reference>
-						<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
-							<ObjectRef Name="Nasty_Radio" ID="{7E6FAC41-3332-47EA-9AC6-625A78B63226}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="GameBoy Bus" ID="{8354D2AD-B5E1-444C-93B2-BEF7B9F591C9}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<MusicTrack Name="Merry_Sonicmas Wav" ID="{7646F644-5133-4836-AC2E-B87FB3440347}" ShortID="528535707">
+						<MusicSegment Name="Intro" ID="{6FC58F98-1224-4EDA-B6C6-558D678645FB}" ShortID="884420440">
 							<PropertyList>
-								<Property Name="Lowpass" Type="int16">
-									<ValueList>
-										<Value>15</Value>
-									</ValueList>
-								</Property>
+								<Property Name="EndPosition" Type="Real64" Value="39338.9795918367"/>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Merry_Sonicmas Wav" ID="{DCFC9A1F-C709-4918-9B6A-BF006C8DC0DF}">
-									<Language>SFX</Language>
-									<AudioFile>Merry_Sonicmas Wav.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="209216606"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<MusicTrack Name="Overworld (Normal) (beginning)" ID="{C4752A80-78C6-4A5E-90A2-F382AF6C6E5A}" ShortID="1021308467">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Overworld (Normal) (beginning)" ID="{F5A0A6F3-B58F-4223-9206-35E6BF60F213}">
+											<Language>SFX</Language>
+											<AudioFile>Normal\Overworld (Normal) (beginning).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="791388537"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{E12542C3-7D44-4AA8-ADED-98242189E726}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{1C4C28A7-016B-409D-B02C-CF19DBD4EDC0}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Overworld (Normal) (beginning)" ID="{8F440636-062C-4312-9B21-20BF88DDEAA0}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="5526.34920634921"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Overworld (Normal) (beginning)" ID="{F5A0A6F3-B58F-4223-9206-35E6BF60F213}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
 							</ChildrenList>
-							<TransitionList>
-								<MusicTransition Name="Root" ID="{1F3E7F20-A184-44B3-82B8-779F40147D77}">
-									<PropertyList>
-										<Property Name="IsFolder" Type="bool" Value="True"/>
-									</PropertyList>
-									<TransitionInfo/>
-								</MusicTransition>
-							</TransitionList>
 							<ObjectLists>
-								<ObjectList Name="Sequences">
+								<ObjectList Name="Cues">
 									<Reference>
 										<Local>
-											<MusicTrackSequence Name="" ID="{74458E17-F8C6-4D64-B7AD-C43A07F9BBBD}">
-												<ObjectLists>
-													<ObjectList Name="Clips">
-														<Reference>
-															<Local>
-																<MusicClip Name="Merry_Sonicmas Wav" ID="{EE38BF20-53EA-4B74-A2A1-F5EC3008C3A0}">
-																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="53199.433106576"/>
-																		<Property Name="FadeInMode" Type="int16" Value="0"/>
-																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																	</PropertyList>
-																	<AudioSourceRef Name="Merry_Sonicmas Wav" ID="{DCFC9A1F-C709-4918-9B6A-BF006C8DC0DF}"/>
-																</MusicClip>
-															</Local>
-														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MusicTrackSequence>
+											<MusicCue Name="Entry Cue" ID="{7C1D82CB-BA93-452D-820F-3B6F44A5DBE7}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{4A857786-EDE1-42C4-9151-5BF55F3FEDFD}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="5526.34920634921"/>
+												</PropertyList>
+											</MusicCue>
 										</Local>
 									</Reference>
 								</ObjectList>
 							</ObjectLists>
-						</MusicTrack>
+						</MusicSegment>
+						<MusicSegment Name="Main" ID="{BCC692A5-6321-4C5C-A1CB-09146C596CC4}" ShortID="1068030692">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="41855.3783034003"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Overworld (Normal) (loop)" ID="{72564784-066A-48BB-9562-D2A9AE038A58}" ShortID="762010963">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Overworld (Normal) (loop)" ID="{01249E44-198F-473A-851F-CD56D3535EFB}">
+											<Language>SFX</Language>
+											<AudioFile>Normal\Overworld (Normal) (loop).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="310413332"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{FBBD2D3E-CE33-4035-9DCB-44413CAB509C}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{34430614-5761-4011-92ED-3AA1F8AC54A5}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Overworld (Normal) (loop)" ID="{A9E9F618-8C05-4D80-AE0A-39CE0950D291}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="39338.9795918367"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Overworld (Normal) (loop)" ID="{01249E44-198F-473A-851F-CD56D3535EFB}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{3B34DE9A-2D05-4864-A58B-017AFDB28671}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{2B5D3A6C-07D2-4D23-9CB3-842F8E1147B3}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="39338.9795918367"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="Main + Drums" ID="{0A6631E4-BABA-4C15-B3B2-41BFE42151F2}" ShortID="640038415">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="39342.5623582766"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Overworld (Yoshi) (loop)" ID="{DBBDB220-0D81-4D1E-B46F-D51CE4E89A34}" ShortID="244400222">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Overworld (Yoshi) (loop)" ID="{4271E33A-924D-4D74-94CF-2EC2DF2AC1B1}">
+											<Language>SFX</Language>
+											<AudioFile>Yoshi\Overworld (Yoshi) (loop).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="396427189"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{B9E13376-F827-4C75-83F1-B428AB3BD7DF}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{B4A86191-6A3D-4156-AAAE-39050BFE114A}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Overworld (Yoshi) (loop)" ID="{25B9E209-F0BD-4E73-B12B-364BF5D0FA05}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="39342.5623582766"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Overworld (Yoshi) (loop)" ID="{4271E33A-924D-4D74-94CF-2EC2DF2AC1B1}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{20889E43-564E-47DB-B3EE-50541EE89E4C}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{A0D5D205-C05A-43A5-ACCD-89128E39E5B0}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="39342.5623582766"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
 					</ChildrenList>
-					<ObjectLists>
-						<ObjectList Name="Cues">
-							<Reference>
-								<Local>
-									<MusicCue Name="Entry Cue" ID="{935D4E6A-ACBE-4715-989D-35CD97F6A7B9}"/>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MusicCue Name="Exit Cue" ID="{24085442-788D-4274-8071-720047024FAB}">
-										<PropertyList>
-											<Property Name="CueType" Type="int16" Value="1"/>
-											<Property Name="TimeMs" Type="Real64" Value="53199.433106576"/>
-										</PropertyList>
-									</MusicCue>
-								</Local>
-							</Reference>
-						</ObjectList>
-					</ObjectLists>
-				</MusicSegment>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{11139C8B-6388-4BFD-9B49-1F334D695559}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{375D80BA-69EC-4166-AAB9-E0CC1C1C26E3}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<ObjectLists/>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{9E2BD6EB-D94E-456A-8CBC-4032344E1B9B}" ShortID="164734453">
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{42A79A71-6950-41B1-9340-4EF713FC0CE4}" ShortID="490968574">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="Intro" ID="{6FC58F98-1224-4EDA-B6C6-558D678645FB}"/>
+								</MusicPlaylistItem>
+								<MusicPlaylistItem Name="" ID="{F9B39190-7E55-4E91-A14C-645E0E315983}" ShortID="151096905">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="Main" ID="{BCC692A5-6321-4C5C-A1CB-09146C596CC4}"/>
+								</MusicPlaylistItem>
+								<MusicPlaylistItem Name="" ID="{089899D1-09DF-4860-B5EA-6CD5F7989B84}" ShortID="389532533">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="Main + Drums" ID="{0A6631E4-BABA-4C15-B3B2-41BFE42151F2}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
+				<MusicSwitchContainer Name="TrackSwitch" ID="{69DEF262-48AE-4FB3-B321-63C7E9BCE38B}" ShortID="351738779">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+						</Reference>
+					</ReferenceList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{0F9AD6E0-4B8D-4D2A-BAB2-43A28966AC97}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{A7732BBE-58D3-468C-8F3E-E73FC61BDB2B}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<ObjectLists/>
+				</MusicSwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>
