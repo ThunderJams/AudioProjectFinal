@@ -22,7 +22,11 @@ public class PlayerController : MonoBehaviour
     [Range(-12, 12)]
     private float gameboyAudioVolume = 0;
 
+    [SerializeField]
+    [Range(-12, 12)]
     private float prevGBvol;
+
+    bool firstTimePlay = true;
 
 
 
@@ -107,6 +111,12 @@ public class PlayerController : MonoBehaviour
             {
                 gameboyAudioVolume = prevGBvol;
                 gba.gameObject.SetActive(true);
+                if (firstTimePlay)
+                {
+                    firstTimePlay = false;
+                    // play music
+                    gba.musicOn.Post(gameObject);
+                }
             }
         }
 

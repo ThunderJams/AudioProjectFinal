@@ -18,8 +18,7 @@ public class Gameboy : MonoBehaviour
         // set position to directly infront of the camera
         transform.position = Camera.main.transform.position + Camera.main.transform.forward * 2;
         
-        // play music
-        musicOn.Post(gameObject);
+        
     }
 
     // Update is called once per frame

@@ -6716,7 +6716,8 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 4ab6b5728252a7147ade643cf183afc7, type: 2}
-  gameboyAudioLevel: 0
+  gameboyAudioVolume: -6
+  prevGBvol: -6
 --- !u!143 &1787533096
 CharacterController:
   m_ObjectHideFlags: 0
