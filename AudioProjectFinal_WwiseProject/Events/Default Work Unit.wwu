@@ -89,6 +89,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="CloseDoor" ID="{C92DA750-CEA0-478A-8E30-A90F4F6A58F8}">
+					<ChildrenList>
+						<Action Name="" ID="{980B5D2D-E5D4-4BE7-8EA1-D28C975367E7}" ShortID="38885763">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Door" ID="{2A625996-DB44-4E33-BE7E-F76D416F0815}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

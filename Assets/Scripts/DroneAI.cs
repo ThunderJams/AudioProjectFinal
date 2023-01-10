@@ -228,6 +228,17 @@ public class DroneAI : MonoBehaviour
 
 
     }
+
+    // when the drone stops colliding with door
+    private void OnTriggerExit(Collider other)
+    {
+        // if we are colliding with a door
+        if (other.gameObject.tag == "Door")
+        {
+            // play the door sound
+            other.gameObject.GetComponent<Door>().doorEvent.Post(other.gameObject);
+        }
+    }
 }
 
 

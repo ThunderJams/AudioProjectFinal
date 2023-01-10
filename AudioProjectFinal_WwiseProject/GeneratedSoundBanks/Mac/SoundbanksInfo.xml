@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2984602315">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1900146710">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -19,12 +19,13 @@
 				<GameParameter Id="743094712" Name="GameBoy_Audio" ObjectPath="\Game Parameters\Default Work Unit\GameBoy_Audio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="762729592">
+		<SoundBank Id="3161908922" Language="SFX" Hash="56942914">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2385628198" Name="Footsteps" ObjectPath="\Events\Default Work Unit\Footsteps" DurationType="OneShot" DurationMin="0.17611" DurationMax="0.25573">
+				<Event Id="1405443347" Name="CloseDoor" ObjectPath="\Events\Default Work Unit\CloseDoor" MaxAttenuation="20." DurationType="OneShot" DurationMin="0.902517" DurationMax="5.6278"/>
+				<Event Id="2385628198" Name="Footsteps" ObjectPath="\Events\Default Work Unit\Footsteps" MaxAttenuation="20." DurationType="OneShot" DurationMin="0.17611" DurationMax="0.25573">
 					<IncludedMemoryFiles>
 						<File Id="76254678" Language="SFX">
 							<ShortName>cloth4.wav</ShortName>
@@ -209,6 +210,10 @@
 					<ShortName>cloth3.wav</ShortName>
 					<Path>SFX\cloth3_10C4C929.wem</Path>
 				</File>
+				<File Id="303868303" Language="SFX">
+					<ShortName>doorClose1.wav</ShortName>
+					<Path>SFX\doorClose1_10C4C929.wem</Path>
+				</File>
 				<File Id="310413332" Language="SFX">
 					<ShortName>Normal\Overworld (Normal) (loop).wav</ShortName>
 					<Path>SFX\Normal\Overworld (Normal) (loop)_D79FB2B7.wem</Path>
@@ -233,6 +238,10 @@
 					<ShortName>Normal\Overworld (Normal) (beginning).wav</ShortName>
 					<Path>SFX\Normal\Overworld (Normal) (beginning)_D79FB2B7.wem</Path>
 				</File>
+				<File Id="843878697" Language="SFX">
+					<ShortName>doorCloseLong.wav</ShortName>
+					<Path>SFX\doorCloseLong_10C4C929.wem</Path>
+				</File>
 				<File Id="861191779" Language="SFX">
 					<ShortName>Footstep3.wav</ShortName>
 					<Path>SFX\Footstep3_10C4C929.wem</Path>
@@ -240,6 +249,10 @@
 				<File Id="927854305" Language="SFX">
 					<ShortName>cloth1.wav</ShortName>
 					<Path>SFX\cloth1_10C4C929.wem</Path>
+				</File>
+				<File Id="963922745" Language="SFX">
+					<ShortName>doorSlam2.wav</ShortName>
+					<Path>SFX\doorSlam2_10C4C929.wem</Path>
 				</File>
 				<File Id="987766169" Language="SFX">
 					<ShortName>Footstep_Walking_Hardwood_04.wav</ShortName>

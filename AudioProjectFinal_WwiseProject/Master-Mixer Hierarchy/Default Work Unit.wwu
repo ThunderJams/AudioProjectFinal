@@ -13,6 +13,9 @@
 						<Bus Name="GameBoy Bus" ID="{8354D2AD-B5E1-444C-93B2-BEF7B9F591C9}">
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{A3389B10-E276-4792-85D2-00E84DA3E105}" ShortID="574404402">
 											<ReferenceList>

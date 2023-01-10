@@ -12,6 +12,10 @@ public class Gameboy : MonoBehaviour
 
     private float gbTimer = 0;
 
+    // wwise event
+    public AK.Wwise.Event pauseEvent = new AK.Wwise.Event();
+    public AK.Wwise.Event resumeEvent = new AK.Wwise.Event();
+
     // Start is called before the first frame update
     void Start()
     {

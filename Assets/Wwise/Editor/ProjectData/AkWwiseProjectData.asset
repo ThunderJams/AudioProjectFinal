@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 847a8e9c32eeaf45ac4f10eb36a60f6e
     GuidInternal: 
-    m_lastTime: -8585283215934522991
+    m_lastTime: -8585282868776224372
     List:
     - name: Footsteps Bus
       guid: 84f733c5da0bc74d877ec9133cfbfd5d
@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 9c6eebb85392204a8a923854e3a502df
     GuidInternal: 
-    m_lastTime: -8585283009064836779
+    m_lastTime: -8585282878295917895
     List:
     - name: Main
       guid: 14ae0f35319b7d45a7bb83b158c03e8d
@@ -145,8 +145,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 313890e9ec0fac47965e488ece730db3
     GuidInternal: 
-    m_lastTime: -8585283007707388868
+    m_lastTime: -8585282879099823943
     List:
+    - name: CloseDoor
+      guid: 50a72dc9a0ce8a478e30a90f4f6a58f8
+      id: 1405443347
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 313890e9ec0fac47965e488ece730db3
+      - ElementName: CloseDoor
+        ObjectType: 3
+        guid: 50a72dc9a0ce8a478e30a90f4f6a58f8
+      Path: Events\Default Work Unit\CloseDoor
+      maxAttenuation: 20
+      maxDuration: 5.6278
+      minDuration: 0.902517
     - name: Footsteps
       guid: 96378923b478f14da1367a0637efb8c7
       id: 2385628198
@@ -161,7 +178,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 96378923b478f14da1367a0637efb8c7
       Path: Events\Default Work Unit\Footsteps
-      maxAttenuation: 0
+      maxAttenuation: 20
       maxDuration: 0.25573
       minDuration: 0.17611
     - name: GB_Music
@@ -181,6 +198,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: PauseMusic
+      guid: 5dd54ecf8f466b46ba095e8c77843115
+      id: 1127073398
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 313890e9ec0fac47965e488ece730db3
+      - ElementName: PauseMusic
+        ObjectType: 3
+        guid: 5dd54ecf8f466b46ba095e8c77843115
+      Path: Events\Default Work Unit\PauseMusic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: ResumeMusic
+      guid: cc3c9ff6eac8164185f1ae81a88b4a1d
+      id: 2170724709
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 313890e9ec0fac47965e488ece730db3
+      - ElementName: ResumeMusic
+        ObjectType: 3
+        guid: cc3c9ff6eac8164185f1ae81a88b4a1d
+      Path: Events\Default Work Unit\ResumeMusic
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: StartMusic
       guid: 1fa48c9505d3a24e935d738227514c8b
       id: 3827058668

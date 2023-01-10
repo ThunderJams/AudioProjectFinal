@@ -19,11 +19,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AK.Wwise.RTPC gameboyAudio;
 
     [SerializeField]
-    [Range(-12, 12)]
+    //[Range(-12, 12)]
     private float gameboyAudioVolume = 0;
 
     [SerializeField]
-    [Range(-12, 12)]
+    //[Range(-12, 12)]
     private float prevGBvol;
 
     bool firstTimePlay = true;
@@ -35,9 +35,7 @@ public class PlayerController : MonoBehaviour
     public AK.Wwise.Switch drumsSwitch = new AK.Wwise.Switch();
     bool drumsSwitchedOn = false;
 
-    // wwise event
-    public AK.Wwise.Event pauseEvent = new AK.Wwise.Event();
-    public AK.Wwise.Event resumeEvent = new AK.Wwise.Event();
+    
 
 
 
@@ -114,11 +112,11 @@ public class PlayerController : MonoBehaviour
             if (gba.isActiveAndEnabled)
             {
                 // stop music
-                //prevGBvol = gameboyAudioVolume;
-                //gameboyAudioVolume = -50;
+                
+                gba.pauseEvent.Post(gba.gameObject);
                 gba.gameObject.SetActive(false);
 
-                pauseEvent.Post(gameObject);
+                
             }
             else
             {
@@ -129,7 +127,7 @@ public class PlayerController : MonoBehaviour
                 
                 if (firstTimePlay)
                 {
-                    mainSwitch.SetValue(gameObject);                    
+                    //mainSwitch.SetValue(gameObject);                    
                     gba.StartMusic();
                     Debug.Log("music started");
                     
@@ -137,34 +135,34 @@ public class PlayerController : MonoBehaviour
 
                 }
 
-                resumeEvent.Post(gameObject);
+                gba.resumeEvent.Post(gba.gameObject);
             }
         }
 
         // if up arrow key is pressed, increase game boy volume
-        if (Input.GetKey("up") && gameboyAudioVolume <= 12)
+        if (Input.GetKey("up") && gameboyAudioVolume <= -12)
         {
             gameboyAudioVolume += 10 * Time.deltaTime;
         }
-        else if (Input.GetKey("down") && gameboyAudioVolume >= -12)
+        else if (Input.GetKey("down") && gameboyAudioVolume >= -36)
         {
             gameboyAudioVolume -= 10 * Time.deltaTime;
         }
 
         if (gba.isActiveAndEnabled)
         {
-            if (gameboyAudioVolume > -11)
+            if (gameboyAudioVolume > -35)
             {
-                score += Time.deltaTime * (gameboyAudioVolume + 12);
+                score += Time.deltaTime * (gameboyAudioVolume + 35);
             }
             
         }
 
-        if (score > 500 && !drumsSwitchedOn)
-        {
-            Debug.Log("music switched");
-            drumsSwitchedOn = true;
-            drumsSwitch.SetValue(gameObject);
-        }
+        //if (score > 500 && !drumsSwitchedOn)
+        //{
+        //    Debug.Log("music switched");
+        //    drumsSwitchedOn = true;
+        //    drumsSwitch.SetValue(gameObject);
+        //}
     }
 }
