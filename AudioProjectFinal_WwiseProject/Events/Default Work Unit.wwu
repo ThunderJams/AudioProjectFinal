@@ -100,6 +100,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="DoorKnocking" ID="{8356336A-D295-42C5-9954-9DC2CF3B0EB1}">
+					<ChildrenList>
+						<Action Name="" ID="{38923D15-C3E2-4197-A8CE-41FB8DBA0344}" ShortID="1044348356">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Knock" ID="{055E336D-CA3F-48CD-86E5-5BEB19966370}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

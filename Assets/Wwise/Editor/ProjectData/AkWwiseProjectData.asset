@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 9c6eebb85392204a8a923854e3a502df
     GuidInternal: 
-    m_lastTime: -8585282878295917895
+    m_lastTime: -8585282028212999846
     List:
     - name: Main
       guid: 14ae0f35319b7d45a7bb83b158c03e8d
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 313890e9ec0fac47965e488ece730db3
     GuidInternal: 
-    m_lastTime: -8585282879099823943
+    m_lastTime: -8585282053307595559
     List:
     - name: CloseDoor
       guid: 50a72dc9a0ce8a478e30a90f4f6a58f8
@@ -164,6 +164,23 @@ MonoBehaviour:
       maxAttenuation: 20
       maxDuration: 5.6278
       minDuration: 0.902517
+    - name: DoorKnocking
+      guid: 6a33568395d2c54299549dc2cf3b0eb1
+      id: 2702694981
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 313890e9ec0fac47965e488ece730db3
+      - ElementName: DoorKnocking
+        ObjectType: 3
+        guid: 6a33568395d2c54299549dc2cf3b0eb1
+      Path: Events\Default Work Unit\DoorKnocking
+      maxAttenuation: 20
+      maxDuration: 1.301042
+      minDuration: 1.190417
     - name: Footsteps
       guid: 96378923b478f14da1367a0637efb8c7
       id: 2385628198

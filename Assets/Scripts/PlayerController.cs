@@ -13,18 +13,14 @@ public class PlayerController : MonoBehaviour
     // capulse collider
     [SerializeField] private CapsuleCollider feet;
 
-    [SerializeField] private Gameboy gba;
+    [SerializeField] public Gameboy gba;
 
     // wwise bus
     [SerializeField] private AK.Wwise.RTPC gameboyAudio;
 
     [SerializeField]
     //[Range(-12, 12)]
-    private float gameboyAudioVolume = 0;
-
-    [SerializeField]
-    //[Range(-12, 12)]
-    private float prevGBvol;
+    public float gameboyAudioVolume = 0;
 
     bool firstTimePlay = true;
 

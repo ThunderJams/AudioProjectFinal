@@ -28,6 +28,8 @@ public class DroneAI : MonoBehaviour
     [SerializeField] private AK.Wwise.Switch woodSwitch;
 
 
+    public AK.Wwise.Event doorKnock = new AK.Wwise.Event();
+
     /// The speed at which footstep sounds are triggered.
     [Range(0.01f, 1.0f)]
     public float footstepRate = 0.3f;
@@ -47,9 +49,16 @@ public class DroneAI : MonoBehaviour
     // int move threshold for each location
     public List<int> moveThreshold;
 
+    public Transform roomLocation;
+
     bool directionOfTravel = true;
 
     float waitCounter = 0;
+
+    bool inRoom = false;
+    bool walkingInRoom = false;
+    bool leavingRoom = false;
+    float roomTimer = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -70,13 +79,13 @@ public class DroneAI : MonoBehaviour
 
         // if we are going to a new location and are not there yet
         // and if wwise sound is not playing
-        if (locations[currentLocation].position != transform.position)
+        if (locations[currentLocation].position != transform.position && !walkingInRoom && !inRoom && !leavingRoom)
         {
             // move towards the current location
             transform.position = Vector3.MoveTowards(transform.position, locations[currentLocation].position, walkSpeed * Time.deltaTime);
             walking = true;
         }
-        else
+        else if (!walkingInRoom && !inRoom && !leavingRoom)
         {
             // call a new event or move elsewhere
             walking = false;
@@ -92,8 +101,50 @@ public class DroneAI : MonoBehaviour
             
         }
 
+        if (walkingInRoom && roomLocation.position != transform.position)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, roomLocation.position, walkSpeed * Time.deltaTime);
+            
+        }
+        else if (walkingInRoom)
+        {
+            inRoom = true;
+            walkingInRoom = false;
+            roomTimer = 3;
+        }
+        else if (roomTimer <= 0 && inRoom)
+        {
+            inRoom = false;
+            leavingRoom = true;
+        }
+
+        if (leavingRoom && locations[currentLocation].position != transform.position)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, locations[currentLocation].position, walkSpeed * Time.deltaTime);
+        }
+        else if (leavingRoom)
+        {
+            leavingRoom = false;
+
+        }
+
+        if (inRoom)
+        {
+            roomTimer -= Time.deltaTime;
+
+            
+        }
+        
+        if (walkingInRoom || inRoom || leavingRoom)
+        {
+            if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().gba.isActiveAndEnabled)
+            {
+                // fail
+            }
+        }
+
         // if we are walking, trigger footstep sounds
-        if (walking)
+        if (walking || (walkingInRoom && !inRoom) || leavingRoom)
         {
             walkCount += Time.deltaTime;
 
@@ -140,7 +191,7 @@ public class DroneAI : MonoBehaviour
             carpetSwitch.SetValue(gameObject);
         }
     }
-    
+
 
 
     // run this event AI after every event (aka sound effect)
@@ -148,9 +199,19 @@ public class DroneAI : MonoBehaviour
     void EventAI()
     {
         // generate a move threshold based on the current location
+        
         // generate a random number between 1 and 100
         int random = Random.Range(1, 100);
 
+        // use the gameboy audio level to influence the AI - the louder the gameboy, the more likely the drone will move
+        // it is slightly inefficient to Find the Player each time but this is just for ease of access for this assignment
+        if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().gba.isActiveAndEnabled)
+        {
+            int vol = (int)GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().gameboyAudioVolume;
+            vol += 50;
+            random = Random.Range(1, vol);
+        }
+        
         if (random < moveThreshold[currentLocation])
         {
             // move to the next location
@@ -175,61 +236,26 @@ public class DroneAI : MonoBehaviour
                 directionOfTravel = true;
             }
         }
+
         else
         {
-            // do event
-            // if we are in the living room
-            if (currentLocation == 4)
+            // switch statement for current location
+            switch (currentLocation)
             {
-                
+                // case 0: at player's door
+                case 0:
+                    OutsideDoorAI();
+                    break;
 
-                // if the tv is on
-                if (tv.isTVon)
-                {
-                    int random2 = Random.Range(1, 100);
-                    
-                    if (random2 <= 10)
-                    {
-                        // if tv is on - turn tv off
-                        tv.tvOff.Post(tv.gameObject);
-                        tv.isTVon = false;
-                        waitCounter = 4;
-                    }
-                    else if (tv.currentChannel != TVChannel.News)
-                    {
-                        // if static is on, switch to news
-                        
-                        // stop playing the existing sound
-                        tv.tvOff.Post(tv.gameObject);
-                        tv.newsSwitch.SetValue(tv.gameObject);
-                        tv.tv.Post(tv.gameObject);
-                        tv.currentChannel = TVChannel.News;
-                        waitCounter = 4;
-                    }
-
-                }
-                else
-                {
-                    tv.tv.Post(tv.gameObject);
-                    tv.isTVon = true;
-                    waitCounter = 3;
-                }
-                
-
-                
-
-                
-
-                
+                // case 4: in living room
+                case 4:
+                    LivingRoomAI();
+                    break;
             }
         }
-
-
-
-
     }
 
-    // when the drone stops colliding with door
+    // when the drone stops colliding with door, play a door closing sound
     private void OnTriggerExit(Collider other)
     {
         // if we are colliding with a door
@@ -237,6 +263,71 @@ public class DroneAI : MonoBehaviour
         {
             // play the door sound
             other.gameObject.GetComponent<Door>().doorEvent.Post(other.gameObject);
+        }
+    }
+
+    private void OutsideDoorAI()
+    {
+        int random = Random.Range(1, 100);        
+        if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().gba.isActiveAndEnabled)
+        {
+            int vol = (int)GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().gameboyAudioVolume;
+            vol += 50;
+            random = Random.Range(vol, 100);
+        }
+
+        
+        if (random > 50)
+        {
+            // medium chance of knocking on door
+            doorKnock.Post(gameObject);
+            waitCounter = 3;
+        }
+        else if (random < 80)
+        {
+            // low chance of entering room
+
+            // go to the positon
+            walkingInRoom = true;
+            
+        }
+        else
+        {
+            // low chance for drone to do nothing
+            waitCounter = 2;
+        }
+    }
+
+    private void LivingRoomAI()
+    {
+        // if the tv is on
+        if (tv.isTVon)
+        {
+            // random AI to switch between channels
+            int random = Random.Range(1, 100);
+            if (random <= 10)
+            {
+                // if tv is on - turn tv off
+                tv.tvOff.Post(tv.gameObject);
+                tv.isTVon = false;
+                waitCounter = 4;
+            }
+            else if (tv.currentChannel != TVChannel.News)
+            {
+                // stop playing the existing sound
+                tv.tvOff.Post(tv.gameObject);
+                tv.newsSwitch.SetValue(tv.gameObject);
+                tv.tv.Post(tv.gameObject);
+                tv.currentChannel = TVChannel.News;
+                waitCounter = 4;
+            }
+
+        }
+        else
+        {
+            tv.tv.Post(tv.gameObject);
+            tv.isTVon = true;
+            waitCounter = 3;
         }
     }
 }
