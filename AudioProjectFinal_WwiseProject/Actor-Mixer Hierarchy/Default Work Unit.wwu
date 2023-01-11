@@ -896,6 +896,36 @@
 					</ChildrenList>
 					<ObjectLists/>
 				</RandomSequenceContainer>
+				<Sound Name="PassingCar" ID="{53C7527C-22B3-4B14-A2B0-631250F6EA36}" ShortID="787015239">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="90"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="GenericAttenuation" ID="{47F5FA26-7DAB-4E3D-BDA0-445F8A4AC66D}" WorkUnitID="{29EBF851-3765-4D25-B772-69C2896CEBC0}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Ambience Bus" ID="{8D4B3240-1479-4348-80BC-DFB6551AFD12}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="PassingCar" ID="{9FCD60A7-35A3-4106-823D-CB63047C54E2}">
+							<Language>SFX</Language>
+							<AudioFile>PassingCar.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="827802886"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="PassingCar" ID="{9FCD60A7-35A3-4106-823D-CB63047C54E2}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

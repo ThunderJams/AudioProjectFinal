@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID CAR = 983016381U;
         static const AkUniqueID CLOSEDOOR = 1405443347U;
         static const AkUniqueID DOORKNOCKING = 2702694981U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
@@ -74,6 +75,7 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID AMBIENCE_BUS = 4202237879U;
         static const AkUniqueID FOOTSTEPS_BUS = 2247540952U;
         static const AkUniqueID GAMEBOY_BUS = 3261620469U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;

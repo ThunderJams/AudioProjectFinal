@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3502555508">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1542502804">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -19,11 +19,19 @@
 				<GameParameter Id="743094712" Name="GameBoy_Audio" ObjectPath="\Game Parameters\Default Work Unit\GameBoy_Audio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3186506207">
+		<SoundBank Id="3161908922" Language="SFX" Hash="897161648">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="983016381" Name="Car" ObjectPath="\Events\Default Work Unit\Car" MaxAttenuation="50." DurationType="OneShot" DurationMin="13.676167" DurationMax="13.676167">
+					<IncludedMemoryFiles>
+						<File Id="827802886" Language="SFX">
+							<ShortName>PassingCar.wav</ShortName>
+							<Path>SFX\PassingCar_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1405443347" Name="CloseDoor" ObjectPath="\Events\Default Work Unit\CloseDoor" MaxAttenuation="20." DurationType="OneShot" DurationMin="0.902517" DurationMax="5.6278"/>
 				<Event Id="2702694981" Name="DoorKnocking" ObjectPath="\Events\Default Work Unit\DoorKnocking" MaxAttenuation="20." DurationType="OneShot" DurationMin="1.190417" DurationMax="1.301042">
 					<IncludedMemoryFiles>
@@ -257,6 +265,10 @@
 				<File Id="791388537" Language="SFX">
 					<ShortName>Normal\Overworld (Normal) (beginning).wav</ShortName>
 					<Path>SFX\Normal\Overworld (Normal) (beginning)_D79FB2B7.wem</Path>
+				</File>
+				<File Id="827802886" Language="SFX">
+					<ShortName>PassingCar.wav</ShortName>
+					<Path>SFX\PassingCar_10C4C929.wem</Path>
 				</File>
 				<File Id="843878697" Language="SFX">
 					<ShortName>doorCloseLong.wav</ShortName>

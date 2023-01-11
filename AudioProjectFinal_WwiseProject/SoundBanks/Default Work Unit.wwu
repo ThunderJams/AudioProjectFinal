@@ -34,9 +34,11 @@
 						<ObjectRef Name="Knock" ID="{055E336D-CA3F-48CD-86E5-5BEB19966370}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TV" ID="{75FC9EA1-2924-4907-9791-527CB09E0FA1}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="DoorSlam" ID="{71E94759-D844-491A-885F-907A2FB2DCAF}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PassingCar" ID="{53C7527C-22B3-4B14-A2B0-631250F6EA36}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="womanCarpet3" ID="{FD32BE70-C8C4-4B94-8934-C0D7097CB911}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep_Walking_Hardwood_03" ID="{3B625B92-1693-4BA3-AFB4-B0CF645E05EA}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Main + Drums" ID="{0A6631E4-BABA-4C15-B3B2-41BFE42151F2}" WorkUnitID="{13E7F24E-7E93-4EF0-A883-76AD701D3881}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Car" ID="{A4B07B74-BC60-4C21-9050-CDB4850DDDEF}" WorkUnitID="{E9903831-0FEC-47AC-965E-488ECE730DB3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep_Walking_Hardwood_01" ID="{7521A9A6-5226-4C3D-8360-035D04F39281}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Main" ID="{BCC692A5-6321-4C5C-A1CB-09146C596CC4}" WorkUnitID="{13E7F24E-7E93-4EF0-A883-76AD701D3881}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="cloth1" ID="{23EC611C-0159-4C99-A309-D67A85AB099A}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>

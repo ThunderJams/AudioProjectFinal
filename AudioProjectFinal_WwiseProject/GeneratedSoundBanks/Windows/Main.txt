@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	463933594	GB_Music			\Default Work Unit\GB_Music	
+	983016381	Car			\Default Work Unit\Car	
 	1127073398	PauseMusic			\Default Work Unit\PauseMusic	
 	1405443347	CloseDoor			\Default Work Unit\CloseDoor	
 	1568083719	TV			\Default Work Unit\TV	
@@ -45,6 +46,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	477920797	womanCarpet1	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\womanCarpet1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\RandomCarpetF\womanCarpet1		55282
 	544270234	Knock1	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\Knock1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Knock\Knock1		228624
 	791388537	Overworld (Normal) (beginning)	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\Normal\Overworld (Normal) (beginning)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\GB_Music\Main Playlist\Intro\Overworld (Normal) (beginning)		974912
+	827802886	PassingCar	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\PassingCar_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PassingCar		2412540
 	843878697	DoorCloseLong	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\doorCloseLong_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door\DoorCloseLong		992808
 	861191779	Footstep3	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\Footstep3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\RandomFootsteps\Footstep3		24000
 	927854305	cloth1	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\cloth1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\RandomCarpetFootsteps\cloth1		18010

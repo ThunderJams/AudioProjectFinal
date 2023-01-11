@@ -52,6 +52,9 @@
 						<Bus Name="TVBus" ID="{2B539258-6559-4169-809D-C6E54B3FAB93}">
 							<ObjectLists/>
 						</Bus>
+						<Bus Name="Ambience Bus" ID="{8D4B3240-1479-4348-80BC-DFB6551AFD12}">
+							<ObjectLists/>
+						</Bus>
 					</ChildrenList>
 					<ObjectLists/>
 				</Bus>

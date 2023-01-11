@@ -27,9 +27,9 @@ public class PlayerController : MonoBehaviour
     float score = 0;
 
     // wwise switch
-    public AK.Wwise.Switch mainSwitch = new AK.Wwise.Switch();
-    public AK.Wwise.Switch drumsSwitch = new AK.Wwise.Switch();
-    bool drumsSwitchedOn = false;
+    //public AK.Wwise.Switch mainSwitch = new AK.Wwise.Switch();
+    //public AK.Wwise.Switch drumsSwitch = new AK.Wwise.Switch();
+    //bool drumsSwitchedOn = false;
 
     
 

@@ -136,7 +136,7 @@ public class DroneAI : MonoBehaviour
             
         }
         
-        if (walkingInRoom || inRoom || leavingRoom)
+        if (inRoom || leavingRoom)
         {
             if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().gba.isActiveAndEnabled)
             {

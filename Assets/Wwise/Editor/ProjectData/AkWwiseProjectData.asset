@@ -38,8 +38,25 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 847a8e9c32eeaf45ac4f10eb36a60f6e
     GuidInternal: 
-    m_lastTime: -8585282868776224372
+    m_lastTime: -8585281276989147133
     List:
+    - name: Ambience Bus
+      guid: 40324b8d7914484380bcdfb6551afd12
+      id: 4202237879
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 847a8e9c32eeaf45ac4f10eb36a60f6e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Ambience Bus
+        ObjectType: 2
+        guid: 40324b8d7914484380bcdfb6551afd12
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Ambience Bus
     - name: Footsteps Bus
       guid: 84f733c5da0bc74d877ec9133cfbfd5d
       id: 2247540952
@@ -117,7 +134,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 9c6eebb85392204a8a923854e3a502df
     GuidInternal: 
-    m_lastTime: -8585282028212999846
+    m_lastTime: -8585281276855323378
     List:
     - name: Main
       guid: 14ae0f35319b7d45a7bb83b158c03e8d
@@ -145,8 +162,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 313890e9ec0fac47965e488ece730db3
     GuidInternal: 
-    m_lastTime: -8585282053307595559
+    m_lastTime: -8585281276989027127
     List:
+    - name: Car
+      guid: 747bb0a460bc214c9050cdb4850dddef
+      id: 983016381
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 313890e9ec0fac47965e488ece730db3
+      - ElementName: Car
+        ObjectType: 3
+        guid: 747bb0a460bc214c9050cdb4850dddef
+      Path: Events\Default Work Unit\Car
+      maxAttenuation: 50
+      maxDuration: 13.676167
+      minDuration: 13.676167
     - name: CloseDoor
       guid: 50a72dc9a0ce8a478e30a90f4f6a58f8
       id: 1405443347
