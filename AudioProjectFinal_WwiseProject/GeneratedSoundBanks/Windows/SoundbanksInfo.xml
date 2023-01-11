@@ -19,12 +19,24 @@
 				<GameParameter Id="743094712" Name="GameBoy_Audio" ObjectPath="\Game Parameters\Default Work Unit\GameBoy_Audio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="56942914">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3186506207">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
 				<Event Id="1405443347" Name="CloseDoor" ObjectPath="\Events\Default Work Unit\CloseDoor" MaxAttenuation="20." DurationType="OneShot" DurationMin="0.902517" DurationMax="5.6278"/>
+				<Event Id="2702694981" Name="DoorKnocking" ObjectPath="\Events\Default Work Unit\DoorKnocking" MaxAttenuation="20." DurationType="OneShot" DurationMin="1.190417" DurationMax="1.301042">
+					<IncludedMemoryFiles>
+						<File Id="6089813" Language="SFX">
+							<ShortName>Knock2.wav</ShortName>
+							<Path>SFX\Knock2_10C4C929.wem</Path>
+						</File>
+						<File Id="544270234" Language="SFX">
+							<ShortName>Knock1.wav</ShortName>
+							<Path>SFX\Knock1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2385628198" Name="Footsteps" ObjectPath="\Events\Default Work Unit\Footsteps" MaxAttenuation="20." DurationType="OneShot" DurationMin="0.17611" DurationMax="0.25573">
 					<IncludedMemoryFiles>
 						<File Id="76254678" Language="SFX">
@@ -174,6 +186,10 @@
 					<ShortName>Footstep2.wav</ShortName>
 					<Path>SFX\Footstep2_10C4C929.wem</Path>
 				</File>
+				<File Id="6089813" Language="SFX">
+					<ShortName>Knock2.wav</ShortName>
+					<Path>SFX\Knock2_10C4C929.wem</Path>
+				</File>
 				<File Id="76254678" Language="SFX">
 					<ShortName>cloth4.wav</ShortName>
 					<Path>SFX\cloth4_10C4C929.wem</Path>
@@ -233,6 +249,10 @@
 				<File Id="477920797" Language="SFX">
 					<ShortName>womanCarpet1.wav</ShortName>
 					<Path>SFX\womanCarpet1_10C4C929.wem</Path>
+				</File>
+				<File Id="544270234" Language="SFX">
+					<ShortName>Knock1.wav</ShortName>
+					<Path>SFX\Knock1_10C4C929.wem</Path>
 				</File>
 				<File Id="791388537" Language="SFX">
 					<ShortName>Normal\Overworld (Normal) (beginning).wav</ShortName>

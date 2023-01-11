@@ -59,6 +59,7 @@ public class DroneAI : MonoBehaviour
     bool walkingInRoom = false;
     bool leavingRoom = false;
     float roomTimer = 0;
+    bool justLeftRoom = true;
 
     // Start is called before the first frame update
     void Start()
@@ -125,7 +126,7 @@ public class DroneAI : MonoBehaviour
         else if (leavingRoom)
         {
             leavingRoom = false;
-
+            justLeftRoom = true;
         }
 
         if (inRoom)
@@ -235,6 +236,8 @@ public class DroneAI : MonoBehaviour
                 currentLocation = 1;
                 directionOfTravel = true;
             }
+
+            justLeftRoom = false;
         }
 
         else
@@ -244,7 +247,11 @@ public class DroneAI : MonoBehaviour
             {
                 // case 0: at player's door
                 case 0:
-                    OutsideDoorAI();
+                    if (!justLeftRoom)
+                    {
+                        OutsideDoorAI();
+                    }
+                    
                     break;
 
                 // case 4: in living room

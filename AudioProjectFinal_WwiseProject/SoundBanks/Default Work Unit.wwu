@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{350FAE14-9B31-457D-A7BB-83B158C03E8D}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Knock1" ID="{B0820D79-842A-4029-8228-3B59DD904343}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="DoorCloseLong" ID="{B2DA4100-52DA-402D-AE1B-FD4B9CC2B37C}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TVNews" ID="{5C9E3C66-DC5D-405C-A64A-0F0CC7B5D078}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Intro + Drums" ID="{DF9FACEC-901D-40A7-B414-6E2D5787BDF9}" WorkUnitID="{13E7F24E-7E93-4EF0-A883-76AD701D3881}" Origin="Manual" Filter="7"/>
@@ -16,11 +17,13 @@
 						<ObjectRef Name="Footstep_Walking_Hardwood_04" ID="{93041766-A709-4173-BED0-272672586F67}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RandomCarpetFootsteps" ID="{6B6D3B21-7AFD-41CA-8B40-E1484C5C1932}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep2" ID="{FBA9012D-55FD-4277-B003-5ADB9FE69C41}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="DoorKnocking" ID="{8356336A-D295-42C5-9954-9DC2CF3B0EB1}" WorkUnitID="{E9903831-0FEC-47AC-965E-488ECE730DB3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RandomFootstepsOnWood" ID="{BE992481-7D04-42E3-97BF-FFBF68154DE6}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RandomCarpetF" ID="{D3939672-AC22-4314-9D87-8ABC5B256D84}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RandomFootsteps" ID="{034E4822-6BA7-4339-82C3-B22941585F75}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep_Walking_Hardwood_02" ID="{0D247B56-8495-439E-8AA9-625E2411AB9A}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="GB_Music" ID="{18C459D8-61C2-4459-AEA1-D3F40FAC6D3C}" WorkUnitID="{13E7F24E-7E93-4EF0-A883-76AD701D3881}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Knock2" ID="{7B28A232-6465-4488-BB18-16491E099BC2}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep_Walking_Hardwood_05" ID="{8BD4BBD8-FF3B-44CB-B801-6FA5AE8C2529}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep_Walking_Hardwood_06" ID="{87E48CE7-6918-44D4-BEF5-31F9F8688831}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PauseMusic" ID="{CF4ED55D-468F-466B-BA09-5E8C77843115}" WorkUnitID="{E9903831-0FEC-47AC-965E-488ECE730DB3}" Origin="Manual" Filter="7"/>
@@ -28,6 +31,7 @@
 						<ObjectRef Name="DoorClose" ID="{0A6367FB-789E-46CE-BF5A-3EFFCB4030EE}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="womanCarpet1" ID="{9719E391-54C2-4813-847C-1D84F334D527}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="GB_Music" ID="{44CFBC9D-85ED-4852-BB53-A589F9F7DD88}" WorkUnitID="{E9903831-0FEC-47AC-965E-488ECE730DB3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Knock" ID="{055E336D-CA3F-48CD-86E5-5BEB19966370}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TV" ID="{75FC9EA1-2924-4907-9791-527CB09E0FA1}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="DoorSlam" ID="{71E94759-D844-491A-885F-907A2FB2DCAF}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="womanCarpet3" ID="{FD32BE70-C8C4-4B94-8934-C0D7097CB911}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>

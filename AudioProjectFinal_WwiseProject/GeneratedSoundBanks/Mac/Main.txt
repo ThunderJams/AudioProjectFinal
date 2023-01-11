@@ -5,6 +5,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1568083719	TV			\Default Work Unit\TV	
 	2170724709	ResumeMusic			\Default Work Unit\ResumeMusic	
 	2385628198	Footsteps			\Default Work Unit\Footsteps	
+	2702694981	DoorKnocking			\Default Work Unit\DoorKnocking	
 	2896649166	TVOff			\Default Work Unit\TVOff	
 	3827058668	StartMusic			\Default Work Unit\StartMusic	
 
@@ -26,6 +27,7 @@ Effect plug-ins	ID	Name	Type				Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	5282315	Footstep2	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Mac\SFX\Footstep2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\RandomFootsteps\Footstep2		28864
+	6089813	Knock2	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Mac\SFX\Knock2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Knock\Knock2		249864
 	76254678	cloth4	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Mac\SFX\cloth4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\RandomCarpetFootsteps\cloth4		18010
 	78163868	cloth2	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Mac\SFX\cloth2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\RandomCarpetFootsteps\cloth2		18010
 	104374374	Footstep_Walking_Hardwood_06	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Mac\SFX\Footstep_Walking_Hardwood_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\RandomFootstepsOnWood\Footstep_Walking_Hardwood_06		25232
@@ -41,6 +43,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	396427189	Overworld (Yoshi) (loop)	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Mac\SFX\Yoshi\Overworld (Yoshi) (loop)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\GB_Music\Additional Playlist\Main + Drums\Overworld (Yoshi) (loop)		6940156
 	441661625	womanCarpet3	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Mac\SFX\womanCarpet3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\RandomCarpetF\womanCarpet3		62184
 	477920797	womanCarpet1	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Mac\SFX\womanCarpet1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\RandomCarpetF\womanCarpet1		55282
+	544270234	Knock1	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Mac\SFX\Knock1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Knock\Knock1		228624
 	791388537	Overworld (Normal) (beginning)	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Mac\SFX\Normal\Overworld (Normal) (beginning)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\GB_Music\Main Playlist\Intro\Overworld (Normal) (beginning)		974912
 	843878697	DoorCloseLong	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Mac\SFX\doorCloseLong_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Door\DoorCloseLong		992808
 	861191779	Footstep3	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Mac\SFX\Footstep3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\RandomFootsteps\Footstep3		24000
