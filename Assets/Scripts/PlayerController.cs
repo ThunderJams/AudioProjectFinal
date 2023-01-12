@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// This script is attached to the player, and it is used to control the player's movement.
+// If player movement is disabled, this mostly just controls opening and closing the GBA
+// Many of the variables are self explanitory for player movement and/or redundant with the Drone AI script
 public class PlayerController : MonoBehaviour
 {
     CharacterController characterController;
@@ -13,33 +16,29 @@ public class PlayerController : MonoBehaviour
     // capulse collider
     [SerializeField] private CapsuleCollider feet;
 
+    // reference to the gba
     [SerializeField] public Gameboy gba;
 
-    // wwise bus
+    // RTPC for interfacing with the volume of the GameBoyBus in Wwise
     [SerializeField] private AK.Wwise.RTPC gameboyAudio;
-
-    [SerializeField]
-    //[Range(-12, 12)]
-    public float gameboyAudioVolume = 0;
+    [SerializeField] public float gameboyAudioVolume = 0;
 
     bool firstTimePlay = true;
-
     public float score = 0;
 
+    // Wwise events for the footsteps
     public AK.Wwise.Event footsteps = new AK.Wwise.Event();
     [SerializeField] private AK.Wwise.Switch carpetSwitch;
     [SerializeField] private AK.Wwise.Switch woodSwitch;
 
-    ///	Used to determine when to trigger footstep sounds.
+    //	Used to determine when to trigger footstep sounds.
     private float walkCount = 0.0f;
 
-    /// The speed at which footstep sounds are triggered.
+    // The speed at which footstep sounds are triggered.
     [Range(0.01f, 1.0f)]
     public float footstepRate = 0.3f;
 
 
-
-    // start
     void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -48,7 +47,7 @@ public class PlayerController : MonoBehaviour
     // update
     void Update()
     {
-        // IF ESCAPE, CLOSE APPLICATION
+        // if Escape is pressed, close the application
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
@@ -59,11 +58,12 @@ public class PlayerController : MonoBehaviour
         {
             movementEnabled = !movementEnabled;
         }
-        
-        
 
+        // call function for interfacing with the gameboy
+        // this is called regardless of the movementEnabled variable
         GameBoy();
 
+        // set the volume of the GBBus in Wwise to the gameboyAudioVolume variable
         gameboyAudio.SetGlobalValue(gameboyAudioVolume);
 
         if (movementEnabled)
@@ -71,10 +71,6 @@ public class PlayerController : MonoBehaviour
             // get input
             float horizontal = Input.GetAxis("Horizontal");
             float vertical = Input.GetAxis("Vertical");
-
-            //// move
-            //Vector3 direction = new Vector3(horizontal, 0, vertical);
-            //characterController.Move(-direction * Time.deltaTime * speed);
 
             // move respective of camera direction
             Vector3 forward = Camera.main.transform.forward;
@@ -111,6 +107,9 @@ public class PlayerController : MonoBehaviour
         
     }
 
+    // Floor Check function - this is implemented through the use of an invisible collider below the player/drone called the "feet"
+    // If the "feet" overlap with the floor, and that floor is carpet, we switch to the carpet footsteps in Wwise
+    // If the "feet" overlap with the floor, and that floor is wood, we switch to the wood footsteps in Wwise
     void FloorCheck()
     {
         floorBelow = FloorType.None;
@@ -136,13 +135,12 @@ public class PlayerController : MonoBehaviour
 
     void GameBoy()
     {
-        // if G is pressed
+        // if G is pressed, enable or disable the gameboy
         if (Input.GetKeyDown(KeyCode.G))
         {
             if (gba.isActiveAndEnabled)
             {
-                // stop music
-                
+                // pause music
                 gba.pauseEvent.Post(gba.gameObject);
                 gba.gameObject.SetActive(false);
 
@@ -150,14 +148,11 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                //gameboyAudioVolume = prevGBvol;
                 gba.gameObject.SetActive(true);
-                
-                
-                
+
+                // opn first play, this posts the GBA music - every other time it simply resumes the existing music
                 if (firstTimePlay)
-                {
-                    //mainSwitch.SetValue(gameObject);                    
+                {                   
                     gba.StartMusic();
                     Debug.Log("music started");
                     
@@ -169,7 +164,8 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        // if up arrow key is pressed, increase game boy volume
+        // if up arrow key is pressed, increase game boy volume, and vice versa
+        // a range is used so that the player cannot completely mute the GBA, and/or turn it up too loud
         if (Input.GetKey("up") && gameboyAudioVolume <= -12)
         {
             gameboyAudioVolume += 10 * Time.deltaTime;
@@ -179,6 +175,7 @@ public class PlayerController : MonoBehaviour
             gameboyAudioVolume -= 10 * Time.deltaTime;
         }
 
+        // increase the players score if the GBA is open. This is called at the end of the Game
         if (gba.isActiveAndEnabled)
         {
             if (gameboyAudioVolume > -35)
@@ -187,12 +184,5 @@ public class PlayerController : MonoBehaviour
             }
             
         }
-
-        //if (score > 500 && !drumsSwitchedOn)
-        //{
-        //    Debug.Log("music switched");
-        //    drumsSwitchedOn = true;
-        //    drumsSwitch.SetValue(gameObject);
-        //}
     }
 }

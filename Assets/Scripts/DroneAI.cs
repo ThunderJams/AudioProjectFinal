@@ -97,9 +97,11 @@ public class DroneAI : MonoBehaviour
             // call a new event or move elsewhere
             walking = false;
 
-            // Each event has a "wait counter", that represents how long the AI should wait before moving on
+            // Each event has a "wait counter", that represents how long the AI should wait before calling a new event
+            // If we are waiting, simply decremenmt the counter
             if (waitCounter <= 0)
             {
+                // calls a new event (either moving to a new location, or playing a sound at the current location)
                 EventAI();
             }
             else
@@ -109,6 +111,7 @@ public class DroneAI : MonoBehaviour
             
         }
 
+        // code for moving the player into the room - determined by the OutsideDoorAI() function
         if (walkingInRoom && roomLocation.position != transform.position)
         {
             transform.position = Vector3.MoveTowards(transform.position, roomLocation.position, walkSpeed * Time.deltaTime);
@@ -126,6 +129,8 @@ public class DroneAI : MonoBehaviour
             leavingRoom = true;
         }
 
+        // code for leaving the room
+        // the "justLeftRoom" variable is used to prevent the AI from immediately moving back into the room - to make the movement patterns feel more realistic
         if (leavingRoom && locations[currentLocation].position != transform.position)
         {
             transform.position = Vector3.MoveTowards(transform.position, locations[currentLocation].position, walkSpeed * Time.deltaTime);
@@ -135,14 +140,12 @@ public class DroneAI : MonoBehaviour
             leavingRoom = false;
             justLeftRoom = true;
         }
-
         if (inRoom)
         {
             roomTimer -= Time.deltaTime;
-
-            
         }
         
+        // if the AI is in the room and the player has thier GBA open, fail the game
         if ((inRoom || leavingRoom) && gameRunning && player.movementEnabled)
         {
             if (player.gba.isActiveAndEnabled)
@@ -168,6 +171,7 @@ public class DroneAI : MonoBehaviour
             }
         }
 
+        // check the floor below each frame - used for playing the appropraite footsteps
         FloorCheck();
         
         // if floor below is none, get affected by gravity
@@ -176,11 +180,11 @@ public class DroneAI : MonoBehaviour
             cc.Move(Vector3.down * Time.deltaTime * 9.8f);
         }
 
-        // debug log what terrain we are standing on
-        //Debug.Log(floorBelow);
-
     }
 
+    // Floor Check function - this is implemented through the use of an invisible collider below the player/drone called the "feet"
+    // If the "feet" overlap with the floor, and that floor is carpet, we switch to the carpet footsteps in Wwise
+    // If the "feet" overlap with the floor, and that floor is wood, we switch to the wood footsteps in Wwise
     void FloorCheck()
     {
         floorBelow = FloorType.None;
@@ -210,20 +214,20 @@ public class DroneAI : MonoBehaviour
     // or after we have moved to a new location
     void EventAI()
     {
-        // generate a move threshold based on the current location
-        
         // generate a random number between 1 and 100
         int random = Random.Range(1, 100);
 
         // use the gameboy audio level to influence the AI - the louder the gameboy, the more likely the drone will move
-        // it is slightly inefficient to Find the Player each time but this is just for ease of access for this assignment
         if (player.gba.isActiveAndEnabled)
         {
             int vol = (int)player.gameboyAudioVolume;
             vol += 50;
             random = Random.Range(1, vol);
         }
-        
+
+        // if the randomly generated number is within the locations "move threshold", then we move to the new location
+        // the move threshold is a value between 1 and 100 that represents the likelihood of the AI moving to a new location at the corrosponding location
+        // for example, this number is 100% in the hallway, meaing the AI will never stop in the hallway
         if (random < moveThreshold[currentLocation])
         {
             // move to the next location
@@ -258,6 +262,7 @@ public class DroneAI : MonoBehaviour
             {
                 // case 0: at player's door
                 case 0:
+                    // if the drone has just left the room, they will not re-enter it until they go back upstairs
                     if (!justLeftRoom)
                     {
                         OutsideDoorAI();
@@ -284,8 +289,10 @@ public class DroneAI : MonoBehaviour
         }
     }
 
+    // Function for determining the AI's actions directly outside the door
     private void OutsideDoorAI()
     {
+        // Actions are randomised - with said random value being influenced by the gameboy audio level
         int random = Random.Range(1, 100);        
         if (player.gba.isActiveAndEnabled)
         {
@@ -304,18 +311,18 @@ public class DroneAI : MonoBehaviour
         else if (random < 80)
         {
             // low chance of entering room
-
-            // go to the positon
             walkingInRoom = true;
             
         }
         else
         {
-            // low chance for drone to do nothing
+            // low chance for drone to do nothing - to increase suspense
             waitCounter = 2;
         }
     }
 
+    // Function for determining the AI's actions in the living room
+    // The AI just switches on the TV and flicks through the channels
     private void LivingRoomAI()
     {
         // if the tv is on
