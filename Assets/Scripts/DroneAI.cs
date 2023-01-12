@@ -301,18 +301,17 @@ public class DroneAI : MonoBehaviour
             random = Random.Range(vol, 100);
         }
 
-        
-        if (random > 50)
+        if (random > 80)
+        {
+            // low chance of entering room
+            walkingInRoom = true;
+
+        }
+        else if (random > 50)
         {
             // medium chance of knocking on door
             doorKnock.Post(gameObject);
             waitCounter = 3;
-        }
-        else if (random < 80)
-        {
-            // low chance of entering room
-            walkingInRoom = true;
-            
         }
         else
         {
