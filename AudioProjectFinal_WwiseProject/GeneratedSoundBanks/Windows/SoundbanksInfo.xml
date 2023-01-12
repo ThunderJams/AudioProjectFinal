@@ -11,15 +11,21 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2928778967">
+		<SoundBank Id="1355168291" Language="SFX" Hash="787033163">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="28587383" Name="LivingRoom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb\LivingRoom"/>
+				<AuxBus Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb"/>
+				<AuxBus Id="2198133169" Name="Hallway" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb\Hallway"/>
+				<AuxBus Id="3788924735" Name="Bedroom" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb\Bedroom"/>
+			</IncludedAuxBusses>
 			<GameParameters>
 				<GameParameter Id="743094712" Name="GameBoy_Audio" ObjectPath="\Game Parameters\Default Work Unit\GameBoy_Audio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3679924174">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1504401268">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -28,7 +34,7 @@
 					<IncludedMemoryFiles>
 						<File Id="827802886" Language="SFX">
 							<ShortName>PassingCar.wav</ShortName>
-							<Path>SFX\PassingCar_10C4C929.wem</Path>
+							<Path>SFX\PassingCar_B09F49DF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -111,20 +117,21 @@
 					</SwitchContainers>
 				</Event>
 				<Event Id="1127073398" Name="PauseMusic" ObjectPath="\Events\Default Work Unit\PauseMusic" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1681012287" Name="PlayerFootsteps" ObjectPath="\Events\Default Work Unit\PlayerFootsteps" DurationType="OneShot" DurationMin="0.309063" DurationMax="0.768146"/>
 				<Event Id="2170724709" Name="ResumeMusic" ObjectPath="\Events\Default Work Unit\ResumeMusic" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="3827058668" Name="StartMusic" ObjectPath="\Events\Default Work Unit\StartMusic" MaxAttenuation="100." DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="310413332" Language="SFX">
-							<ShortName>Normal\Overworld (Normal) (loop).wav</ShortName>
-							<Path>SFX\Normal\Overworld (Normal) (loop)_D79FB2B7.wem</Path>
-						</File>
-						<File Id="396427189" Language="SFX">
-							<ShortName>Yoshi\Overworld (Yoshi) (loop).wav</ShortName>
-							<Path>SFX\Yoshi\Overworld (Yoshi) (loop)_D79FB2B7.wem</Path>
-						</File>
-						<File Id="791388537" Language="SFX">
+						<File Id="205731052" Language="SFX">
 							<ShortName>Normal\Overworld (Normal) (beginning).wav</ShortName>
-							<Path>SFX\Normal\Overworld (Normal) (beginning)_D79FB2B7.wem</Path>
+							<Path>SFX\Normal\Overworld (Normal) (beginning)_9EDFC787.wem</Path>
+						</File>
+						<File Id="466818155" Language="SFX">
+							<ShortName>Normal\Overworld (Normal) (loop).wav</ShortName>
+							<Path>SFX\Normal\Overworld (Normal) (loop)_9EDFC787.wem</Path>
+						</File>
+						<File Id="469235757" Language="SFX">
+							<ShortName>Yoshi\Overworld (Yoshi) (loop).wav</ShortName>
+							<Path>SFX\Yoshi\Overworld (Yoshi) (loop)_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -132,11 +139,11 @@
 					<IncludedMemoryFiles>
 						<File Id="167514482" Language="SFX">
 							<ShortName>TVStatic.wav</ShortName>
-							<Path>SFX\TVStatic_D79FB2B7.wem</Path>
+							<Path>SFX\TVStatic_4811579D.wem</Path>
 						</File>
 						<File Id="1039977825" Language="SFX">
 							<ShortName>TVNews.wav</ShortName>
-							<Path>SFX\TVNews_D79FB2B7.wem</Path>
+							<Path>SFX\TVNews_4811579D.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{65258556-A82D-41B8-B6A4-442BA0CF2429}</DefaultSwitchValue>
@@ -172,6 +179,10 @@
 					<ShortName>cloth2.wav</ShortName>
 					<Path>SFX\cloth2_10C4C929.wem</Path>
 				</File>
+				<File Id="82595701" Language="SFX">
+					<ShortName>PlayerCarpet2.wav</ShortName>
+					<Path>SFX\PlayerCarpet2_10C4C929.wem</Path>
+				</File>
 				<File Id="104374374" Language="SFX">
 					<ShortName>Footstep_Walking_Hardwood_06.wav</ShortName>
 					<Path>SFX\Footstep_Walking_Hardwood_06_10C4C929.wem</Path>
@@ -186,7 +197,7 @@
 				</File>
 				<File Id="167514482" Language="SFX">
 					<ShortName>TVStatic.wav</ShortName>
-					<Path>SFX\TVStatic_D79FB2B7.wem</Path>
+					<Path>SFX\TVStatic_4811579D.wem</Path>
 				</File>
 				<File Id="267028213" Language="SFX">
 					<ShortName>Footstep_Walking_Hardwood_01.wav</ShortName>
@@ -195,6 +206,10 @@
 				<File Id="287944606" Language="SFX">
 					<ShortName>cloth3.wav</ShortName>
 					<Path>SFX\cloth3_10C4C929.wem</Path>
+				</File>
+				<File Id="302040718" Language="SFX">
+					<ShortName>PlayerWood2.wav</ShortName>
+					<Path>SFX\PlayerWood2_10C4C929.wem</Path>
 				</File>
 				<File Id="303868303" Language="SFX">
 					<ShortName>doorClose1.wav</ShortName>
@@ -212,13 +227,21 @@
 					<ShortName>womanCarpet1.wav</ShortName>
 					<Path>SFX\womanCarpet1_10C4C929.wem</Path>
 				</File>
+				<File Id="512489392" Language="SFX">
+					<ShortName>PlayerCarpet1.wav</ShortName>
+					<Path>SFX\PlayerCarpet1_10C4C929.wem</Path>
+				</File>
 				<File Id="544270234" Language="SFX">
 					<ShortName>Knock1.wav</ShortName>
 					<Path>SFX\Knock1_10C4C929.wem</Path>
 				</File>
+				<File Id="734340477" Language="SFX">
+					<ShortName>PlayerWood3.wav</ShortName>
+					<Path>SFX\PlayerWood3_10C4C929.wem</Path>
+				</File>
 				<File Id="827802886" Language="SFX">
 					<ShortName>PassingCar.wav</ShortName>
-					<Path>SFX\PassingCar_10C4C929.wem</Path>
+					<Path>SFX\PassingCar_B09F49DF.wem</Path>
 				</File>
 				<File Id="843878697" Language="SFX">
 					<ShortName>doorCloseLong.wav</ShortName>
@@ -227,6 +250,10 @@
 				<File Id="861191779" Language="SFX">
 					<ShortName>Footstep3.wav</ShortName>
 					<Path>SFX\Footstep3_10C4C929.wem</Path>
+				</File>
+				<File Id="905563057" Language="SFX">
+					<ShortName>PlayerWood1.wav</ShortName>
+					<Path>SFX\PlayerWood1_10C4C929.wem</Path>
 				</File>
 				<File Id="927854305" Language="SFX">
 					<ShortName>cloth1.wav</ShortName>
@@ -240,6 +267,10 @@
 					<ShortName>Footstep_Walking_Hardwood_04.wav</ShortName>
 					<Path>SFX\Footstep_Walking_Hardwood_04_10C4C929.wem</Path>
 				</File>
+				<File Id="1011065318" Language="SFX">
+					<ShortName>PlayerCarpet3.wav</ShortName>
+					<Path>SFX\PlayerCarpet3_10C4C929.wem</Path>
+				</File>
 				<File Id="1033927115" Language="SFX">
 					<ShortName>Footstep1.wav</ShortName>
 					<Path>SFX\Footstep1_10C4C929.wem</Path>
@@ -250,7 +281,7 @@
 				</File>
 				<File Id="1039977825" Language="SFX">
 					<ShortName>TVNews.wav</ShortName>
-					<Path>SFX\TVNews_D79FB2B7.wem</Path>
+					<Path>SFX\TVNews_4811579D.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 			<SwitchGroups>
@@ -258,6 +289,12 @@
 					<Switches>
 						<Switch Id="1409504247" Name="Static" ObjectPath="\Switches\Default Work Unit\TV\Static" GUID="{65258556-A82D-41B8-B6A4-442BA0CF2429}"/>
 						<Switch Id="898907948" Name="News" ObjectPath="\Switches\Default Work Unit\TV\News" GUID="{E7EBA029-249A-419B-B462-FD76543654DD}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="1681012287" Name="PlayerFootsteps" ObjectPath="\Switches\Default Work Unit\PlayerFootsteps" GUID="{9F607224-9C6B-4F47-97D1-3CC837D62E5E}">
+					<Switches>
+						<Switch Id="2412606308" Name="Carpet" ObjectPath="\Switches\Default Work Unit\PlayerFootsteps\Carpet" GUID="{B045F0C0-F8F0-43C2-A94B-4DC009AFC045}"/>
+						<Switch Id="2058049674" Name="Wood" ObjectPath="\Switches\Default Work Unit\PlayerFootsteps\Wood" GUID="{6A89771E-712A-4703-B3D2-1AE046E29572}"/>
 					</Switches>
 				</SwitchGroup>
 				<SwitchGroup Id="2385628198" Name="Footsteps" ObjectPath="\Switches\Default Work Unit\Footsteps" GUID="{83EE5126-1392-43BE-83A3-F5B22BA74E02}">

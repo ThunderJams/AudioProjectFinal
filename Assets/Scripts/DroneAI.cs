@@ -68,10 +68,13 @@ public class DroneAI : MonoBehaviour
     public TextMeshProUGUI endingText;
     bool gameRunning = true;
 
+    PlayerController player;
+
     // Start is called before the first frame update
     void Start()
     {
         cc = GetComponent<CharacterController>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
@@ -143,14 +146,14 @@ public class DroneAI : MonoBehaviour
             
         }
         
-        if ((inRoom || leavingRoom) && gameRunning)
+        if ((inRoom || leavingRoom) && gameRunning && player.movementEnabled)
         {
-            if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().gba.isActiveAndEnabled)
+            if (player.gba.isActiveAndEnabled)
             {
                 // fail
                 hudImage.SetActive(false);
                 endingImage.SetActive(true);
-                endingText.text = "You were caught!" + "\n" + "You kept the GBA open for " + GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().gba.GetTimer() + " seconds." + "\n" + "You earned " + GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().score + " points." + "\n" + "Press Esc to Close Application.";
+                endingText.text = "You were caught!" + "\n" + "You kept the GBA open for " + player.gba.GetTimer() + " seconds." + "\n" + "You earned " + player.score + " points." + "\n" + "Press Esc to Close Application.";
                 gameRunning = false;
             }
         }
@@ -217,9 +220,9 @@ public class DroneAI : MonoBehaviour
 
         // use the gameboy audio level to influence the AI - the louder the gameboy, the more likely the drone will move
         // it is slightly inefficient to Find the Player each time but this is just for ease of access for this assignment
-        if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().gba.isActiveAndEnabled)
+        if (player.gba.isActiveAndEnabled)
         {
-            int vol = (int)GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().gameboyAudioVolume;
+            int vol = (int)player.gameboyAudioVolume;
             vol += 50;
             random = Random.Range(1, vol);
         }
@@ -287,9 +290,9 @@ public class DroneAI : MonoBehaviour
     private void OutsideDoorAI()
     {
         int random = Random.Range(1, 100);        
-        if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().gba.isActiveAndEnabled)
+        if (player.gba.isActiveAndEnabled)
         {
-            int vol = (int)GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().gameboyAudioVolume;
+            int vol = (int)player.gameboyAudioVolume;
             vol += 50;
             random = Random.Range(vol, 100);
         }

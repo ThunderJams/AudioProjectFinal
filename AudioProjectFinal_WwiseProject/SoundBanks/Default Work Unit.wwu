@@ -8,6 +8,7 @@
 						<ObjectRef Name="Knock1" ID="{B0820D79-842A-4029-8228-3B59DD904343}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="DoorCloseLong" ID="{B2DA4100-52DA-402D-AE1B-FD4B9CC2B37C}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TVNews" ID="{5C9E3C66-DC5D-405C-A64A-0F0CC7B5D078}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayerWood3" ID="{C8BB850D-17DD-40BF-B2B3-A4F2311EDA4A}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ResumeMusic" ID="{F69F3CCC-C8EA-4116-85F1-AE81A88B4A1D}" WorkUnitID="{E9903831-0FEC-47AC-965E-488ECE730DB3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="womanCarpet2" ID="{634ACE7F-52D0-4145-AB67-6FCF2C0884BB}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footsteps" ID="{24BA8E53-409B-4149-88C9-3023ED49B6DF}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
@@ -16,6 +17,7 @@
 						<ObjectRef Name="Footstep_Walking_Hardwood_04" ID="{93041766-A709-4173-BED0-272672586F67}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RandomCarpetFootsteps" ID="{6B6D3B21-7AFD-41CA-8B40-E1484C5C1932}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep2" ID="{FBA9012D-55FD-4277-B003-5ADB9FE69C41}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayerWood2" ID="{888C995D-C66F-42B9-BDEB-C3D6DAB2E0F4}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="DoorKnocking" ID="{8356336A-D295-42C5-9954-9DC2CF3B0EB1}" WorkUnitID="{E9903831-0FEC-47AC-965E-488ECE730DB3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RandomFootstepsOnWood" ID="{BE992481-7D04-42E3-97BF-FFBF68154DE6}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RandomCarpetF" ID="{D3939672-AC22-4314-9D87-8ABC5B256D84}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
@@ -25,26 +27,33 @@
 						<ObjectRef Name="Footstep_Walking_Hardwood_05" ID="{8BD4BBD8-FF3B-44CB-B801-6FA5AE8C2529}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep_Walking_Hardwood_06" ID="{87E48CE7-6918-44D4-BEF5-31F9F8688831}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PauseMusic" ID="{CF4ED55D-468F-466B-BA09-5E8C77843115}" WorkUnitID="{E9903831-0FEC-47AC-965E-488ECE730DB3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="RandomCarpetPlayer" ID="{04E8EFFA-C79A-469E-A3B0-7C1AA8C12D3D}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep3" ID="{19074968-4D10-46C7-A073-64B2E1655422}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="DoorClose" ID="{0A6367FB-789E-46CE-BF5A-3EFFCB4030EE}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="womanCarpet1" ID="{9719E391-54C2-4813-847C-1D84F334D527}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="RandomWoodPlayer" ID="{36B67EF0-2E77-4857-848A-70F38FDD351C}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Knock" ID="{055E336D-CA3F-48CD-86E5-5BEB19966370}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TV" ID="{75FC9EA1-2924-4907-9791-527CB09E0FA1}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="DoorSlam" ID="{71E94759-D844-491A-885F-907A2FB2DCAF}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Player Footsteps" ID="{0CF5E2CD-7AE8-4979-AF9F-401F8D4187A4}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PassingCar" ID="{53C7527C-22B3-4B14-A2B0-631250F6EA36}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="womanCarpet3" ID="{FD32BE70-C8C4-4B94-8934-C0D7097CB911}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep_Walking_Hardwood_03" ID="{3B625B92-1693-4BA3-AFB4-B0CF645E05EA}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Car" ID="{A4B07B74-BC60-4C21-9050-CDB4850DDDEF}" WorkUnitID="{E9903831-0FEC-47AC-965E-488ECE730DB3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep_Walking_Hardwood_01" ID="{7521A9A6-5226-4C3D-8360-035D04F39281}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayerCarpet1" ID="{404714F6-AD4B-4C74-A5FD-6144EB7D1ED6}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="cloth1" ID="{23EC611C-0159-4C99-A309-D67A85AB099A}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep1" ID="{431B0394-1D2E-4D85-B498-82DA157B521C}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayerCarpet2" ID="{74F0CD5E-78B5-4D9D-8DD0-716894C6DB70}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TVStatic" ID="{D81A6AFF-46CB-4DE9-AA74-FB1B0235A381}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footsteps" ID="{23893796-78B4-4DF1-A136-7A0637EFB8C7}" WorkUnitID="{E9903831-0FEC-47AC-965E-488ECE730DB3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TV" ID="{1453E022-C02F-4DF1-B77C-9456B61138B6}" WorkUnitID="{E9903831-0FEC-47AC-965E-488ECE730DB3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Door" ID="{2A625996-DB44-4E33-BE7E-F76D416F0815}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="StartMusic" ID="{958CA41F-D305-4EA2-935D-738227514C8B}" WorkUnitID="{E9903831-0FEC-47AC-965E-488ECE730DB3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="cloth4" ID="{2FB0D449-E135-4EE7-84C5-68777501402B}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayerCarpet3" ID="{A436E689-8176-4EFD-ADF8-0AD271CAF6A9}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TVOff" ID="{A33D048C-FC69-4F4D-BAC5-14F7D87E7C3D}" WorkUnitID="{E9903831-0FEC-47AC-965E-488ECE730DB3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayerWood1" ID="{291D0119-2B09-4FA2-B076-BBE425C816D6}" WorkUnitID="{94821554-1153-4220-90A1-5BCDA3B87363}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

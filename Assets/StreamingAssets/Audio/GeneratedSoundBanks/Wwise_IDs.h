@@ -18,6 +18,7 @@ namespace AK
         static const AkUniqueID DOORKNOCKING = 2702694981U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID PAUSEMUSIC = 1127073398U;
+        static const AkUniqueID PLAYERFOOTSTEPS = 1681012287U;
         static const AkUniqueID RESUMEMUSIC = 2170724709U;
         static const AkUniqueID STARTMUSIC = 3827058668U;
         static const AkUniqueID TV = 1568083719U;
@@ -47,6 +48,17 @@ namespace AK
                 static const AkUniqueID MAIN_LOOP = 3813340491U;
             } // namespace SWITCH
         } // namespace GAMEBOY
+
+        namespace PLAYERFOOTSTEPS
+        {
+            static const AkUniqueID GROUP = 1681012287U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CARPET = 2412606308U;
+                static const AkUniqueID WOOD = 2058049674U;
+            } // namespace SWITCH
+        } // namespace PLAYERFOOTSTEPS
 
         namespace TV
         {
@@ -80,6 +92,14 @@ namespace AK
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID TVBUS = 2342546307U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID BEDROOM = 3788924735U;
+        static const AkUniqueID HALLWAY = 2198133169U;
+        static const AkUniqueID LIVINGROOM = 28587383U;
+        static const AkUniqueID REVERB = 348963605U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {

@@ -3,9 +3,10 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{A4FCB931-9F57-46D4-88BC-7A3C153418C7}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Ewan\Unity Projects\AudioProjectFinal\Assets\Audio\Door\"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Ewan\Unity Projects\AudioProjectFinal\Assets\Audio\Footsteps\Wood\"/>
 				<Property Name="Event Action List\{1453E022-C02F-4DF1-B77C-9456B61138B6}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{23893796-78B4-4DF1-A136-7A0637EFB8C7}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{41DB088E-09A4-4EB8-8E98-0C80C163E351}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{44CFBC9D-85ED-4852-BB53-A589F9F7DD88}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{48CBAE13-E714-4026-93B6-720B1C9D5441}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{8131ADB2-FA4F-4AE6-8F27-E02C09C133C2}\x64_Expand States" Type="string" Value=""/>

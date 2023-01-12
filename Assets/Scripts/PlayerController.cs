@@ -26,12 +26,16 @@ public class PlayerController : MonoBehaviour
 
     public float score = 0;
 
-    // wwise switch
-    //public AK.Wwise.Switch mainSwitch = new AK.Wwise.Switch();
-    //public AK.Wwise.Switch drumsSwitch = new AK.Wwise.Switch();
-    //bool drumsSwitchedOn = false;
+    public AK.Wwise.Event footsteps = new AK.Wwise.Event();
+    [SerializeField] private AK.Wwise.Switch carpetSwitch;
+    [SerializeField] private AK.Wwise.Switch woodSwitch;
 
-    
+    ///	Used to determine when to trigger footstep sounds.
+    private float walkCount = 0.0f;
+
+    /// The speed at which footstep sounds are triggered.
+    [Range(0.01f, 1.0f)]
+    public float footstepRate = 0.3f;
 
 
 
@@ -49,6 +53,14 @@ public class PlayerController : MonoBehaviour
         {
             Application.Quit();
         }
+
+        // if Q pressed, toggle movement
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            movementEnabled = !movementEnabled;
+        }
+        
+        
 
         GameBoy();
 
@@ -74,7 +86,21 @@ public class PlayerController : MonoBehaviour
             Vector3 desiredMoveDirection = forward * vertical + right * horizontal;
             characterController.Move(desiredMoveDirection * Time.deltaTime * speed);
 
+            // check which surface we are currently on
             FloorCheck();
+
+            // if we are walking, trigger footstep sounds
+            if (horizontal != 0 || vertical != 0)
+            {
+                walkCount += Time.deltaTime;
+
+                if (walkCount > footstepRate)
+                {
+                    footsteps.Post(gameObject);
+
+                    walkCount = 0.0f;
+                }
+            }            
 
             // if floor below is none, get affected by gravity
             if (floorBelow == FloorType.None)
@@ -95,6 +121,7 @@ public class PlayerController : MonoBehaviour
         if (hitColliders.Length > 0)
         {
             floorBelow = FloorType.Floor;
+            woodSwitch.SetValue(gameObject);
         }
 
         // feet overlap circle
@@ -103,6 +130,7 @@ public class PlayerController : MonoBehaviour
         if (hitColliders2.Length > 0)
         {
             floorBelow = FloorType.Carpet;
+            carpetSwitch.SetValue(gameObject);
         }
     }
 

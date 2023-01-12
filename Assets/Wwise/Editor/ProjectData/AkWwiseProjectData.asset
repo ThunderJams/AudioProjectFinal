@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 847a8e9c32eeaf45ac4f10eb36a60f6e
     GuidInternal: 
-    m_lastTime: -8585281276989147133
+    m_lastTime: -8585281048910843537
     List:
     - name: Ambience Bus
       guid: 40324b8d7914484380bcdfb6551afd12
@@ -57,6 +57,26 @@ MonoBehaviour:
         ObjectType: 2
         guid: 40324b8d7914484380bcdfb6551afd12
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Ambience Bus
+    - name: Bedroom
+      guid: 964b68330f8b0c4a9d4781b5b4072a6c
+      id: 3788924735
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 847a8e9c32eeaf45ac4f10eb36a60f6e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Reverb
+        ObjectType: 1
+        guid: 544b3fbe6886594b94fb0f11c992271c
+      - ElementName: Bedroom
+        ObjectType: 1
+        guid: 964b68330f8b0c4a9d4781b5b4072a6c
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb\Bedroom
     - name: Footsteps Bus
       guid: 84f733c5da0bc74d877ec9133cfbfd5d
       id: 2247540952
@@ -91,6 +111,46 @@ MonoBehaviour:
         ObjectType: 2
         guid: add25483e1b54c4493b2bef7b9f591c9
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GameBoy Bus
+    - name: Hallway
+      guid: 69a23bf77f7c16478b286c4d5509bd2a
+      id: 2198133169
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 847a8e9c32eeaf45ac4f10eb36a60f6e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Reverb
+        ObjectType: 1
+        guid: 544b3fbe6886594b94fb0f11c992271c
+      - ElementName: Hallway
+        ObjectType: 1
+        guid: 69a23bf77f7c16478b286c4d5509bd2a
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb\Hallway
+    - name: LivingRoom
+      guid: 97833fad8c99c3498cbcf5b20bf89b1e
+      id: 28587383
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 847a8e9c32eeaf45ac4f10eb36a60f6e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Reverb
+        ObjectType: 1
+        guid: 544b3fbe6886594b94fb0f11c992271c
+      - ElementName: LivingRoom
+        ObjectType: 1
+        guid: 97833fad8c99c3498cbcf5b20bf89b1e
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb\LivingRoom
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -105,6 +165,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Reverb
+      guid: 544b3fbe6886594b94fb0f11c992271c
+      id: 348963605
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 847a8e9c32eeaf45ac4f10eb36a60f6e
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Reverb
+        ObjectType: 1
+        guid: 544b3fbe6886594b94fb0f11c992271c
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb
     - name: TVBus
       guid: 5892532b59656941809dc6e54b3fab93
       id: 2342546307
@@ -134,7 +211,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 9c6eebb85392204a8a923854e3a502df
     GuidInternal: 
-    m_lastTime: -8585281276855323378
+    m_lastTime: -8585280999995077692
     List:
     - name: Main
       guid: 14ae0f35319b7d45a7bb83b158c03e8d
@@ -162,7 +239,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 313890e9ec0fac47965e488ece730db3
     GuidInternal: 
-    m_lastTime: -8585281276989027127
+    m_lastTime: -8585281004682940435
     List:
     - name: Car
       guid: 747bb0a460bc214c9050cdb4850dddef
@@ -232,23 +309,6 @@ MonoBehaviour:
       maxAttenuation: 20
       maxDuration: 0.25573
       minDuration: 0.17611
-    - name: GB_Music
-      guid: 9dbccf44ed855248bb53a589f9f7dd88
-      id: 463933594
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 313890e9ec0fac47965e488ece730db3
-      - ElementName: GB_Music
-        ObjectType: 3
-        guid: 9dbccf44ed855248bb53a589f9f7dd88
-      Path: Events\Default Work Unit\GB_Music
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: PauseMusic
       guid: 5dd54ecf8f466b46ba095e8c77843115
       id: 1127073398
@@ -266,6 +326,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: PlayerFootsteps
+      guid: 8e08db41a409b84e8e980c80c163e351
+      id: 1681012287
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 313890e9ec0fac47965e488ece730db3
+      - ElementName: PlayerFootsteps
+        ObjectType: 3
+        guid: 8e08db41a409b84e8e980c80c163e351
+      Path: Events\Default Work Unit\PlayerFootsteps
+      maxAttenuation: 0
+      maxDuration: 0.768146
+      minDuration: 0.309063
     - name: ResumeMusic
       guid: cc3c9ff6eac8164185f1ae81a88b4a1d
       id: 2170724709
@@ -297,7 +374,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 1fa48c9505d3a24e935d738227514c8b
       Path: Events\Default Work Unit\StartMusic
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
     - name: TV
@@ -388,7 +465,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 54cfbe0b97a7604685872bb00518f602
     GuidInternal: 
-    m_lastTime: -8585283010978078413
+    m_lastTime: -8585281005128555212
     List:
     - name: Footsteps
       guid: 2651ee839213be4383a3f5b22ba74e02
@@ -490,6 +567,56 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: PlayerFootsteps
+      guid: 2472609f6b9c474f97d13cc837d62e5e
+      id: 1681012287
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 54cfbe0b97a7604685872bb00518f602
+      - ElementName: PlayerFootsteps
+        ObjectType: 11
+        guid: 2472609f6b9c474f97d13cc837d62e5e
+      Path: Switches\Default Work Unit\PlayerFootsteps
+      values:
+      - name: Carpet
+        guid: c0f045b0f0f8c243a94b4dc009afc045
+        id: 2412606308
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 54cfbe0b97a7604685872bb00518f602
+        - ElementName: PlayerFootsteps
+          ObjectType: 11
+          guid: 2472609f6b9c474f97d13cc837d62e5e
+        - ElementName: Carpet
+          ObjectType: 10
+          guid: c0f045b0f0f8c243a94b4dc009afc045
+      - name: Wood
+        guid: 1e77896a2a710347b3d21ae046e29572
+        id: 2058049674
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 54cfbe0b97a7604685872bb00518f602
+        - ElementName: PlayerFootsteps
+          ObjectType: 11
+          guid: 2472609f6b9c474f97d13cc837d62e5e
+        - ElementName: Wood
+          ObjectType: 10
+          guid: 1e77896a2a710347b3d21ae046e29572
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: TV
       guid: 4d5ef3b1031753478ea08be2d11e655a
       id: 1568083719
@@ -555,7 +682,7 @@ MonoBehaviour:
     m_lastTime: -8585291504995917688
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000006000000070000000a0000000b00000010000000110000001300000014000000150000001700000018000000
+  ExpandedWaapiItemIds: 010000000200000003000000040000000500000006000000070000000a0000000b000000100000001100000013000000140000001500000017000000180000001b0000001f0000005e0000005f0000006000000065060000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

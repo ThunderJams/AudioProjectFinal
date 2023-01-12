@@ -7,6 +7,7 @@
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="85"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -618,7 +619,50 @@
 				<SwitchContainer Name="TV" ID="{75FC9EA1-2924-4907-9791-527CB09E0FA1}" ShortID="440152187">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+							<Custom CreatedFrom="{6D1B890C-9826-4384-BF07-C15223E9FB56}">
+								<Conversion Name="Default Conversion Settings (Custom)" ID="{ECF3231F-36D1-460C-8D94-6C9B7A02FDB2}">
+									<PropertyList>
+										<Property Name="Channels" Type="int32">
+											<ValueList>
+												<Value Platform="Mac">4</Value>
+												<Value Platform="Windows">4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="LRMix" Type="Real64">
+											<ValueList>
+												<Value Platform="Mac">0</Value>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MaxSampleRate" Type="int32">
+											<ValueList>
+												<Value Platform="Mac">0</Value>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MinSampleRate" Type="int32">
+											<ValueList>
+												<Value Platform="Mac">0</Value>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="SampleRate" Type="int32">
+											<ValueList>
+												<Value Platform="Mac">0</Value>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ConversionPluginInfoList>
+										<ConversionPluginInfo Platform="Mac">
+											<ConversionPlugin Name="" ID="{13D665F0-4A07-444C-B362-95D80842BFD6}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
+										</ConversionPluginInfo>
+										<ConversionPluginInfo Platform="Windows">
+											<ConversionPlugin Name="" ID="{4DCF818B-B0D8-4361-90D1-4AF8543C5083}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
+										</ConversionPluginInfo>
+									</ConversionPluginInfoList>
+								</Conversion>
+							</Custom>
 						</Reference>
 						<Reference Name="DefaultSwitchOrState">
 							<ObjectRef Name="Static" ID="{65258556-A82D-41B8-B6A4-442BA0CF2429}" WorkUnitID="{0BBECF54-A797-4660-8587-2BB00518F602}"/>
@@ -742,6 +786,7 @@
 				<RandomSequenceContainer Name="Door" ID="{2A625996-DB44-4E33-BE7E-F76D416F0815}" ShortID="1069680329">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -835,6 +880,9 @@
 					<ObjectLists/>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Knock" ID="{055E336D-CA3F-48CD-86E5-5BEB19966370}" ShortID="705234201">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<ObjectRef Name="Door Attenuation" ID="{2C429161-D880-4E49-AED4-BF4E7CB78ED9}" WorkUnitID="{29EBF851-3765-4D25-B772-69C2896CEBC0}"/>
@@ -906,7 +954,50 @@
 							<ObjectRef Name="GenericAttenuation" ID="{47F5FA26-7DAB-4E3D-BDA0-445F8A4AC66D}" WorkUnitID="{29EBF851-3765-4D25-B772-69C2896CEBC0}"/>
 						</Reference>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+							<Custom CreatedFrom="{6D1B890C-9826-4384-BF07-C15223E9FB56}">
+								<Conversion Name="Default Conversion Settings (Custom)" ID="{5B48FBA9-F083-429B-B021-D1FBF24067BF}">
+									<PropertyList>
+										<Property Name="Channels" Type="int32">
+											<ValueList>
+												<Value Platform="Mac">4</Value>
+												<Value Platform="Windows">4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="LRMix" Type="Real64">
+											<ValueList>
+												<Value Platform="Mac">0</Value>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MaxSampleRate" Type="int32">
+											<ValueList>
+												<Value Platform="Mac">0</Value>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MinSampleRate" Type="int32">
+											<ValueList>
+												<Value Platform="Mac">0</Value>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+										<Property Name="SampleRate" Type="int32">
+											<ValueList>
+												<Value Platform="Mac">0</Value>
+												<Value Platform="Windows">0</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ConversionPluginInfoList>
+										<ConversionPluginInfo Platform="Mac">
+											<ConversionPlugin Name="" ID="{2A98D77E-D889-4C39-99BA-AFF410E30CC0}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
+										</ConversionPluginInfo>
+										<ConversionPluginInfo Platform="Windows">
+											<ConversionPlugin Name="" ID="{90985C21-CB20-4F08-8C32-FA986FE0F695}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
+										</ConversionPluginInfo>
+									</ConversionPluginInfoList>
+								</Conversion>
+							</Custom>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Ambience Bus" ID="{8D4B3240-1479-4348-80BC-DFB6551AFD12}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
@@ -926,6 +1017,216 @@
 						<ActiveSource Name="PassingCar" ID="{9FCD60A7-35A3-4106-823D-CB63047C54E2}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<SwitchContainer Name="Player Footsteps" ID="{0CF5E2CD-7AE8-4979-AF9F-401F8D4187A4}" ShortID="967411929">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Wood" ID="{6A89771E-712A-4703-B3D2-1AE046E29572}" WorkUnitID="{0BBECF54-A797-4660-8587-2BB00518F602}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Footsteps Bus" ID="{C533F784-0BDA-4DC7-877E-C9133CFBFD5D}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="PlayerFootsteps" ID="{9F607224-9C6B-4F47-97D1-3CC837D62E5E}" WorkUnitID="{0BBECF54-A797-4660-8587-2BB00518F602}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="RandomCarpetPlayer" ID="{04E8EFFA-C79A-469E-A3B0-7C1AA8C12D3D}" ShortID="218195688">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="PlayerCarpet1" ID="{404714F6-AD4B-4C74-A5FD-6144EB7D1ED6}" ShortID="282244254">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PlayerCarpet1" ID="{2AE5414E-6138-4207-883A-B68D0B50AAF3}">
+											<Language>SFX</Language>
+											<AudioFile>PlayerCarpet1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="512489392"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="PlayerCarpet1" ID="{2AE5414E-6138-4207-883A-B68D0B50AAF3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PlayerCarpet2" ID="{74F0CD5E-78B5-4D9D-8DD0-716894C6DB70}" ShortID="1060026482">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PlayerCarpet2" ID="{BC8C7FAA-4CF1-4733-B276-1A5DD965D43F}">
+											<Language>SFX</Language>
+											<AudioFile>PlayerCarpet2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="82595701"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="PlayerCarpet2" ID="{BC8C7FAA-4CF1-4733-B276-1A5DD965D43F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PlayerCarpet3" ID="{A436E689-8176-4EFD-ADF8-0AD271CAF6A9}" ShortID="235857664">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PlayerCarpet3" ID="{9D673720-5FC0-4766-B214-97932A71D7E8}">
+											<Language>SFX</Language>
+											<AudioFile>PlayerCarpet3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1011065318"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="PlayerCarpet3" ID="{9D673720-5FC0-4766-B214-97932A71D7E8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="RandomWoodPlayer" ID="{36B67EF0-2E77-4857-848A-70F38FDD351C}" ShortID="1064138436">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="PlayerWood1" ID="{291D0119-2B09-4FA2-B076-BBE425C816D6}" ShortID="577067075">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PlayerWood1" ID="{372BF44D-9617-4E7E-9A7E-7BB9DF158156}">
+											<Language>SFX</Language>
+											<AudioFile>PlayerWood1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="905563057"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="PlayerWood1" ID="{372BF44D-9617-4E7E-9A7E-7BB9DF158156}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PlayerWood2" ID="{888C995D-C66F-42B9-BDEB-C3D6DAB2E0F4}" ShortID="856716440">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PlayerWood2" ID="{26DB922B-E42D-45F3-B101-4A7ECE05EB0B}">
+											<Language>SFX</Language>
+											<AudioFile>PlayerWood2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="302040718"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="PlayerWood2" ID="{26DB922B-E42D-45F3-B101-4A7ECE05EB0B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PlayerWood3" ID="{C8BB850D-17DD-40BF-B2B3-A4F2311EDA4A}" ShortID="143437825">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A4C528C5-552F-4FF3-9739-64E301BE84C6}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PlayerWood3" ID="{0471DE1E-43CE-4897-A0C4-B902956C08EB}">
+											<Language>SFX</Language>
+											<AudioFile>PlayerWood3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="734340477"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="PlayerWood3" ID="{0471DE1E-43CE-4897-A0C4-B902956C08EB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists/>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="RandomWoodPlayer" ID="{36B67EF0-2E77-4857-848A-70F38FDD351C}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="RandomCarpetPlayer" ID="{04E8EFFA-C79A-469E-A3B0-7C1AA8C12D3D}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Wood" ID="{6A89771E-712A-4703-B3D2-1AE046E29572}"/>
+								<ItemList>
+									<ItemRef Name="RandomWoodPlayer" ID="{36B67EF0-2E77-4857-848A-70F38FDD351C}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Carpet" ID="{B045F0C0-F8F0-43C2-A94B-4DC009AFC045}"/>
+								<ItemList>
+									<ItemRef Name="RandomCarpetPlayer" ID="{04E8EFFA-C79A-469E-A3B0-7C1AA8C12D3D}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

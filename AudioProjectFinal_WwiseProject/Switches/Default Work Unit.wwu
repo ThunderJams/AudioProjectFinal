@@ -21,6 +21,12 @@
 						<Switch Name="Additional_Loop" ID="{D1FA960C-D835-4743-A377-A7C9536F32AA}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="PlayerFootsteps" ID="{9F607224-9C6B-4F47-97D1-3CC837D62E5E}">
+					<ChildrenList>
+						<Switch Name="Carpet" ID="{B045F0C0-F8F0-43C2-A94B-4DC009AFC045}"/>
+						<Switch Name="Wood" ID="{6A89771E-712A-4703-B3D2-1AE046E29572}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>
