@@ -20,16 +20,4 @@ public class Television : MonoBehaviour
 
     public bool isTVon = false;
     public TVChannel currentChannel = TVChannel.Static;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

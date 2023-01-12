@@ -391,7 +391,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 22e053142fc0f14db77c9456b61138b6
       Path: Events\Default Work Unit\TV
-      maxAttenuation: 0
+      maxAttenuation: 30
       maxDuration: -1
       minDuration: -1
     - name: TVOff

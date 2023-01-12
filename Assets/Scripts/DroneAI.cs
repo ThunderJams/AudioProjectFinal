@@ -16,23 +16,23 @@ enum FloorType
 
 public class DroneAI : MonoBehaviour
 {
+    
     CharacterController cc;
     public Television tv;
-    private float internalTimer = 0;
-    private bool goingLeft = false;
     private FloorType floorBelow = FloorType.None;
 
     // capulse collider
     [SerializeField] private CapsuleCollider feet;
 
+    // wwise variables for the footsteps
     public AK.Wwise.Event footsteps = new AK.Wwise.Event();
     [SerializeField] private AK.Wwise.Switch carpetSwitch;
     [SerializeField] private AK.Wwise.Switch woodSwitch;
 
-
+    // wwise event for the door knocking
     public AK.Wwise.Event doorKnock = new AK.Wwise.Event();
 
-    /// The speed at which footstep sounds are triggered.
+    // The speed at which footstep sounds are triggered.
     [Range(0.01f, 1.0f)]
     public float footstepRate = 0.3f;
 
@@ -40,34 +40,39 @@ public class DroneAI : MonoBehaviour
     [Range(0.01f, 5.0f)]    
     public float walkSpeed = 1.0f;
 
-    ///	Used to determine when to trigger footstep sounds.
+    //	Used to determine when to trigger footstep sounds.
 	private bool walking = true;
-    ///	Used to determine when to trigger footstep sounds.
     private float walkCount = 0.0f;
 
+    // This collection of variables is used to determine the simple path that the AI follows
+    // The AI is given a list of locations it can go to, and back and forth
     public int currentLocation;
     // public list of transforms
     public List<Transform> locations;
     // int move threshold for each location
     public List<int> moveThreshold;
-
     public Transform roomLocation;
-
     bool directionOfTravel = true;
 
+    // timer for the AI to wait - not moving or performing events
     float waitCounter = 0;
 
+    // Variables for the AI walking into the player's room
+    // This is very messy and there are definetly better ways to implement this.
+    // I just wanted a quick solution to get it working, to be cleaned up if this was a larger scale project
     bool inRoom = false;
     bool walkingInRoom = false;
     bool leavingRoom = false;
     float roomTimer = 0;
     bool justLeftRoom = true;
 
+    // variables for the ending screen
     public GameObject hudImage;
     public GameObject endingImage;
     public TextMeshProUGUI endingText;
     bool gameRunning = true;
 
+    // reference to the player
     PlayerController player;
 
     // Start is called before the first frame update
@@ -80,19 +85,10 @@ public class DroneAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        internalTimer += Time.deltaTime;
-        // alternate moving left and right on a cycle
-        if (internalTimer > 5)
-        {
-            internalTimer = 0;
-            goingLeft = !goingLeft;
-        }
-
-        // if we are going to a new location and are not there yet
-        // and if wwise sound is not playing
+        // if we are going to a new location and are not there yet, move towards the current location
+        // the additional conditions are exceptions for if the drone is walking into the player's room
         if (locations[currentLocation].position != transform.position && !walkingInRoom && !inRoom && !leavingRoom)
         {
-            // move towards the current location
             transform.position = Vector3.MoveTowards(transform.position, locations[currentLocation].position, walkSpeed * Time.deltaTime);
             walking = true;
         }
@@ -101,6 +97,7 @@ public class DroneAI : MonoBehaviour
             // call a new event or move elsewhere
             walking = false;
 
+            // Each event has a "wait counter", that represents how long the AI should wait before moving on
             if (waitCounter <= 0)
             {
                 EventAI();

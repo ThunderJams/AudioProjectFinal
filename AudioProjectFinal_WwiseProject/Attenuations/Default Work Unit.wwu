@@ -74,6 +74,13 @@
 				</Attenuation>
 				<Attenuation Name="TV Attenuation" ID="{00FF16E2-D213-4AED-8D98-7F5A8175D9F0}" ShortID="1025611598">
 					<PropertyList>
+						<Property Name="ConeInnerAngle" Type="int32" Value="40"/>
+						<Property Name="ConeLowPassFilterValue" Type="int32">
+							<ValueList>
+								<Value>36</Value>
+							</ValueList>
+						</Property>
+						<Property Name="ConeOuterAngle" Type="int32" Value="105"/>
 						<Property Name="ConeUse" Type="bool">
 							<ValueList>
 								<Value>True</Value>

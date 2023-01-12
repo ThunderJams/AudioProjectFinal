@@ -25,7 +25,7 @@ Switch	ID	Name	Switch Group			Notes
 
 Effect plug-ins	ID	Name	Type				Notes
 	2135883084	Nasty_Radio	Wwise Peak Limiter			
-	3157398371	Few_Odd_Harm_Notches	Wwise Flanger			
+	2202047219	Few_Even_Notches	Wwise Flanger			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	5282315	Footstep2	C:\Users\Ewan\Unity Projects\AudioProjectFinal\AudioProjectFinal_WwiseProject\.cache\Windows\SFX\Footstep2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\RandomFootsteps\Footstep2		28864

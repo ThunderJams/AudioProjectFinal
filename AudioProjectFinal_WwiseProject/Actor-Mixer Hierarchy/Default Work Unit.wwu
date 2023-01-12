@@ -617,7 +617,17 @@
 					</GroupingInfo>
 				</SwitchContainer>
 				<SwitchContainer Name="TV" ID="{75FC9EA1-2924-4907-9791-527CB09E0FA1}" ShortID="440152187">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>28</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="TV Attenuation" ID="{00FF16E2-D213-4AED-8D98-7F5A8175D9F0}" WorkUnitID="{29EBF851-3765-4D25-B772-69C2896CEBC0}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<Custom CreatedFrom="{6D1B890C-9826-4384-BF07-C15223E9FB56}">
 								<Conversion Name="Default Conversion Settings (Custom)" ID="{ECF3231F-36D1-460C-8D94-6C9B7A02FDB2}">
@@ -668,7 +678,7 @@
 							<ObjectRef Name="Static" ID="{65258556-A82D-41B8-B6A4-442BA0CF2429}" WorkUnitID="{0BBECF54-A797-4660-8587-2BB00518F602}"/>
 						</Reference>
 						<Reference Name="Effect0" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
-							<ObjectRef Name="Few_Odd_Harm_Notches" ID="{3B5685A6-6274-4292-B5B9-32AFE28DB80B}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+							<ObjectRef Name="Few_Even_Notches" ID="{25DCAC4B-7165-436C-9B22-75628C2533D1}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="TVBus" ID="{2B539258-6559-4169-809D-C6E54B3FAB93}" WorkUnitID="{9C8E7A84-EE32-45AF-AC4F-10EB36A60F6E}"/>
