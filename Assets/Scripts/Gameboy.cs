@@ -6,10 +6,7 @@ public class Gameboy : MonoBehaviour
 {
     // wwise event for music on
     public AK.Wwise.Event musicOn;
-
-    // wwise event for music off
-    public AK.Wwise.Event musicOff;
-
+    
     private float gbTimer = 0;
 
     // wwise event

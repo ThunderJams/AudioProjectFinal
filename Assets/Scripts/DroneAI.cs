@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 // enum for floor types
 enum FloorType
@@ -60,6 +62,11 @@ public class DroneAI : MonoBehaviour
     bool leavingRoom = false;
     float roomTimer = 0;
     bool justLeftRoom = true;
+
+    public GameObject hudImage;
+    public GameObject endingImage;
+    public TextMeshProUGUI endingText;
+    bool gameRunning = true;
 
     // Start is called before the first frame update
     void Start()
@@ -136,11 +143,15 @@ public class DroneAI : MonoBehaviour
             
         }
         
-        if (inRoom || leavingRoom)
+        if ((inRoom || leavingRoom) && gameRunning)
         {
             if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().gba.isActiveAndEnabled)
             {
                 // fail
+                hudImage.SetActive(false);
+                endingImage.SetActive(true);
+                endingText.text = "You were caught!" + "\n" + "You kept the GBA open for " + GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().gba.GetTimer() + " seconds." + "\n" + "You earned " + GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().score + " points." + "\n" + "Press Esc to Close Application.";
+                gameRunning = false;
             }
         }
 

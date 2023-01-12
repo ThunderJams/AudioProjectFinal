@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
 
     bool firstTimePlay = true;
 
-    float score = 0;
+    public float score = 0;
 
     // wwise switch
     //public AK.Wwise.Switch mainSwitch = new AK.Wwise.Switch();
@@ -44,6 +44,12 @@ public class PlayerController : MonoBehaviour
     // update
     void Update()
     {
+        // IF ESCAPE, CLOSE APPLICATION
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
         GameBoy();
 
         gameboyAudio.SetGlobalValue(gameboyAudioVolume);

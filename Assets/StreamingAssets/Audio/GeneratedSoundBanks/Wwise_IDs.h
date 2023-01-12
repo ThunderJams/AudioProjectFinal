@@ -17,7 +17,6 @@ namespace AK
         static const AkUniqueID CLOSEDOOR = 1405443347U;
         static const AkUniqueID DOORKNOCKING = 2702694981U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
-        static const AkUniqueID GB_MUSIC = 463933594U;
         static const AkUniqueID PAUSEMUSIC = 1127073398U;
         static const AkUniqueID RESUMEMUSIC = 2170724709U;
         static const AkUniqueID STARTMUSIC = 3827058668U;

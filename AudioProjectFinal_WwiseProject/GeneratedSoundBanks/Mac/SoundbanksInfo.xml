@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3140505398">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2326860105">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -19,7 +19,7 @@
 				<GameParameter Id="743094712" Name="GameBoy_Audio" ObjectPath="\Game Parameters\Default Work Unit\GameBoy_Audio"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="897161648">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3679924174">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -110,43 +110,9 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="463933594" Name="GB_Music" ObjectPath="\Events\Default Work Unit\GB_Music" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="213614345" Language="SFX">
-							<ShortName>Yoshi\Overworld (Yoshi) (beginning).wav</ShortName>
-							<Path>SFX\Yoshi\Overworld (Yoshi) (beginning)_D79FB2B7.wem</Path>
-						</File>
-						<File Id="310413332" Language="SFX">
-							<ShortName>Normal\Overworld (Normal) (loop).wav</ShortName>
-							<Path>SFX\Normal\Overworld (Normal) (loop)_D79FB2B7.wem</Path>
-						</File>
-						<File Id="396427189" Language="SFX">
-							<ShortName>Yoshi\Overworld (Yoshi) (loop).wav</ShortName>
-							<Path>SFX\Yoshi\Overworld (Yoshi) (loop)_D79FB2B7.wem</Path>
-						</File>
-						<File Id="791388537" Language="SFX">
-							<ShortName>Normal\Overworld (Normal) (beginning).wav</ShortName>
-							<Path>SFX\Normal\Overworld (Normal) (beginning)_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-					<SwitchContainers>
-						<SwitchContainer SwitchValue="{86B782AE-3200-42CE-B1E2-44C114CE0925}">
-							<Media>
-								<File Id="310413332"/>
-								<File Id="791388537"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{D1FA960C-D835-4743-A377-A7C9536F32AA}">
-							<Media>
-								<File Id="213614345"/>
-								<File Id="396427189"/>
-							</Media>
-						</SwitchContainer>
-					</SwitchContainers>
-				</Event>
 				<Event Id="1127073398" Name="PauseMusic" ObjectPath="\Events\Default Work Unit\PauseMusic" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="2170724709" Name="ResumeMusic" ObjectPath="\Events\Default Work Unit\ResumeMusic" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="3827058668" Name="StartMusic" ObjectPath="\Events\Default Work Unit\StartMusic" DurationType="Infinite">
+				<Event Id="3827058668" Name="StartMusic" ObjectPath="\Events\Default Work Unit\StartMusic" MaxAttenuation="100." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="310413332" Language="SFX">
 							<ShortName>Normal\Overworld (Normal) (loop).wav</ShortName>
@@ -222,10 +188,6 @@
 					<ShortName>TVStatic.wav</ShortName>
 					<Path>SFX\TVStatic_D79FB2B7.wem</Path>
 				</File>
-				<File Id="213614345" Language="SFX">
-					<ShortName>Yoshi\Overworld (Yoshi) (beginning).wav</ShortName>
-					<Path>SFX\Yoshi\Overworld (Yoshi) (beginning)_D79FB2B7.wem</Path>
-				</File>
 				<File Id="267028213" Language="SFX">
 					<ShortName>Footstep_Walking_Hardwood_01.wav</ShortName>
 					<Path>SFX\Footstep_Walking_Hardwood_01_10C4C929.wem</Path>
@@ -238,17 +200,9 @@
 					<ShortName>doorClose1.wav</ShortName>
 					<Path>SFX\doorClose1_10C4C929.wem</Path>
 				</File>
-				<File Id="310413332" Language="SFX">
-					<ShortName>Normal\Overworld (Normal) (loop).wav</ShortName>
-					<Path>SFX\Normal\Overworld (Normal) (loop)_D79FB2B7.wem</Path>
-				</File>
 				<File Id="346463506" Language="SFX">
 					<ShortName>Footstep_Walking_Hardwood_05.wav</ShortName>
 					<Path>SFX\Footstep_Walking_Hardwood_05_10C4C929.wem</Path>
-				</File>
-				<File Id="396427189" Language="SFX">
-					<ShortName>Yoshi\Overworld (Yoshi) (loop).wav</ShortName>
-					<Path>SFX\Yoshi\Overworld (Yoshi) (loop)_D79FB2B7.wem</Path>
 				</File>
 				<File Id="441661625" Language="SFX">
 					<ShortName>womanCarpet3.wav</ShortName>
@@ -261,10 +215,6 @@
 				<File Id="544270234" Language="SFX">
 					<ShortName>Knock1.wav</ShortName>
 					<Path>SFX\Knock1_10C4C929.wem</Path>
-				</File>
-				<File Id="791388537" Language="SFX">
-					<ShortName>Normal\Overworld (Normal) (beginning).wav</ShortName>
-					<Path>SFX\Normal\Overworld (Normal) (beginning)_D79FB2B7.wem</Path>
 				</File>
 				<File Id="827802886" Language="SFX">
 					<ShortName>PassingCar.wav</ShortName>
@@ -308,12 +258,6 @@
 					<Switches>
 						<Switch Id="1409504247" Name="Static" ObjectPath="\Switches\Default Work Unit\TV\Static" GUID="{65258556-A82D-41B8-B6A4-442BA0CF2429}"/>
 						<Switch Id="898907948" Name="News" ObjectPath="\Switches\Default Work Unit\TV\News" GUID="{E7EBA029-249A-419B-B462-FD76543654DD}"/>
-					</Switches>
-				</SwitchGroup>
-				<SwitchGroup Id="2215897303" Name="Gameboy" ObjectPath="\Switches\Default Work Unit\Gameboy" GUID="{455A2057-A207-48AC-AA2D-9E96B3318077}">
-					<Switches>
-						<Switch Id="3813340491" Name="Main_Loop" ObjectPath="\Switches\Default Work Unit\Gameboy\Main_Loop" GUID="{86B782AE-3200-42CE-B1E2-44C114CE0925}"/>
-						<Switch Id="974269499" Name="Additional_Loop" ObjectPath="\Switches\Default Work Unit\Gameboy\Additional_Loop" GUID="{D1FA960C-D835-4743-A377-A7C9536F32AA}"/>
 					</Switches>
 				</SwitchGroup>
 				<SwitchGroup Id="2385628198" Name="Footsteps" ObjectPath="\Switches\Default Work Unit\Footsteps" GUID="{83EE5126-1392-43BE-83A3-F5B22BA74E02}">
